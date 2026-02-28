@@ -1,0 +1,422 @@
+[
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "Economic growth exceeds expectations: Statistics bureau reports stronger than predicted growth driven by exports and consumer spending.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: Economic growth exceeds expectations. Statistics bureau reports stronger than predicted growth driven by exports and consumer spending.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "What is the significance of: Economic growth exceeds expectations?",
+    "ideal_answer": "This story is significant because: Statistics bureau reports stronger than predicted growth driven by exports and consumer spending. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "Education reforms announced: Ministry introduces reforms focusing on digital literacy and advanced skill development.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: Education reforms announced. Ministry introduces reforms focusing on digital literacy and advanced skill development.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "What is the significance of: Education reforms announced?",
+    "ideal_answer": "This story is significant because: Ministry introduces reforms focusing on digital literacy and advanced skill development. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "National infrastructure project begins: Government launches major construction initiative to modernize transportation and utility networks.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: National infrastructure project begins. Government launches major construction initiative to modernize transportation and utility networks.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "What is the significance of: National infrastructure project begins?",
+    "ideal_answer": "This story is significant because: Government launches major construction initiative to modernize transportation and utility networks. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "Climate conference sets emission targets: Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: Climate conference sets emission targets. Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "What is the significance of: Climate conference sets emission targets?",
+    "ideal_answer": "This story is significant because: Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "International health initiative launched: WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: International health initiative launched. WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "What is the significance of: International health initiative launched?",
+    "ideal_answer": "This story is significant because: WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "Global summit addresses crises: UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: Global summit addresses crises. UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "What is the significance of: Global summit addresses crises?",
+    "ideal_answer": "This story is significant because: UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "Diplomatic talks ease regional tensions: High-level negotiations between neighboring countries show promise in resolving long-standing disputes.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: Diplomatic talks ease regional tensions. High-level negotiations between neighboring countries show promise in resolving long-standing disputes.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "What is the significance of: Diplomatic talks ease regional tensions?",
+    "ideal_answer": "This story is significant because: High-level negotiations between neighboring countries show promise in resolving long-standing disputes. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "Parliament debates climate legislation: Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: Parliament debates climate legislation. Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "What is the significance of: Parliament debates climate legislation?",
+    "ideal_answer": "This story is significant because: Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "International trade negotiations resume: Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: International trade negotiations resume. Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "What is the significance of: International trade negotiations resume?",
+    "ideal_answer": "This story is significant because: Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "What's the latest news in technology?",
+    "ideal_answer": "Cybersecurity threats increase globally: International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  },
+  {
+    "question": "Summarize recent technology news",
+    "ideal_answer": "According to recent news: Cybersecurity threats increase globally. International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  },
+  {
+    "question": "What is the significance of: Cybersecurity threats increase globally?",
+    "ideal_answer": "This story is significant because: International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions. This represents an important development in technology.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  },
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "Economic growth exceeds expectations: Statistics bureau reports stronger than predicted growth driven by exports and consumer spending.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: Economic growth exceeds expectations. Statistics bureau reports stronger than predicted growth driven by exports and consumer spending.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "What is the significance of: Economic growth exceeds expectations?",
+    "ideal_answer": "This story is significant because: Statistics bureau reports stronger than predicted growth driven by exports and consumer spending. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678"
+  },
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "Education reforms announced: Ministry introduces reforms focusing on digital literacy and advanced skill development.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: Education reforms announced. Ministry introduces reforms focusing on digital literacy and advanced skill development.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "What is the significance of: Education reforms announced?",
+    "ideal_answer": "This story is significant because: Ministry introduces reforms focusing on digital literacy and advanced skill development. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597"
+  },
+  {
+    "question": "What's the latest news in national?",
+    "ideal_answer": "National infrastructure project begins: Government launches major construction initiative to modernize transportation and utility networks.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "Summarize recent national news",
+    "ideal_answer": "According to recent news: National infrastructure project begins. Government launches major construction initiative to modernize transportation and utility networks.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "What is the significance of: National infrastructure project begins?",
+    "ideal_answer": "This story is significant because: Government launches major construction initiative to modernize transportation and utility networks. This represents an important development in national.",
+    "source": "inshorts",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "Climate conference sets emission targets: Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: Climate conference sets emission targets. Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "What is the significance of: Climate conference sets emission targets?",
+    "ideal_answer": "This story is significant because: Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "International health initiative launched: WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: International health initiative launched. WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "What is the significance of: International health initiative launched?",
+    "ideal_answer": "This story is significant because: WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902"
+  },
+  {
+    "question": "What's the latest news in world?",
+    "ideal_answer": "Global summit addresses crises: UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "Summarize recent world news",
+    "ideal_answer": "According to recent news: Global summit addresses crises. UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "What is the significance of: Global summit addresses crises?",
+    "ideal_answer": "This story is significant because: UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters. This represents an important development in world.",
+    "source": "inshorts",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "Diplomatic talks ease regional tensions: High-level negotiations between neighboring countries show promise in resolving long-standing disputes.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: Diplomatic talks ease regional tensions. High-level negotiations between neighboring countries show promise in resolving long-standing disputes.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "What is the significance of: Diplomatic talks ease regional tensions?",
+    "ideal_answer": "This story is significant because: High-level negotiations between neighboring countries show promise in resolving long-standing disputes. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "Parliament debates climate legislation: Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: Parliament debates climate legislation. Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "What is the significance of: Parliament debates climate legislation?",
+    "ideal_answer": "This story is significant because: Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389"
+  },
+  {
+    "question": "What's the latest news in politics?",
+    "ideal_answer": "International trade negotiations resume: Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "Summarize recent politics news",
+    "ideal_answer": "According to recent news: International trade negotiations resume. Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "What is the significance of: International trade negotiations resume?",
+    "ideal_answer": "This story is significant because: Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce. This represents an important development in politics.",
+    "source": "inshorts",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045"
+  },
+  {
+    "question": "What's the latest news in technology?",
+    "ideal_answer": "Cybersecurity threats increase globally: International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  },
+  {
+    "question": "Summarize recent technology news",
+    "ideal_answer": "According to recent news: Cybersecurity threats increase globally. International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  },
+  {
+    "question": "What is the significance of: Cybersecurity threats increase globally?",
+    "ideal_answer": "This story is significant because: International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions. This represents an important development in technology.",
+    "source": "inshorts",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860"
+  }
+]

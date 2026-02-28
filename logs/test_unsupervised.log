@@ -1,0 +1,103 @@
+INFO:src.inshorts_scraper:Loaded 326 existing articles
+INFO:src.inshorts_scraper:Loaded 60 existing training pairs
+INFO:src.inshorts_scraper:Loaded 326 existing articles
+INFO:src.inshorts_scraper:Loaded 60 existing training pairs
+INFO:src.inshorts_scraper:🌐 Scraping 8 live RSS categories…
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/news/technology/rss.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://www.wired.com/feed/rss "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Science.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/news/science_and_environment/rss.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/World.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/news/world/rss.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Business.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/news/business/rss.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/sport/rss.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://feeds.bbci.co.uk/news/rss.xml "HTTP/1.1 200 OK"
+INFO:src.inshorts_scraper:📰 NEW (national): Starmer chairs Cobra meeting over US-Israeli strikes on Iran…
+INFO:src.inshorts_scraper:📰 NEW (national): Formula 1's new golden age of celebrity may have just begun…
+INFO:src.inshorts_scraper:✅ Scraped 2 new articles (total: 328)
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:Generating response for: What is the role of Netflix in context of: Formula...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=9/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.5/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: What is the role of Netflix in context of: Formula...
+INFO:src.training_dashboard:Generating response for: Summarize the latest news on Formula 1's new golde...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=8/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.0/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: Summarize the latest news on Formula 1's new golde...
+INFO:src.training_dashboard:Generating response for: How does the news about 'Formula 1's new golden ag...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=8/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.0/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: How does the news about 'Formula 1's new golden ag...
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/extract-claims "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:Generating response for: What is the role of Starmer in context of: Starmer...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=9/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.5/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: What is the role of Starmer in context of: Starmer...
+INFO:src.training_dashboard:Generating response for: What is the role of US, Israel, Iran in context of...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=8/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.0/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: What is the role of US, Israel, Iran in context of...
+INFO:src.training_dashboard:Generating response for: What factual detail can you provide about Starmer ...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=9/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.5/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: What factual detail can you provide about Starmer ...
+INFO:src.training_dashboard:Generating response for: What is the role of government in context of: Star...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=9/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.5/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: What is the role of government in context of: Star...
+INFO:src.training_dashboard:Generating response for: Summarize the latest news on Starmer chairs Cobra ...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=8/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.0/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: Summarize the latest news on Starmer chairs Cobra ...
+INFO:src.training_dashboard:Generating response for: How does the news about 'Starmer chairs Cobra meet...
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://localhost:8000/api/evaluate "HTTP/1.1 200 OK"
+INFO:src.training_dashboard:API evaluation: score=9/10, store=True
+INFO:src.training_dashboard:Training result: reward=4.5/5.0 (via api_evaluate)
+INFO:src.inshorts_trainer:✓ Trained: How does the news about 'Starmer chairs Cobra meet...
+============================================================
+  AZAN Atomic Claim Extraction - Unsupervised Cycle
+============================================================
+
+🌐 SCRAPING LATEST NEWS FEEDS...
+✅ Scraped {'status': 'success', 'articles_scraped': 10, 'training_pairs_generated': 38, 'total_articles': 328, 'total_training_pairs': 98} new articles.
+
+🧬 EXTRACTING CLAIMS & COMMITTING TO KNOWLEDGE BASE...
+✅ Successfully processed 9 training units.
+
+📊 VERIFYING KNOWLEDGE DATA...
+✅ Found 0 atomic claims in the training dataset.
+
+============================================================
+  CYCLE COMPLETE.

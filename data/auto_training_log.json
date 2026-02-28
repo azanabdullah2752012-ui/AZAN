@@ -1,0 +1,1130 @@
+{
+  "sessions": [
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 2.1,
+      "duration_seconds": 0.01,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:35:24.264280"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 2.1,
+      "duration_seconds": 0.01,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:35:44.629487"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 2.202,
+      "duration_seconds": 0.01,
+      "topics_covered": {
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:39:37.179125"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.502,
+      "duration_seconds": 16.43,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:43:46.158682"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.312,
+      "duration_seconds": 15.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:44:28.282457"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.614,
+      "duration_seconds": 16.35,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "International Security and Conflicts": 1,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:48:22.061211"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.438,
+      "duration_seconds": 16.13,
+      "topics_covered": {
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-22T22:48:52.131286"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.436,
+      "duration_seconds": 31.25,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T03:44:43.174092"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.502,
+      "duration_seconds": 15.44,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T04:27:55.170154"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.354,
+      "duration_seconds": 16.13,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T04:28:18.756154"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.232,
+      "duration_seconds": 77.13,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:07:17.416026"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.3,
+      "duration_seconds": 84.31,
+      "topics_covered": {
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:07:25.945113"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.13,
+      "duration_seconds": 18.28,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:16:20.264491"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.712,
+      "duration_seconds": 17.16,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:19:22.701889"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.314,
+      "duration_seconds": 14.61,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:27:31.033793"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.738,
+      "duration_seconds": 31.17,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:39:02.519597"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.56,
+      "duration_seconds": 19.04,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 1,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:47:35.037573"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.648,
+      "duration_seconds": 15.64,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 1,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T05:57:40.721575"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.418,
+      "duration_seconds": 17.51,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Democratic Institutions and Elections": 3
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T06:13:03.728122"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.416,
+      "duration_seconds": 20.01,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T06:30:15.978589"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.386,
+      "duration_seconds": 20.14,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T06:46:12.127325"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.272,
+      "duration_seconds": 97.92,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T07:14:36.818404"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.436,
+      "duration_seconds": 16.86,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "International Security and Conflicts": 3
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T07:16:51.698609"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.31,
+      "duration_seconds": 107.53,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T08:01:05.054905"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.462,
+      "duration_seconds": 77.96,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 3,
+        "Climate Policy and International Action": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T08:38:13.516938"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.714,
+      "duration_seconds": 34.56,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T09:15:36.882869"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.536,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T09:45:06.977623"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.31,
+      "duration_seconds": 62.84,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T10:23:59.440531"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.458,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T11:01:37.686098"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.55,
+      "duration_seconds": 34.4,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T11:42:08.059327"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.49,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 3,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T12:11:33.668816"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.344,
+      "duration_seconds": 11.8,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T12:48:18.570555"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.348,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T13:25:14.688193"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.546,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T14:04:40.786076"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.278,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 3,
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T14:43:09.842893"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.654,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T15:27:09.846347"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.552,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 3,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T16:06:09.447198"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.634,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T16:37:41.119815"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.358,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T17:07:41.124790"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.528,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 3,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T17:42:33.973732"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.572,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 2,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T18:12:33.979401"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.414,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T18:42:33.984502"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.706,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 3
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T19:12:33.992351"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.49,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T19:42:33.997836"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.542,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 3
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T20:12:34.002737"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.63,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T20:42:34.007684"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.486,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T21:12:34.014937"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.752,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T21:52:34.946488"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.574,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 3
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T22:28:01.690101"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.5,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T23:00:21.731186"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.572,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 3,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-23T23:32:37.795985"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.406,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T00:18:16.949879"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.274,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T00:56:12.341199"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.606,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T01:29:26.720782"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.682,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T02:02:51.151419"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.492,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "Democratic Institutions and Elections": 2,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T02:38:14.932014"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.632,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 2,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T03:18:20.980639"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.542,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 4,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T03:55:42.008056"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.454,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T04:39:06.819899"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.474,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-24T05:12:28.234834"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.418,
+      "duration_seconds": 21.87,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T21:02:21.976065"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.348,
+      "duration_seconds": 20.17,
+      "topics_covered": {
+        "Climate Policy and International Action": 2,
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T21:13:49.221713"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.55,
+      "duration_seconds": 20.52,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T21:21:40.897419"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.458,
+      "duration_seconds": 15.4,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T21:23:49.228090"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.572,
+      "duration_seconds": 1119.82,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T22:13:15.683290"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.406,
+      "duration_seconds": 129.59,
+      "topics_covered": {
+        "International Security and Conflicts": 3,
+        "Democratic Institutions and Elections": 1,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T22:30:55.195665"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.658,
+      "duration_seconds": 991.17,
+      "topics_covered": {
+        "International Security and Conflicts": 2,
+        "Global Trade Relationships": 1,
+        "Climate Policy and International Action": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T23:25:17.962473"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.514,
+      "duration_seconds": 745.1,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-27T23:59:00.465385"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.572,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 3,
+        "Democratic Institutions and Elections": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T00:30:24.395069"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.288,
+      "duration_seconds": 1035.49,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T01:27:19.019545"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.666,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T01:40:05.339972"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.646,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 3,
+        "Democratic Institutions and Elections": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T02:12:52.664199"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.322,
+      "duration_seconds": 65.97,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T02:59:03.815091"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.17,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 2,
+        "Global Trade Relationships": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T03:34:46.637335"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.804,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Democratic Institutions and Elections": 1,
+        "Global Trade Relationships": 3,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T04:18:11.535726"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.342,
+      "duration_seconds": 0.17,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 2,
+        "Democratic Institutions and Elections": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T13:30:33.154626"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.652,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Climate Policy and International Action": 3,
+        "Global Trade Relationships": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T14:00:32.993705"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.256,
+      "duration_seconds": 0.0,
+      "topics_covered": {
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 2,
+        "Climate Policy and International Action": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T14:43:39.259450"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.59,
+      "duration_seconds": 16.98,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 2,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T14:50:01.601833"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.674,
+      "duration_seconds": 19.6,
+      "topics_covered": {
+        "Climate Policy and International Action": 1,
+        "Democratic Institutions and Elections": 3,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T15:18:19.557972"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 4.3,
+      "duration_seconds": 40.75,
+      "topics_covered": {
+        "International Security and Conflicts": 1,
+        "Climate Policy and International Action": 1,
+        "Global Trade Relationships": 1,
+        "Democratic Institutions and Elections": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T15:19:14.472140"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 4.5,
+      "duration_seconds": 40.95,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 2
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T15:49:14.679931"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 4.5,
+      "duration_seconds": 33.04,
+      "topics_covered": {
+        "Climate Policy and International Action": 3,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T16:19:06.772034"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 4.5,
+      "duration_seconds": 146.03,
+      "topics_covered": {
+        "Global Trade Relationships": 2,
+        "Climate Policy and International Action": 1,
+        "International Security and Conflicts": 1,
+        "Democratic Institutions and Elections": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T16:49:00.645564"
+    },
+    {
+      "auto_training": true,
+      "examples_trained": 5,
+      "avg_reward": 3.814,
+      "duration_seconds": 236.46,
+      "topics_covered": {
+        "Climate Policy and International Action": 3,
+        "Global Trade Relationships": 1,
+        "International Security and Conflicts": 1
+      },
+      "quick_mode_used": true,
+      "timestamp": "2026-02-28T17:20:31.095381"
+    }
+  ]
+}

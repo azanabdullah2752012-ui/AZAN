@@ -1,0 +1,92 @@
+[
+  {
+    "topic": "Global Trade Relationships",
+    "questions": [
+      "What are the current trade tensions between major world powers?",
+      "How are trade agreements affecting developing economies?",
+      "What is the impact of tariffs on global commerce?",
+      "How are supply chains adapting to new trade policies?"
+    ]
+  },
+  {
+    "topic": "Climate Policy and International Action",
+    "questions": [
+      "What are the latest international climate agreements?",
+      "How are countries implementing carbon neutrality goals?",
+      "What is the role of renewable energy in global politics?",
+      "How does climate policy affect economic development?"
+    ]
+  },
+  {
+    "topic": "Democratic Institutions and Elections",
+    "questions": [
+      "What are current trends in democratic participation worldwide?",
+      "How are elections being conducted in major democracies?",
+      "What challenges face electoral integrity today?",
+      "How is technology affecting democratic processes?"
+    ]
+  },
+  {
+    "topic": "International Security and Conflicts",
+    "questions": [
+      "What are the major geopolitical tensions in the world today?",
+      "How are international organizations addressing conflicts?",
+      "What is the role of military alliances in modern geopolitics?",
+      "How are cyber threats affecting international security?"
+    ]
+  },
+  {
+    "topic": "Economic Development and Inequality",
+    "questions": [
+      "How are developing nations addressing economic challenges?",
+      "What policies reduce wealth inequality globally?",
+      "How do labor policies affect international competitiveness?",
+      "What is the impact of automation on employment worldwide?"
+    ]
+  },
+  {
+    "topic": "Migration and Border Policy",
+    "questions": [
+      "What are current approaches to immigration policy?",
+      "How are countries managing refugee crises?",
+      "What is the economic impact of labor migration?",
+      "How do border policies affect regional relationships?"
+    ]
+  },
+  {
+    "topic": "Technology and Governance",
+    "questions": [
+      "How is technology regulation evolving globally?",
+      "What are the implications of AI development for governance?",
+      "How are data privacy policies being standardized internationally?",
+      "What role does tech innovation play in political systems?"
+    ]
+  },
+  {
+    "topic": "Healthcare and Pandemics",
+    "questions": [
+      "How are countries preparing for future health emergencies?",
+      "What are global approaches to vaccine distribution?",
+      "How does healthcare policy affect international relations?",
+      "What lessons have been learned from recent pandemics?"
+    ]
+  },
+  {
+    "topic": "Energy Independence and Resources",
+    "questions": [
+      "How are countries achieving energy independence?",
+      "What is the geopolitical importance of energy resources?",
+      "How are renewable energy transitions affecting politics?",
+      "What role does resource control play in conflicts?"
+    ]
+  },
+  {
+    "topic": "Human Rights and Social Justice",
+    "questions": [
+      "What are global human rights concerns today?",
+      "How are countries addressing systemic inequality?",
+      "What is the role of activism in modern politics?",
+      "How do international organizations promote rights protection?"
+    ]
+  }
+]

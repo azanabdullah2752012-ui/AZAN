@@ -1,0 +1,172 @@
+[
+  {
+    "timestamp": "2026-02-23T05:16:33.890510",
+    "articles_scraped": 24,
+    "total_articles": 24
+  },
+  {
+    "timestamp": "2026-02-23T05:32:08.950198",
+    "articles_scraped": 24,
+    "total_articles": 48
+  },
+  {
+    "timestamp": "2026-02-23T05:32:55.007449",
+    "articles_scraped": 24,
+    "total_articles": 52
+  },
+  {
+    "timestamp": "2026-02-23T05:34:11.714786",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-23T05:34:57.764477",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-23T05:36:06.783063",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-23T05:36:52.835474",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-23T05:37:42.617437",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-27T21:07:16.257725",
+    "articles_scraped": 24,
+    "total_articles": 64
+  },
+  {
+    "timestamp": "2026-02-27T21:29:38.200167",
+    "articles_scraped": 120,
+    "total_articles": 184
+  },
+  {
+    "timestamp": "2026-02-27T21:35:18.989764",
+    "articles_scraped": 3,
+    "total_articles": 187
+  },
+  {
+    "timestamp": "2026-02-28T00:32:09.254491",
+    "articles_scraped": 25,
+    "total_articles": 212
+  },
+  {
+    "timestamp": "2026-02-28T03:36:29.546896",
+    "articles_scraped": 25,
+    "total_articles": 237
+  },
+  {
+    "timestamp": "2026-02-28T13:36:31.669762",
+    "articles_scraped": 43,
+    "total_articles": 280
+  },
+  {
+    "timestamp": "2026-02-28T14:00:38.971747",
+    "articles_scraped": 1,
+    "total_articles": 281
+  },
+  {
+    "timestamp": "2026-02-28T14:11:33.728714",
+    "articles_scraped": 4,
+    "total_articles": 285
+  },
+  {
+    "timestamp": "2026-02-28T14:23:24.507269",
+    "articles_scraped": 2,
+    "total_articles": 287
+  },
+  {
+    "timestamp": "2026-02-28T14:29:20.193772",
+    "articles_scraped": 2,
+    "total_articles": 289
+  },
+  {
+    "timestamp": "2026-02-28T14:49:13.040098",
+    "articles_scraped": 4,
+    "total_articles": 293
+  },
+  {
+    "timestamp": "2026-02-28T15:24:14.508551",
+    "articles_scraped": 3,
+    "total_articles": 296
+  },
+  {
+    "timestamp": "2026-02-28T15:29:57.611165",
+    "articles_scraped": 1,
+    "total_articles": 297
+  },
+  {
+    "timestamp": "2026-02-28T15:38:05.907125",
+    "articles_scraped": 12,
+    "total_articles": 309
+  },
+  {
+    "timestamp": "2026-02-28T15:43:48.948417",
+    "articles_scraped": 1,
+    "total_articles": 310
+  },
+  {
+    "timestamp": "2026-02-28T15:53:29.742546",
+    "articles_scraped": 4,
+    "total_articles": 314
+  },
+  {
+    "timestamp": "2026-02-28T16:06:27.057376",
+    "articles_scraped": 2,
+    "total_articles": 316
+  },
+  {
+    "timestamp": "2026-02-28T16:12:05.685768",
+    "articles_scraped": 1,
+    "total_articles": 317
+  },
+  {
+    "timestamp": "2026-02-28T16:19:02.757212",
+    "articles_scraped": 1,
+    "total_articles": 318
+  },
+  {
+    "timestamp": "2026-02-28T16:24:47.661630",
+    "articles_scraped": 1,
+    "total_articles": 319
+  },
+  {
+    "timestamp": "2026-02-28T16:32:43.434182",
+    "articles_scraped": 2,
+    "total_articles": 321
+  },
+  {
+    "timestamp": "2026-02-28T16:38:27.780842",
+    "articles_scraped": 1,
+    "total_articles": 322
+  },
+  {
+    "timestamp": "2026-02-28T17:13:14.871598",
+    "articles_scraped": 4,
+    "total_articles": 326
+  },
+  {
+    "timestamp": "2026-02-28T17:30:16.289515",
+    "articles_scraped": 2,
+    "total_articles": 328
+  },
+  {
+    "timestamp": "2026-02-28T17:35:58.429626",
+    "articles_scraped": 2,
+    "total_articles": 330
+  },
+  {
+    "timestamp": "2026-02-28T17:46:53.180493",
+    "articles_scraped": 2,
+    "total_articles": 332
+  }
+]

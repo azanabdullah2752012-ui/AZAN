@@ -1,0 +1,2355 @@
+INFO: Loaded 33 cached responses
+INFO:     Started server process [70890]
+INFO:     Waiting for application startup.
+INFO: Loaded 612 training pairs
+INFO: Loaded 612 reward records
+INFO: ✓ RLDataCollector initialized with 612 training pairs
+INFO: ✓ RLTrainingEnvironment initialized
+INFO: Loaded checkpoint: checkpoint_000250.json
+INFO: ✓ RLModel initialized (iteration 250)
+INFO: ✓ AutomatedRLPipeline initialized (update_interval=60s)
+INFO: 🤖 RL Training loop started
+INFO: ✓ Started autonomous RL training loop
+INFO: ✅ RL Pipeline started on server startup
+INFO: ✓ KnowledgeBase initialized with 64 articles
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: ✓ EnhancedInference initialized
+INFO: ✅ RL Inference engine initialized
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+/Users/azan/Desktop/AZAN/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+INFO: Auto-training scheduler started
+INFO: ✅ Auto-training scheduler started on server startup
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO:     127.0.0.1:51492 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO:     127.0.0.1:51496 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51503 - "GET /api/rl/knowledge HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51504 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.26/5.0
+INFO: Auto-training session #1 completed: 5 examples, avg reward 3.436
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51492 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:     127.0.0.1:51540 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:     127.0.0.1:51552 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:     127.0.0.1:51567 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Generated response for: how to build with claude...
+INFO:     127.0.0.1:51556 - "POST /chat HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000300.json
+INFO: 🎯 Training iteration 10: avg_reward=5.00/5.0, total_iterations=300
+INFO:     127.0.0.1:51590 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:     127.0.0.1:51607 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:     127.0.0.1:51619 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:     127.0.0.1:51635 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:     127.0.0.1:51653 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:     127.0.0.1:51676 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:     127.0.0.1:51687 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:     127.0.0.1:51697 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Virtual reality concerts sell out w... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Virtual reality concerts... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International film festival celebra... (reward=5.00)
+INFO:     127.0.0.1:51735 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51735 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51735 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51735 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51737 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51737 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51737 - "GET /api/rl/metrics HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about International film festi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gaming becomes fastest-growing ente... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gaming becomes fastest-g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000350.json
+INFO: 🎯 Training iteration 20: avg_reward=5.00/5.0, total_iterations=350
+INFO:     127.0.0.1:51761 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51761 - "GET /dashboard/summary HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Generated response for: hi...
+INFO:     127.0.0.1:51761 - "POST /chat HTTP/1.1" 200 OK
+INFO: Generating response for: hi...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=2.1/5.0
+INFO:     127.0.0.1:51763 - "POST /train HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51763 - "GET /dashboard/models HTTP/1.1" 200 OK
+INFO:   ✓ Trained: Tell me about: Gene therapy cures genetic blood di... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gene therapy cures genet... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Brain-computer interface enables pa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Brain-computer interface... (reward=5.00)
+INFO:     127.0.0.1:51780 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51780 - "GET /dashboard/summary HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Telescope discovers potentially hab... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Telescope discovers pote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: 5G networks achieve global majority... (reward=5.00)
+INFO:   ✓ Trained: What is significant about 5G networks achieve glob... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy tech cuts costs by... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy tech cu... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity firm stops ransomware... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity firm stops... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New cybersecurity treaty signed by ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New cybersecurity treaty... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Democracy summit promotes electoral... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Democracy summit promote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: United Nations reform package passe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about United Nations reform pa... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Arctic research reveals climate ada... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Arctic research reveals ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Humanitarian aid reaches conflict z... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Humanitarian aid reaches... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Ocean conservation treaty creates p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Ocean conservation treat... (reward=5.00)
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy becomes primary po... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy becomes... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Healthcare system achieves universa... (reward=5.00)
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #2 completed: 5 examples, avg reward 3.31
+INFO:   ✓ Trained: What is significant about Healthcare system achiev... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Space agency achieves historic plan... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Space agency achieves hi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.19/5.0
+INFO: Auto-training session #3 completed: 5 examples, avg reward 3.462
+INFO:   ✓ Trained: Tell me about: Small business confidence reaches a... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Small business confidenc... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Technology revolutionizes sports pe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Technology revolutionize... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000400.json
+INFO: 🎯 Training iteration 30: avg_reward=5.00/5.0, total_iterations=400
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Podcast networks report explosive l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Podcast networks report ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Agricultural scientists develop dro... (reward=5.00)
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #4 completed: 5 examples, avg reward 3.714
+INFO:   ✓ Trained: What is significant about Agricultural scientists ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global stock markets rally on econo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global stock markets ral... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Olympics set attendance and viewers... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Olympics set attendance ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global cinema experiences streaming... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global cinema experience... (reward=5.00)
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #5 completed: 5 examples, avg reward 3.536
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Fusion energy reactor achieves net ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Fusion energy reactor ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: AI breakthroughs accelerate autonom... (reward=5.00)
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #6 completed: 5 examples, avg reward 3.31
+INFO:   ✓ Trained: What is significant about AI breakthroughs acceler... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computers solve complex che... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computers solve ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #7 completed: 5 examples, avg reward 3.458
+INFO:   ✓ Trained: Tell me about: International climate accord streng... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International climate ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade agreement resolves US-EU disp... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade agreement resolves... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global healthcare collaboration fig... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global healthcare collab... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: African countries lead green energy... (reward=5.00)
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO:   ✓ Trained: What is significant about African countries lead g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National education system adopts AI... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National education syste... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.81/5.0
+INFO: Auto-training session #8 completed: 5 examples, avg reward 3.55
+INFO:   ✓ Trained: Tell me about: Infrastructure modernization create... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Infrastructure moderniza... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #9 completed: 5 examples, avg reward 3.49
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000450.json
+INFO: 🎯 Training iteration 40: avg_reward=5.00/5.0, total_iterations=450
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #10 completed: 5 examples, avg reward 3.344
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Auto-training session #11 completed: 5 examples, avg reward 3.348
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Auto-training session #12 completed: 5 examples, avg reward 3.546
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #13 completed: 5 examples, avg reward 3.278
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #14 completed: 5 examples, avg reward 3.654
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Auto-training session #15 completed: 5 examples, avg reward 3.552
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000500.json
+INFO: 🎯 Training iteration 50: avg_reward=5.00/5.0, total_iterations=500
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:     127.0.0.1:52336 - "GET /api/restricted/query?query=latest%20business%20news HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52338 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /dashboard/summary HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Generated response for: hi...
+INFO:     127.0.0.1:52338 - "POST /chat HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000550.json
+INFO: 🎯 Training iteration 60: avg_reward=5.00/5.0, total_iterations=550
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:     127.0.0.1:52476 - "GET /api/rl/start-training HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:52476 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Auto-training session #16 completed: 5 examples, avg reward 3.634
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000600.json
+INFO: 🎯 Training iteration 70: avg_reward=5.00/5.0, total_iterations=600
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000650.json
+INFO: 🎯 Training iteration 80: avg_reward=5.00/5.0, total_iterations=650
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000700.json
+INFO: 🎯 Training iteration 90: avg_reward=5.00/5.0, total_iterations=700
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #17 completed: 5 examples, avg reward 3.358
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000750.json
+INFO: 🎯 Training iteration 100: avg_reward=5.00/5.0, total_iterations=750
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Virtual reality concerts sell out w... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Virtual reality concerts... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International film festival celebra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International film festi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gaming becomes fastest-growing ente... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gaming becomes fastest-g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gene therapy cures genetic blood di... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gene therapy cures genet... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Brain-computer interface enables pa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Brain-computer interface... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Telescope discovers potentially hab... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Telescope discovers pote... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000800.json
+INFO: 🎯 Training iteration 110: avg_reward=5.00/5.0, total_iterations=800
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: 5G networks achieve global majority... (reward=5.00)
+INFO:   ✓ Trained: What is significant about 5G networks achieve glob... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy tech cuts costs by... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy tech cu... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity firm stops ransomware... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity firm stops... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New cybersecurity treaty signed by ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New cybersecurity treaty... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Democracy summit promotes electoral... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Democracy summit promote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: United Nations reform package passe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about United Nations reform pa... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Arctic research reveals climate ada... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Arctic research reveals ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Auto-training session #18 completed: 5 examples, avg reward 3.528
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000850.json
+INFO: 🎯 Training iteration 120: avg_reward=5.00/5.0, total_iterations=850
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:     127.0.0.1:52707 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52707 - "GET /dashboard/summary HTTP/1.1" 200 OK
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Generated response for: what are you trained for...
+INFO:     127.0.0.1:52709 - "POST /chat HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:     127.0.0.1:52726 - "GET /azan-dashboard HTTP/1.1" 404 Not Found
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000900.json
+INFO: 🎯 Training iteration 130: avg_reward=5.00/5.0, total_iterations=900
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Auto-training session #19 completed: 5 examples, avg reward 3.572
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_000950.json
+INFO: 🎯 Training iteration 140: avg_reward=5.00/5.0, total_iterations=950
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Virtual reality concerts sell out w... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Virtual reality concerts... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International film festival celebra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International film festi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gaming becomes fastest-growing ente... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gaming becomes fastest-g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gene therapy cures genetic blood di... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gene therapy cures genet... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #20 completed: 5 examples, avg reward 3.414
+INFO:   ✓ Trained: Tell me about: Brain-computer interface enables pa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Brain-computer interface... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Telescope discovers potentially hab... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Telescope discovers pote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: 5G networks achieve global majority... (reward=5.00)
+INFO:   ✓ Trained: What is significant about 5G networks achieve glob... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy tech cuts costs by... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy tech cu... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity firm stops ransomware... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity firm stops... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New cybersecurity treaty signed by ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New cybersecurity treaty... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Democracy summit promotes electoral... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Democracy summit promote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: United Nations reform package passe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about United Nations reform pa... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Arctic research reveals climate ada... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Arctic research reveals ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Humanitarian aid reaches conflict z... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Humanitarian aid reaches... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Ocean conservation treaty creates p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Ocean conservation treat... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy becomes primary po... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy becomes... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001000.json
+INFO: 🎯 Training iteration 150: avg_reward=5.00/5.0, total_iterations=1000
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Healthcare system achieves universa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Healthcare system achiev... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Space agency achieves historic plan... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Space agency achieves hi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Small business confidence reaches a... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Small business confidenc... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Technology revolutionizes sports pe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Technology revolutionize... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Podcast networks report explosive l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Podcast networks report ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Agricultural scientists develop dro... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Agricultural scientists ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global stock markets rally on econo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global stock markets ral... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Olympics set attendance and viewers... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Olympics set attendance ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global cinema experiences streaming... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global cinema experience... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Fusion energy reactor achieves net ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Fusion energy reactor ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: AI breakthroughs accelerate autonom... (reward=5.00)
+INFO:   ✓ Trained: What is significant about AI breakthroughs acceler... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computers solve complex che... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computers solve ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International climate accord streng... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International climate ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Auto-training session #21 completed: 5 examples, avg reward 3.706
+INFO:   ✓ Trained: Tell me about: Trade agreement resolves US-EU disp... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade agreement resolves... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global healthcare collaboration fig... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global healthcare collab... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: African countries lead green energy... (reward=5.00)
+INFO:   ✓ Trained: What is significant about African countries lead g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National education system adopts AI... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001050.json
+INFO: 🎯 Training iteration 160: avg_reward=5.00/5.0, total_iterations=1050
+INFO:   ✓ Trained: What is significant about National education syste... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Infrastructure modernization create... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Infrastructure moderniza... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001100.json
+INFO: 🎯 Training iteration 170: avg_reward=5.00/5.0, total_iterations=1100
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001150.json
+INFO: 🎯 Training iteration 180: avg_reward=5.00/5.0, total_iterations=1150
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Auto-training session #22 completed: 5 examples, avg reward 3.49
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001200.json
+INFO: 🎯 Training iteration 190: avg_reward=5.00/5.0, total_iterations=1200
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001250.json
+INFO: 🎯 Training iteration 200: avg_reward=5.00/5.0, total_iterations=1250
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001300.json
+INFO: 🎯 Training iteration 210: avg_reward=5.00/5.0, total_iterations=1300
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Auto-training session #23 completed: 5 examples, avg reward 3.542
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001350.json
+INFO: 🎯 Training iteration 220: avg_reward=5.00/5.0, total_iterations=1350
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Virtual reality concerts sell out w... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Virtual reality concerts... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International film festival celebra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International film festi... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001400.json
+INFO: 🎯 Training iteration 230: avg_reward=5.00/5.0, total_iterations=1400
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gaming becomes fastest-growing ente... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gaming becomes fastest-g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gene therapy cures genetic blood di... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gene therapy cures genet... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Brain-computer interface enables pa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Brain-computer interface... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Telescope discovers potentially hab... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Telescope discovers pote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: 5G networks achieve global majority... (reward=5.00)
+INFO:   ✓ Trained: What is significant about 5G networks achieve glob... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy tech cuts costs by... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy tech cu... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity firm stops ransomware... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity firm stops... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New cybersecurity treaty signed by ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New cybersecurity treaty... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Democracy summit promotes electoral... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Democracy summit promote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: United Nations reform package passe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about United Nations reform pa... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Arctic research reveals climate ada... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Arctic research reveals ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001450.json
+INFO: 🎯 Training iteration 240: avg_reward=5.00/5.0, total_iterations=1450
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #24 completed: 5 examples, avg reward 3.63
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001500.json
+INFO: 🎯 Training iteration 250: avg_reward=5.00/5.0, total_iterations=1500
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001550.json
+INFO: 🎯 Training iteration 260: avg_reward=5.00/5.0, total_iterations=1550
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:     127.0.0.1:54399 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54399 - "GET /dashboard/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54399 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO: Generated response for: hi...
+INFO:     127.0.0.1:54399 - "POST /chat HTTP/1.1" 200 OK
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Virtual reality concerts sell out w... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Virtual reality concerts... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International film festival celebra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International film festi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gaming becomes fastest-growing ente... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gaming becomes fastest-g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Gene therapy cures genetic blood di... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Gene therapy cures genet... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Brain-computer interface enables pa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Brain-computer interface... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Telescope discovers potentially hab... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Telescope discovers pote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: 5G networks achieve global majority... (reward=5.00)
+INFO:   ✓ Trained: What is significant about 5G networks achieve glob... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy tech cuts costs by... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy tech cu... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity firm stops ransomware... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity firm stops... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New cybersecurity treaty signed by ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New cybersecurity treaty... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Democracy summit promotes electoral... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Democracy summit promote... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: United Nations reform package passe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about United Nations reform pa... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001600.json
+INFO: 🎯 Training iteration 270: avg_reward=5.00/5.0, total_iterations=1600
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Arctic research reveals climate ada... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Arctic research reveals ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Humanitarian aid reaches conflict z... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Humanitarian aid reaches... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Ocean conservation treaty creates p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Ocean conservation treat... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Renewable energy becomes primary po... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Renewable energy becomes... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Healthcare system achieves universa... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Healthcare system achiev... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Space agency achieves historic plan... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Space agency achieves hi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Small business confidence reaches a... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Small business confidenc... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Technology revolutionizes sports pe... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Technology revolutionize... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Podcast networks report explosive l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Podcast networks report ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Agricultural scientists develop dro... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Agricultural scientists ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global stock markets rally on econo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global stock markets ral... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Olympics set attendance and viewers... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Olympics set attendance ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global cinema experiences streaming... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global cinema experience... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Auto-training session #25 completed: 5 examples, avg reward 3.486
+INFO:   ✓ Trained: Tell me about: Fusion energy reactor achieves net ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Fusion energy reactor ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: AI breakthroughs accelerate autonom... (reward=5.00)
+INFO:   ✓ Trained: What is significant about AI breakthroughs acceler... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computers solve complex che... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computers solve ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International climate accord streng... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001650.json
+INFO: 🎯 Training iteration 280: avg_reward=5.00/5.0, total_iterations=1650
+INFO:   ✓ Trained: What is significant about International climate ac... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade agreement resolves US-EU disp... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade agreement resolves... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global healthcare collaboration fig... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global healthcare collab... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: African countries lead green energy... (reward=5.00)
+INFO:   ✓ Trained: What is significant about African countries lead g... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National education system adopts AI... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National education syste... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Infrastructure modernization create... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Infrastructure moderniza... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001700.json
+INFO: 🎯 Training iteration 290: avg_reward=5.00/5.0, total_iterations=1700
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001750.json
+INFO: 🎯 Training iteration 300: avg_reward=5.00/5.0, total_iterations=1750
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Auto-training session #26 completed: 5 examples, avg reward 3.752
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001800.json
+INFO: 🎯 Training iteration 310: avg_reward=5.00/5.0, total_iterations=1800
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Corporate merger creates... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International women's sports league... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International women's sp... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Esports tournament offers largest p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Esports tournament offer... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Youth sports programs expand access... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Youth sports programs ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001850.json
+INFO: 🎯 Training iteration 320: avg_reward=5.00/5.0, total_iterations=1850
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Auto-training session #27 completed: 5 examples, avg reward 3.574
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Auto-training session #28 completed: 5 examples, avg reward 3.5
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Auto-training session #29 completed: 5 examples, avg reward 3.572
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Quantum computing makes practical p... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Quantum computing makes ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cybersecurity threats increase glob... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Cybersecurity threats in... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International trade negotiations re... (reward=5.00)
+INFO:   ✓ Trained: What is significant about International trade nego... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Parliament debates climate legislat... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Parliament debates clima... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in politics?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Diplomatic talks ease regional tens... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Diplomatic talks ease re... (reward=5.00)
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #30 completed: 5 examples, avg reward 3.406
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global summit addresses crises...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global summit addresses ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: International health initiative lau... (reward=5.00)
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What is the impact of tariffs on global commerce?...
+INFO: Training result: reward=2.76/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Auto-training session #31 completed: 5 examples, avg reward 3.274
+INFO:   ✓ Trained: What is significant about International health ini... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in world?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Climate conference sets emission ta... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Climate conference sets ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001900.json
+INFO: 🎯 Training iteration 330: avg_reward=5.00/5.0, total_iterations=1900
+INFO: Generating response for: How are cyber threats affecting international secu...
+INFO: Training result: reward=3.93/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Auto-training session #32 completed: 5 examples, avg reward 3.606
+INFO:   ✓ Trained: Tell me about: National infrastructure project beg... (reward=5.00)
+INFO:   ✓ Trained: What is significant about National infrastructure ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Education reforms announced...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Education reforms announ... (reward=5.00)
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What are the current trade tensions between major ...
+INFO: Training result: reward=3.55/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Auto-training session #33 completed: 5 examples, avg reward 3.682
+INFO:   ✓ Trained: What's the latest news in national?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Economic growth exceeds expectation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Economic growth exceeds ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Cryptocurrency market experiences m... (reward=5.00)
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: What challenges face electoral integrity today?...
+INFO: Training result: reward=3.19/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: What are current trends in democratic participatio...
+INFO: Training result: reward=3.99/5.0
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Auto-training session #34 completed: 5 examples, avg reward 3.492
+INFO:   ✓ Trained: What is significant about Cryptocurrency market ex... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Trade deficit shrinks amid manufact... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Trade deficit shrinks am... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Corporate merger creates industry-l... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Global markets react to interest ra... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Global markets react to ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO: Generating response for: What are the major geopolitical tensions in the wo...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Auto-training session #35 completed: 5 examples, avg reward 3.632
+INFO:   ✓ Trained: Tell me about: Tech giants report record earnings ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Tech giants report recor... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in business?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Oil prices surge amid geopolitical ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Oil prices surge amid ge... (reward=5.00)
+INFO: Generating response for: What are the latest international climate agreemen...
+INFO: Training result: reward=3.68/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: What is the role of renewable energy in global pol...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Auto-training session #36 completed: 5 examples, avg reward 3.542
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Championship finals set for next mo... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Championship finals set ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Athletic records broken internation... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Athletic records broken ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in sports?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Team signs star player in record de... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Team signs star player i... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are supply chains adapting to new trade polici...
+INFO: Training result: reward=3.81/5.0
+INFO: Generating response for: How does climate policy affect economic developmen...
+INFO: Training result: reward=3.26/5.0
+INFO: Generating response for: How is technology affecting democratic processes?...
+INFO: Training result: reward=2.76/5.0
+INFO: Auto-training session #37 completed: 5 examples, avg reward 3.454
+INFO: Generating response for: How are international organizations addressing con...
+INFO: Training result: reward=3.64/5.0
+INFO: Generating response for: How are countries implementing carbon neutrality g...
+INFO: Training result: reward=3.9/5.0
+INFO: Generating response for: How are trade agreements affecting developing econ...
+INFO: Training result: reward=3.8/5.0
+INFO: Generating response for: What is the role of military alliances in modern g...
+INFO: Training result: reward=2.8/5.0
+INFO: Generating response for: How are elections being conducted in major democra...
+INFO: Training result: reward=3.23/5.0
+INFO: Auto-training session #38 completed: 5 examples, avg reward 3.474
+INFO:   ✓ Trained: Tell me about: Streaming series breaks viewership ... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Streaming series breaks ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Film festival announces award winne... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Film festival announces ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in entertainment?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Music artists announce collaboratio... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Music artists announce c... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Mars rover discovers organic compou... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Mars rover discovers org... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: Medical breakthrough in cancer trea... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Medical breakthrough in ... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in science?... (reward=5.00)
+INFO: ✓ Saved checkpoint: checkpoint_001950.json
+INFO: 🎯 Training iteration 340: avg_reward=5.00/5.0, total_iterations=1950
+INFO:   ✓ Trained: Tell me about: Deep ocean reveals new species...... (reward=5.00)
+INFO:   ✓ Trained: What is significant about Deep ocean reveals new s... (reward=5.00)
+INFO:   ✓ Trained: What's the latest news in technology?... (reward=5.00)
+INFO:   ✓ Trained: Tell me about: New AI model shows significant adva... (reward=5.00)
+INFO:   ✓ Trained: What is significant about New AI model shows signi... (reward=5.00)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.

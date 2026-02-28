@@ -1,0 +1,104 @@
+[
+  {
+    "timestamp": "2026-02-23T05:33:25.672736",
+    "articles_trained": 15,
+    "total_articles": 52,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-23T05:35:20.733393",
+    "articles_trained": 15,
+    "total_articles": 64,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-23T05:36:56.568743",
+    "articles_trained": 15,
+    "total_articles": 64,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-27T21:55:17.307528",
+    "articles_trained": 15,
+    "total_articles": 187,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T13:30:54.068586",
+    "articles_trained": 15,
+    "total_articles": 237,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T13:43:33.686995",
+    "articles_trained": 15,
+    "total_articles": 280,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T13:54:54.518446",
+    "articles_trained": 15,
+    "total_articles": 280,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T14:12:06.069624",
+    "articles_trained": 15,
+    "total_articles": 285,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T14:23:38.591302",
+    "articles_trained": 15,
+    "total_articles": 287,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T15:32:22.009329",
+    "articles_trained": 15,
+    "total_articles": 297,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T15:45:49.891135",
+    "articles_trained": 15,
+    "total_articles": 310,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T16:00:47.832166",
+    "articles_trained": 15,
+    "total_articles": 314,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T16:13:20.638690",
+    "articles_trained": 15,
+    "total_articles": 317,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T16:27:00.680419",
+    "articles_trained": 15,
+    "total_articles": 319,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T16:42:56.260153",
+    "articles_trained": 15,
+    "total_articles": 322,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T17:24:34.307364",
+    "articles_trained": 15,
+    "total_articles": 326,
+    "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T17:41:12.892116",
+    "articles_trained": 14,
+    "total_articles": 330,
+    "total_training_pairs": 60
+  }
+]

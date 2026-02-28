@@ -1,0 +1,56 @@
+2026-02-23 20:43:02 [INFO] api.app: === AZAN Unsupervised System Starting ===
+2026-02-23 20:43:02 [INFO] core.embedding_engine: Loaded embedding cache: 20 entries
+2026-02-23 20:43:02 [INFO] core.vector_store: VectorStore loaded: 20 entries
+2026-02-23 20:43:02 [INFO] core.cluster_engine: Loaded cluster state: k=3, 20 labels
+2026-02-23 20:43:02 [INFO] core.incremental_indexer: Checkpoint loaded: 20 total indexed
+2026-02-23 20:43:02 [INFO] core.unsupervised_learner: Background loop starting — running initial full index...
+2026-02-23 20:43:02 [INFO] core.unsupervised_learner: UnsupervisedLearner background thread started.
+2026-02-23 20:43:02 [INFO] core.unsupervised_learner: Existing index found (20 entries). Checking for updates...
+2026-02-23 20:43:02 [INFO] api.app: Background indexing loop started.
+2026-02-23 20:44:46 [INFO] core.embedding_engine: Computing embeddings for 1 new texts...
+2026-02-23 20:44:46 [INFO] core.embedding_engine: Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-23 20:44:51 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-02-23 20:44:51 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-23 20:44:55 [INFO] core.embedding_engine: Embedding model loaded.
+2026-02-23 20:45:10 [INFO] core.embedding_engine: Computing embeddings for 1 new texts...
+2026-02-23 20:54:05 [INFO] api.app: Shutting down AZAN Unsupervised System...
+2026-02-23 20:54:05 [INFO] core.unsupervised_learner: Background loop stopped.
+2026-02-23 20:54:05 [INFO] core.unsupervised_learner: UnsupervisedLearner stopped.
+2026-02-23 21:11:10 [INFO] api.app: === AZAN Unsupervised System Starting ===
+2026-02-23 21:11:10 [INFO] core.embedding_engine: Loaded embedding cache: 22 entries
+2026-02-23 21:11:10 [INFO] core.vector_store: VectorStore loaded: 20 entries
+2026-02-23 21:11:10 [INFO] core.cluster_engine: Loaded cluster state: k=3, 20 labels
+2026-02-23 21:11:10 [INFO] core.incremental_indexer: Checkpoint loaded: 20 total indexed
+2026-02-23 21:11:10 [INFO] core.unsupervised_learner: Background loop starting — running initial full index...
+2026-02-23 21:11:10 [INFO] core.unsupervised_learner: UnsupervisedLearner background thread started.
+2026-02-23 21:11:10 [INFO] core.unsupervised_learner: Existing index found (20 entries). Checking for updates...
+2026-02-23 21:11:10 [INFO] api.app: Background indexing loop started.
+2026-02-23 21:13:41 [INFO] api.app: Shutting down AZAN Unsupervised System...
+2026-02-23 21:13:41 [INFO] core.unsupervised_learner: Background loop stopped.
+2026-02-23 21:13:41 [INFO] core.unsupervised_learner: UnsupervisedLearner stopped.
+2026-02-23 21:14:25 [INFO] api.app: === AZAN Unsupervised System Starting ===
+2026-02-23 21:14:25 [INFO] core.embedding_engine: Loaded embedding cache: 22 entries
+2026-02-23 21:14:25 [INFO] core.vector_store: VectorStore loaded: 20 entries
+2026-02-23 21:14:25 [INFO] core.cluster_engine: Loaded cluster state: k=3, 20 labels
+2026-02-23 21:14:25 [INFO] core.incremental_indexer: Checkpoint loaded: 20 total indexed
+2026-02-23 21:14:25 [INFO] core.unsupervised_learner: Background loop starting — running initial full index...
+2026-02-23 21:14:25 [INFO] core.unsupervised_learner: UnsupervisedLearner background thread started.
+2026-02-23 21:14:25 [INFO] core.unsupervised_learner: Existing index found (20 entries). Checking for updates...
+2026-02-23 21:14:25 [INFO] api.app: Background indexing loop started.
+2026-02-23 21:16:38 [INFO] core.embedding_engine: Computing embeddings for 1 new texts...
+2026-02-23 21:16:38 [INFO] core.embedding_engine: Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-23 21:16:51 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-02-23 21:16:51 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-02-23 21:16:55 [INFO] core.embedding_engine: Embedding model loaded.
+2026-02-23 21:17:25 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-02-23 21:18:05 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-02-23 21:18:16 [INFO] httpx: HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-02-27 06:24:24 [INFO] api.app: === AZAN Unsupervised System Starting ===
+2026-02-27 06:24:24 [INFO] core.embedding_engine: Loaded embedding cache: 23 entries
+2026-02-27 06:24:24 [INFO] core.vector_store: VectorStore loaded: 20 entries
+2026-02-27 06:24:24 [INFO] core.cluster_engine: Loaded cluster state: k=3, 20 labels
+2026-02-27 06:24:24 [INFO] core.incremental_indexer: Checkpoint loaded: 20 total indexed
+2026-02-27 06:24:24 [INFO] core.unsupervised_learner: Background loop starting — running initial full index...
+2026-02-27 06:24:24 [INFO] core.unsupervised_learner: UnsupervisedLearner background thread started.
+2026-02-27 06:24:24 [INFO] core.unsupervised_learner: Existing index found (20 entries). Checking for updates...
+2026-02-27 06:24:24 [INFO] api.app: Background indexing loop started.

@@ -1,0 +1,157 @@
+################################################################################
+# AZAN KNOWLEDGE BASE
+# Format: CATEGORY / TITLE / SOURCE / CONTENT blocks separated by ---
+# Add new entries at the bottom. The system auto-detects changes within ~10 sec.
+# DO NOT remove the --- separator between entries.
+################################################################################
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 14 - Equality Before Law
+SOURCE: Constitution of India, Part III - Fundamental Rights
+CONTENT:
+The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India. This article ensures that every person, regardless of religion, race, caste, sex or place of birth, has a right to equal treatment before the law.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 19 - Freedom of Speech and Expression
+SOURCE: Constitution of India, Part III - Fundamental Rights
+CONTENT:
+All citizens shall have the right to freedom of speech and expression; to assemble peaceably and without arms; to form associations or unions; to move freely throughout the territory of India; to reside and settle in any part of the territory of India; and to practise any profession, or to carry on any occupation, trade or business. These rights are subject to reasonable restrictions under Article 19(2) on grounds including sovereignty, integrity, public order, decency or morality.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 21 - Protection of Life and Personal Liberty
+SOURCE: Constitution of India, Part III - Fundamental Rights
+CONTENT:
+No person shall be deprived of his life or personal liberty except according to procedure established by law. The Supreme Court of India has interpreted Article 21 broadly to include the right to live with human dignity, right to livelihood, right to health, right to education, right to privacy, and right to a clean environment. This article is considered the heart of the Indian Constitution.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 32 - Right to Constitutional Remedies
+SOURCE: Constitution of India, Part III - Fundamental Rights
+CONTENT:
+Article 32 gives every citizen the right to approach the Supreme Court for the enforcement of Fundamental Rights. Dr. B.R. Ambedkar described Article 32 as the most important article in the Constitution without which the Constitution would be a nullity. It empowers the Supreme Court to issue writs including habeas corpus, mandamus, prohibition, quo warranto, and certiorari.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 51A - Fundamental Duties
+SOURCE: Constitution of India, Part IVA - Fundamental Duties (42nd Amendment, 1976)
+CONTENT:
+It shall be the duty of every citizen of India to abide by the Constitution and respect its ideals and institutions; to uphold and protect the sovereignty, unity and integrity of India; to defend the country and render national service when called upon; to promote harmony and the spirit of common brotherhood; to value and preserve the rich heritage of our composite culture; to protect and improve the natural environment; to develop the scientific temper, humanism and the spirit of inquiry and reform; and to strive towards excellence in all spheres of individual and collective activity.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 370 - Special Status of Jammu and Kashmir
+SOURCE: Constitution of India (now abrogated)
+CONTENT:
+Article 370 originally granted special autonomous status to the state of Jammu and Kashmir. The Indian Parliament, through a Presidential Order on August 5, 2019, abrogated Article 370, revoking the special status of Jammu and Kashmir. Following this, the state was bifurcated into two Union Territories: Jammu and Kashmir (with a legislature) and Ladakh (without a legislature), effective October 31, 2019.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Preamble - Statement of Intent
+SOURCE: Constitution of India
+CONTENT:
+WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens: JUSTICE — social, economic and political; LIBERTY of thought, expression, belief, faith and worship; EQUALITY of status and of opportunity; and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation — IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November 1949, DO HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.
+---
+
+CATEGORY: INDIAN_CONSTITUTION
+TITLE: Article 44 - Uniform Civil Code
+SOURCE: Constitution of India, Part IV - Directive Principles of State Policy
+CONTENT:
+The State shall endeavour to secure for the citizens a uniform civil code throughout the territory of India. The Uniform Civil Code (UCC) refers to a common set of laws governing personal matters such as marriage, divorce, inheritance, and adoption for all citizens, regardless of religion. It remains a directive principle, not an enforceable fundamental right, but has been debated significantly in Indian politics and jurisprudence.
+---
+
+CATEGORY: UN_LAW
+TITLE: UN Charter - Article 1 - Purposes of the United Nations
+SOURCE: Charter of the United Nations (1945)
+CONTENT:
+The Purposes of the United Nations are: (1) To maintain international peace and security, and to that end: to take effective collective measures for the prevention and removal of threats to the peace, and for the suppression of acts of aggression or other breaches of the peace; (2) To develop friendly relations among nations based on respect for the principle of equal rights and self-determination of peoples; (3) To achieve international co-operation in solving international problems of an economic, social, cultural, or humanitarian character; (4) To be a centre for harmonizing the actions of nations in the attainment of these common ends.
+---
+
+CATEGORY: UN_LAW
+TITLE: UN Charter - Article 2 - Principles
+SOURCE: Charter of the United Nations (1945)
+CONTENT:
+The Organization and its Members shall act in accordance with the following Principles: (1) The Organization is based on the principle of the sovereign equality of all its Members; (2) All Members shall fulfil in good faith the obligations assumed by them in accordance with the present Charter; (3) All Members shall settle their international disputes by peaceful means; (4) All Members shall refrain in their international relations from the threat or use of force against the territorial integrity or political independence of any state; (5) All Members shall give the United Nations every assistance in any action it takes in accordance with the present Charter.
+---
+
+CATEGORY: UN_LAW
+TITLE: Universal Declaration of Human Rights - Article 1 - Freedom and Equality
+SOURCE: Universal Declaration of Human Rights (UDHR), 1948
+CONTENT:
+All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood. The UDHR was proclaimed by the United Nations General Assembly in Paris on 10 December 1948 as a common standard of achievements for all peoples and all nations.
+---
+
+CATEGORY: UN_LAW
+TITLE: Universal Declaration of Human Rights - Article 3 - Right to Life
+SOURCE: Universal Declaration of Human Rights (UDHR), 1948
+CONTENT:
+Everyone has the right to life, liberty and security of person. This article forms the cornerstone of international human rights law and is reflected in numerous international treaties including the International Covenant on Civil and Political Rights (ICCPR) Article 6, which states that every human being has the inherent right to life and that this right shall be protected by law.
+---
+
+CATEGORY: UN_LAW
+TITLE: Universal Declaration of Human Rights - Article 10 - Right to Fair Trial
+SOURCE: Universal Declaration of Human Rights (UDHR), 1948
+CONTENT:
+Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him. This right is further elaborated in Article 14 of the ICCPR, which ensures the right to a fair trial, presumption of innocence, and minimum guarantees for criminal proceedings.
+---
+
+CATEGORY: UN_LAW
+TITLE: UN Security Council - Role and Powers
+SOURCE: Charter of the United Nations, Chapter V (Articles 23–32)
+CONTENT:
+The United Nations Security Council has primary responsibility for the maintenance of international peace and security. It has 15 members: 5 permanent members (P5) — China, France, Russian Federation, United Kingdom, and United States — and 10 non-permanent members elected for two-year terms. Each permanent member holds veto power, meaning any one of them can block a substantive resolution. The Security Council can impose sanctions, authorize the use of force, and establish peacekeeping operations.
+---
+
+CATEGORY: UN_LAW
+TITLE: International Court of Justice - Jurisdiction
+SOURCE: Statute of the International Court of Justice, Article 36
+CONTENT:
+The jurisdiction of the International Court of Justice (ICJ) comprises all cases which the parties refer to it and all matters specially provided for in the Charter of the United Nations or in treaties and conventions in force. States can recognize the compulsory jurisdiction of the ICJ by depositing a declaration with the UN Secretary-General. The ICJ is the principal judicial organ of the United Nations, seated at the Peace Palace in The Hague, Netherlands.
+---
+
+CATEGORY: INTERNATIONAL_LAW
+TITLE: Vienna Convention on the Law of Treaties - Pacta Sunt Servanda
+SOURCE: Vienna Convention on the Law of Treaties, 1969, Article 26
+CONTENT:
+Every treaty in force is binding upon the parties to it and must be performed by them in good faith. This principle, known as pacta sunt servanda, is the foundational norm of international treaty law. The Vienna Convention on the Law of Treaties was adopted on 23 May 1969 and entered into force on 27 January 1980. It codifies the rules governing the formation, validity, application, interpretation, and termination of treaties between states.
+---
+
+CATEGORY: INTERNATIONAL_LAW
+TITLE: Responsibility to Protect (R2P)
+SOURCE: 2005 World Summit Outcome Document, UN General Assembly Resolution A/RES/60/1
+CONTENT:
+The Responsibility to Protect (R2P) is an international norm adopted at the 2005 World Summit affirming that every state has a responsibility to protect its populations from genocide, war crimes, ethnic cleansing and crimes against humanity. If a state manifestly fails to protect its populations, the international community has a responsibility to take collective action, including through the UN Security Council. R2P has three pillars: state responsibility, international assistance, and timely collective response.
+---
+
+CATEGORY: INDIAN_LAW
+TITLE: Indian Penal Code - Section 124A - Sedition
+SOURCE: Indian Penal Code, 1860 (IPC)
+CONTENT:
+Section 124A of the IPC defines sedition as bringing or attempting to bring into hatred or contempt, or exciting or attempting to excite disaffection towards the Government established by law in India. It provides for punishment with imprisonment for life, to which a fine may be added. The Supreme Court of India in S.G. Vombatkere v. Union of India (2022) stayed the application of Section 124A and referred it for reconsideration, observing that colonial-era sedition law needs re-examination in light of constitutional freedoms.
+---
+
+CATEGORY: INDIAN_LAW
+TITLE: Right to Information Act 2005
+SOURCE: Right to Information Act, 2005 (RTI Act)
+CONTENT:
+The Right to Information Act 2005 mandates timely response to citizen requests for government information. It applies to all constitutional authorities, Parliament and state legislatures, courts, and the executive. Citizens can request information from public authorities within 30 days (48 hours in life or liberty cases). The Act exempts certain information related to national security, foreign relations, cabinet deliberations, and personal privacy. The Central Information Commission (CIC) and State Information Commissions enforce the Act.
+---
+
+CATEGORY: AZAN_SYSTEM
+TITLE: How to Add Knowledge to AZAN
+SOURCE: AZAN System Documentation
+CONTENT:
+To add new knowledge to the AZAN system, open the file data/knowledge_base.txt in any plain text editor. Add a new block at the bottom of the file following this exact format:
+
+CATEGORY: YOUR_CATEGORY_NAME
+TITLE: Your Entry Title
+SOURCE: Your Source Document
+CONTENT:
+Your knowledge content goes here. Write as much as needed.
+---
+
+After saving the file, the AZAN background indexing system will automatically detect the change within approximately 10 seconds and embed and index the new entry. No restart is required. The knowledge will immediately become searchable and queryable.
+
+Supported categories include but are not limited to: INDIAN_CONSTITUTION, UN_LAW, INTERNATIONAL_LAW, INDIAN_LAW, SCIENCE, HISTORY, AZAN_SYSTEM, ECONOMICS, POLITICS, and any custom category you define.
+---

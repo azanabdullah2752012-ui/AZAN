@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZAN AI — Intelligent Assistant</title>
+    <meta name="description" content="AZAN AI — an advanced AI assistant powered by reinforcement learning and real-time knowledge.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <h1>AZAN</h1>
+                </div>
+                <p class="logo-tagline">AI Assistant</p>
+            </div>
+
+            <!-- Status Panel -->
+            <div class="sidebar-panel">
+                <div class="panel-title">
+                    <span class="panel-dot" id="statusDot"></span>
+                    System Status
+                </div>
+                <div class="status-grid" id="statusGrid">
+                    <div class="status-item">
+                        <span class="status-label">Ollama</span>
+                        <span class="status-value" id="ollamaStatus">Checking…</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Model</span>
+                        <span class="status-value" id="modelStatus">—</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Inference</span>
+                        <span class="status-value" id="inferenceStatus">—</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Panel -->
+            <div class="sidebar-panel">
+                <div class="panel-title">📚 Knowledge Base</div>
+                <div class="knowledge-stats" id="knowledgeStats">
+                    <div class="knowledge-stat">
+                        <span class="knowledge-number" id="articleCount">—</span>
+                        <span class="knowledge-label">Articles</span>
+                    </div>
+                    <div class="knowledge-stat">
+                        <span class="knowledge-number" id="trainingCount">—</span>
+                        <span class="knowledge-label">Training Pairs</span>
+                    </div>
+                    <div class="knowledge-stat">
+                        <span class="knowledge-number" id="categoryCount">—</span>
+                        <span class="knowledge-label">Categories</span>
+                    </div>
+                </div>
+                <div class="category-chips" id="categoryChips"></div>
+            </div>
+
+            <!-- Footer -->
+            <div class="sidebar-footer">
+                <span>Powered by Ollama + RL</span>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <!-- Header -->
+            <header class="chat-header">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar">☰</button>
+                <div class="header-info">
+                    <h2>AZAN AI Chat</h2>
+                    <span class="header-subtitle">Connected to Ollama · Knowledge-augmented responses</span>
+                </div>
+                <button class="clear-btn" id="clearChat" title="Clear chat">🗑️</button>
+            </header>
+
+            <!-- Messages -->
+            <div class="messages-area" id="messagesArea">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">✦</div>
+                    <h2>Welcome to AZAN AI</h2>
+                    <p>Ask me anything — I'm connected to Ollama and powered by a knowledge base built from RL training on news articles.</p>
+                    <div class="suggestions">
+                        <button class="suggestion-chip" onclick="sendSuggestion('What is fusion energy?')">⚡ What is fusion energy?</button>
+                        <button class="suggestion-chip" onclick="sendSuggestion('Tell me about quantum computing')">🔬 Quantum computing</button>
+                        <button class="suggestion-chip" onclick="sendSuggestion('What are the latest AI developments?')">🤖 AI developments</button>
+                        <button class="suggestion-chip" onclick="sendSuggestion('Explain reinforcement learning')">📊 Reinforcement learning</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea
+                        id="chatInput"
+                        placeholder="Ask AZAN anything…"
+                        rows="1"
+                        autocomplete="off"
+                        autofocus
+                    ></textarea>
+                    <button id="sendBtn" class="send-btn" aria-label="Send message">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-hint">Press Enter to send · Shift+Enter for new line</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

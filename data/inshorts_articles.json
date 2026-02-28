@@ -1,0 +1,2410 @@
+{
+  "55b5e64dc3afd110765fe34015111b65": {
+    "headline": "Global markets react to interest rate decisions",
+    "body": "Major indices showed mixed results as central banks announced their latest policy decisions. The Fed's hawkish stance continues to impact investor sentiment worldwide.",
+    "category": "business",
+    "timestamp": "2026-02-23T05:16:17.847614",
+    "hash": "55b5e64dc3afd110765fe34015111b65"
+  },
+  "3e4a2791623622b0e58e8b11ba3cec07": {
+    "headline": "Tech giants report record earnings this quarter",
+    "body": "Several multinational technology companies announced their best quarterly results in years, driven by AI boom and cloud computing demand.",
+    "category": "business",
+    "timestamp": "2026-02-23T05:16:17.847638",
+    "hash": "3e4a2791623622b0e58e8b11ba3cec07"
+  },
+  "b72dc46c2b15172fa066d4e6f29856e5": {
+    "headline": "Oil prices surge amid geopolitical tensions",
+    "body": "Crude oil prices hit a six-month high as supply concerns mount due to international conflicts and reduced production in key regions.",
+    "category": "business",
+    "timestamp": "2026-02-23T05:16:17.847649",
+    "hash": "b72dc46c2b15172fa066d4e6f29856e5"
+  },
+  "f707bead832a63408050a0dc2d12c09d": {
+    "headline": "Championship finals set for next month",
+    "body": "Major sports leagues announce championship schedules with matches between top-ranked teams.",
+    "category": "sports",
+    "timestamp": "2026-02-23T05:16:19.852807",
+    "hash": "f707bead832a63408050a0dc2d12c09d"
+  },
+  "129acdfbe8252ffcbd5f250c22ae2be9": {
+    "headline": "Athletic records broken internationally",
+    "body": "Multiple world records fell as athletes delivered extraordinary performances at the competition.",
+    "category": "sports",
+    "timestamp": "2026-02-23T05:16:19.853433",
+    "hash": "129acdfbe8252ffcbd5f250c22ae2be9"
+  },
+  "11b9c93f371d551b910446ec1bef36f7": {
+    "headline": "Team signs star player in record deal",
+    "body": "Professional franchise announces signing of top international athlete for record-breaking transfer fee.",
+    "category": "sports",
+    "timestamp": "2026-02-23T05:16:19.853615",
+    "hash": "11b9c93f371d551b910446ec1bef36f7"
+  },
+  "aa9c36051e98d4275032bf5cc5df72c5": {
+    "headline": "Streaming series breaks viewership records",
+    "body": "Popular streaming platform releases highly anticipated series that immediately tops global charts.",
+    "category": "entertainment",
+    "timestamp": "2026-02-23T05:16:21.858791",
+    "hash": "aa9c36051e98d4275032bf5cc5df72c5"
+  },
+  "bc2f5b49577391591896998f3f01dc98": {
+    "headline": "Film festival announces award winners",
+    "body": "Prestigious international film festival celebrates outstanding cinema with major awards.",
+    "category": "entertainment",
+    "timestamp": "2026-02-23T05:16:21.858866",
+    "hash": "bc2f5b49577391591896998f3f01dc98"
+  },
+  "45bd4becf072bf7a93ee9c66aa8767da": {
+    "headline": "Music artists announce collaboration",
+    "body": "Top musicians from different genres unite for special collaborative album and world tour.",
+    "category": "entertainment",
+    "timestamp": "2026-02-23T05:16:21.858885",
+    "hash": "45bd4becf072bf7a93ee9c66aa8767da"
+  },
+  "b226a38b39d771461eaeb2c57a311ce7": {
+    "headline": "Mars rover discovers organic compounds",
+    "body": "Space agency's rover finds evidence of past microbial life in ancient Martian rock samples.",
+    "category": "science",
+    "timestamp": "2026-02-23T05:16:23.864045",
+    "hash": "b226a38b39d771461eaeb2c57a311ce7"
+  },
+  "6ad32a477896fed9723dfad0975405b3": {
+    "headline": "Medical breakthrough in cancer treatment",
+    "body": "Scientists announce promising results from immunotherapy trials with improved survival rates.",
+    "category": "science",
+    "timestamp": "2026-02-23T05:16:23.864225",
+    "hash": "6ad32a477896fed9723dfad0975405b3"
+  },
+  "db5bd57a8b959d5e07ed57838c734497": {
+    "headline": "Deep ocean reveals new species",
+    "body": "Researchers discover dozens of previously unknown species in deep-sea trenches during exploration.",
+    "category": "science",
+    "timestamp": "2026-02-23T05:16:23.864271",
+    "hash": "db5bd57a8b959d5e07ed57838c734497"
+  },
+  "65dee0dcf7c852395c1a170ff2e70195": {
+    "headline": "New AI model shows significant advancement",
+    "body": "Researchers unveiled a breakthrough AI with improved capabilities in complex problem-solving and logical reasoning tasks.",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867679",
+    "hash": "65dee0dcf7c852395c1a170ff2e70195"
+  },
+  "b23845f586feb3e91b24c5dfb5815da2": {
+    "headline": "Quantum computing makes practical progress",
+    "body": "Scientists demonstrated quantum computers solving real-world optimization problems faster than classical computers.",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867816",
+    "hash": "b23845f586feb3e91b24c5dfb5815da2"
+  },
+  "ea655232872d92720efae73e4697f76c": {
+    "headline": "Cybersecurity threats increase globally",
+    "body": "International agencies warn of rising sophisticated cyberattacks targeting critical infrastructure and financial institutions.",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:16:25.867860",
+    "hash": "ea655232872d92720efae73e4697f76c"
+  },
+  "556aaf9b75f429f1f9e7942f3fa40212": {
+    "headline": "International trade negotiations resume",
+    "body": "Nations meet to discuss new agreements on tariffs and trade policies affecting billions in annual commerce.",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873045",
+    "hash": "556aaf9b75f429f1f9e7942f3fa40212"
+  },
+  "829f7be084a39831eeda652ed7200cb8": {
+    "headline": "Parliament debates climate legislation",
+    "body": "Lawmakers discuss ambitious new climate bills aimed at reducing emissions and transitioning to renewable energy.",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873389",
+    "hash": "829f7be084a39831eeda652ed7200cb8"
+  },
+  "956b6b9b6b5461ae38f6c965294aa10f": {
+    "headline": "Diplomatic talks ease regional tensions",
+    "body": "High-level negotiations between neighboring countries show promise in resolving long-standing disputes.",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:16:27.873467",
+    "hash": "956b6b9b6b5461ae38f6c965294aa10f"
+  },
+  "439568a776ba9b7cdfa679cc0ea2b887": {
+    "headline": "Global summit addresses crises",
+    "body": "UN convenes emergency session to coordinate relief efforts in multiple regions affected by disasters.",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877578",
+    "hash": "439568a776ba9b7cdfa679cc0ea2b887"
+  },
+  "b9933ddaf372e29bd43baa247fb773a6": {
+    "headline": "International health initiative launched",
+    "body": "WHO announces coordinated global effort to combat emerging diseases and strengthen healthcare systems.",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877902",
+    "hash": "b9933ddaf372e29bd43baa247fb773a6"
+  },
+  "a5d2abd653771ef960877bb393424df4": {
+    "headline": "Climate conference sets emission targets",
+    "body": "Nations commit to aggressive emission cuts by 2035 in historic agreement at international summit.",
+    "category": "world",
+    "timestamp": "2026-02-23T05:16:29.877980",
+    "hash": "a5d2abd653771ef960877bb393424df4"
+  },
+  "2cbc0876568c11e9f4731b9c35294530": {
+    "headline": "National infrastructure project begins",
+    "body": "Government launches major construction initiative to modernize transportation and utility networks.",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882370",
+    "hash": "2cbc0876568c11e9f4731b9c35294530"
+  },
+  "2896004b03d085771eb3a626e105f175": {
+    "headline": "Education reforms announced",
+    "body": "Ministry introduces reforms focusing on digital literacy and advanced skill development.",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882597",
+    "hash": "2896004b03d085771eb3a626e105f175"
+  },
+  "0244d6352924c8be764eaf65df11b22a": {
+    "headline": "Economic growth exceeds expectations",
+    "body": "Statistics bureau reports stronger than predicted growth driven by exports and consumer spending.",
+    "category": "national",
+    "timestamp": "2026-02-23T05:16:31.882678",
+    "hash": "0244d6352924c8be764eaf65df11b22a"
+  },
+  "ca1b5a3560cb06eba306b25a15e64778": {
+    "headline": "Cryptocurrency market experiences major gains",
+    "body": "Bitcoin and Ethereum surge past previous records as institutional investment increases. Blockchain technology continues to gain mainstream adoption across financial institutions.",
+    "category": "business",
+    "timestamp": "2026-02-23T05:36:36.799300",
+    "hash": "ca1b5a3560cb06eba306b25a15e64778"
+  },
+  "5b9fc23a398bda732bd5e3270faabdd2": {
+    "headline": "Trade deficit shrinks amid manufacturing boost",
+    "body": "US trade deficit narrowed significantly thanks to increased domestic manufacturing and reduced imports. Supply chain resilience improvements are benefiting the economy.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:07:00.215533",
+    "hash": "5b9fc23a398bda732bd5e3270faabdd2"
+  },
+  "e193c134c96f75f7964a302fd9fb3115": {
+    "headline": "Corporate merger creates industry-leading powerhouse",
+    "body": "Two major corporations complete historic merger creating a technology and finance hybrid company. The combined entity expects significant synergies and market growth.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:07:00.215657",
+    "hash": "e193c134c96f75f7964a302fd9fb3115"
+  },
+  "b7f9d076df1e8e14e499f7f02ba4939b": {
+    "headline": "International women's sports leagues gain massive investment",
+    "body": "Record funding flows into female athletes and sports organizations. Pay equity initiatives close gaps in professional sports compensation.",
+    "category": "sports",
+    "timestamp": "2026-02-23T05:36:38.804642",
+    "hash": "b7f9d076df1e8e14e499f7f02ba4939b"
+  },
+  "6f0990f201e583f63d1baaefc66dcf57": {
+    "headline": "Esports tournament offers largest prize pool ever",
+    "body": "Gaming competition surpasses traditional sports in viewership numbers. Professional gaming recognized as major competitive field globally.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:07:02.220805",
+    "hash": "6f0990f201e583f63d1baaefc66dcf57"
+  },
+  "c5d582fb456793c679f0450420139c63": {
+    "headline": "Youth sports programs expand access for underprivileged",
+    "body": "International foundation funds athletic training in developing countries. Program identifies and develops future Olympic champions.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:07:02.221208",
+    "hash": "c5d582fb456793c679f0450420139c63"
+  },
+  "b83efaae4b1bb3198d7328f20386f2f2": {
+    "headline": "Virtual reality concerts sell out worldwide",
+    "body": "Musicians perform to global audiences through immersive VR experiences. Technology enables fans to 'attend' shows from home.",
+    "category": "entertainment",
+    "timestamp": "2026-02-23T05:36:40.806202",
+    "hash": "b83efaae4b1bb3198d7328f20386f2f2"
+  },
+  "e099888521b733c3f6c52cb9705806fe": {
+    "headline": "International film festival celebrates diverse creators",
+    "body": "Record number of films from developing nations compete for awards. Industry recognizes and celebrates global storytelling diversity.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:07:04.225576",
+    "hash": "e099888521b733c3f6c52cb9705806fe"
+  },
+  "1a3efb9ece0658ae810be78336c32334": {
+    "headline": "Gaming becomes fastest-growing entertainment medium",
+    "body": "Video game revenue surpasses film and music industries combined. Interactive entertainment dominates leisure time globally.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:07:04.225942",
+    "hash": "1a3efb9ece0658ae810be78336c32334"
+  },
+  "76e8f9c5898560577a7c118c0c7ad5ec": {
+    "headline": "Gene therapy cures genetic blood disorder",
+    "body": "Clinical trials show 95% success rate in treating inherited diseases. Treatment offers hope for millions suffering from genetic conditions.",
+    "category": "science",
+    "timestamp": "2026-02-23T05:36:42.808559",
+    "hash": "76e8f9c5898560577a7c118c0c7ad5ec"
+  },
+  "83b6fb691dae6dade4989d07bdab2bb4": {
+    "headline": "Brain-computer interface enables paralyzed patients to walk",
+    "body": "Advanced neural implants restore mobility to spinal cord injury patients. Technology could help millions regain independence.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:07:06.231199",
+    "hash": "83b6fb691dae6dade4989d07bdab2bb4"
+  },
+  "b34fe8bc9a8fd6e053ef8f4f9f958f50": {
+    "headline": "Telescope discovers potentially habitable exoplanet",
+    "body": "Space observatory identifies earth-like planet in habitable zone. Discovery fuels renewed focus on searching for extraterrestrial life.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:07:06.231282",
+    "hash": "b34fe8bc9a8fd6e053ef8f4f9f958f50"
+  },
+  "363deca126e642e19fbd5609baa74a35": {
+    "headline": "5G networks achieve global majority coverage",
+    "body": "Over 50% of world population now has access to 5G networks. Ultra-fast connectivity enables new applications in healthcare, manufacturing, and entertainment.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:07:08.236449",
+    "hash": "363deca126e642e19fbd5609baa74a35"
+  },
+  "d7faa4253ed1573e084570b96a5cfff0": {
+    "headline": "Renewable energy tech cuts costs by 40%",
+    "body": "Innovation in solar and wind technology reduces production costs dramatically. Renewable energy now cheaper than fossil fuels in most markets.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:07:08.236819",
+    "hash": "d7faa4253ed1573e084570b96a5cfff0"
+  },
+  "8757adf355db3a0dd66dff5ef3ba34bc": {
+    "headline": "Cybersecurity firm stops ransomware attack on healthcare",
+    "body": "Advanced threat detection prevents major hospital network breach. New AI-powered security tools proving highly effective against cyber threats.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:07:08.236909",
+    "hash": "8757adf355db3a0dd66dff5ef3ba34bc"
+  },
+  "6d52cc3b6c4e7bcb1ce82e0a13d068b9": {
+    "headline": "New cybersecurity treaty signed by 50 nations",
+    "body": "Countries establish joint framework for international cyber defense. Agreement strengthens protections for critical infrastructure and civilians.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:07:10.241185",
+    "hash": "6d52cc3b6c4e7bcb1ce82e0a13d068b9"
+  },
+  "a249050c0d1de75332f0201286aa4a8e": {
+    "headline": "Democracy summit promotes electoral transparency",
+    "body": "International conference establishes standards for election integrity. Focus on combating disinformation and strengthening voting systems.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:07:10.241287",
+    "hash": "a249050c0d1de75332f0201286aa4a8e"
+  },
+  "60ea998fe6f40cc95ffaf04d4521e556": {
+    "headline": "United Nations reform package passes first vote",
+    "body": "Security Council modernization advances amid diplomatic negotiations. Changes aim to improve responsiveness to modern global crises.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:07:10.241324",
+    "hash": "60ea998fe6f40cc95ffaf04d4521e556"
+  },
+  "e3957461b265d59d533e97956fda0325": {
+    "headline": "Arctic research reveals climate adaptation strategies",
+    "body": "International expedition studies ecosystems adapting to climate change. Findings could inform global conservation and sustainability efforts.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:07:12.246462",
+    "hash": "e3957461b265d59d533e97956fda0325"
+  },
+  "0f38e10bf61a4fb9a1e85232a791c7b4": {
+    "headline": "Humanitarian aid reaches conflict zones with new routes",
+    "body": "Creative logistics solutions enable food and medicine delivery to isolated areas. Technology improving efficiency of emergency response.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:07:12.246810",
+    "hash": "0f38e10bf61a4fb9a1e85232a791c7b4"
+  },
+  "799ea4f2a103cf30a510db5d2a29d74a": {
+    "headline": "Ocean conservation treaty creates protection zones",
+    "body": "Historic agreement protects 30% of world's oceans from exploitation. Marine biodiversity initiatives show early success in reversing ecosystem decline.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:07:12.246889",
+    "hash": "799ea4f2a103cf30a510db5d2a29d74a"
+  },
+  "d3e52fbe9d255b42ec441d5accd23186": {
+    "headline": "Renewable energy becomes primary power source nationally",
+    "body": "Solar and wind installations surpass coal and gas in electricity generation. Nation leads global transition to clean energy.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:07:14.251108",
+    "hash": "d3e52fbe9d255b42ec441d5accd23186"
+  },
+  "589a1bcd2c962a3ee085a3c6cdf3e2ee": {
+    "headline": "Healthcare system achieves universal digital records",
+    "body": "National implementation of unified health information system improves patient care. Data sharing enables better treatment outcomes and medical research.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:07:14.251405",
+    "hash": "589a1bcd2c962a3ee085a3c6cdf3e2ee"
+  },
+  "c4ec197d6754a3eb2dac74babe63240f": {
+    "headline": "Space agency achieves historic planetary exploration milestone",
+    "body": "National spacecraft successfully completes research mission on distant celestial body. Discovery adds to understanding of universe and potential extraterrestrial resources.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:07:14.251467",
+    "hash": "c4ec197d6754a3eb2dac74babe63240f"
+  },
+  "d5bbf1733969eb1c622a8739ffe28bad": {
+    "headline": "Small business confidence reaches all-time high",
+    "body": "Survey shows entrepreneurs increasingly optimistic about growth prospects. Access to capital and digital tools enabling rapid expansion for startups.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:07:00.215673",
+    "hash": "d5bbf1733969eb1c622a8739ffe28bad"
+  },
+  "de1554eeb69652c7a971019de5624e8f": {
+    "headline": "Technology revolutionizes sports performance analysis",
+    "body": "Real-time AI analytics provide coaches with unprecedented insights. Performance metrics improving athlete health and team success rates.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:07:02.221290",
+    "hash": "de1554eeb69652c7a971019de5624e8f"
+  },
+  "04c4e7f56e63d8d031512c60b18911d0": {
+    "headline": "Podcast networks report explosive listener growth",
+    "body": "Audio content consumption reaches new highs with billions of listeners. Format becomes mainstream media with significant advertising revenue.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:07:04.226067",
+    "hash": "04c4e7f56e63d8d031512c60b18911d0"
+  },
+  "f270dbc053dd7c511af6f8799eebd623": {
+    "headline": "Agricultural scientists develop drought-resistant crops",
+    "body": "Genetic engineering produces food crops requiring 30% less water. Innovation crucial for food security in water-scarce regions.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:07:06.231299",
+    "hash": "f270dbc053dd7c511af6f8799eebd623"
+  },
+  "6622f0893a549f87e69a44723252d56b": {
+    "headline": "Global stock markets rally on economic recovery signs",
+    "body": "Major financial indices have climbed to new heights as companies report stronger-than-expected earnings and inflation shows signs of cooling. Investors are optimistic about the economic outlook for 2026.",
+    "category": "business",
+    "timestamp": "2026-02-23T05:35:50.741023",
+    "hash": "6622f0893a549f87e69a44723252d56b"
+  },
+  "12774905dc900aaaa8cddce60f0a492a": {
+    "headline": "Olympics set attendance and viewership records",
+    "body": "2026 Winter Games break all previous records with global audience of billions. Athletes deliver inspiring performances and record-breaking achievements.",
+    "category": "sports",
+    "timestamp": "2026-02-23T05:35:52.745845",
+    "hash": "12774905dc900aaaa8cddce60f0a492a"
+  },
+  "7fe44774ba05d05cfb4584b2df882100": {
+    "headline": "Global cinema experiences streaming revolution",
+    "body": "New distribution model allows simultaneous theatrical and streaming releases. Content creators reach unprecedented worldwide audiences.",
+    "category": "entertainment",
+    "timestamp": "2026-02-23T05:35:54.750507",
+    "hash": "7fe44774ba05d05cfb4584b2df882100"
+  },
+  "5182277f1ba8973f1fa816bf6c27a88e": {
+    "headline": "Fusion energy reactor achieves net positive energy",
+    "body": "Scientists demonstrate nuclear fusion producing more energy than consumed. Breakthrough brings clean, abundant energy source closer to reality.",
+    "category": "science",
+    "timestamp": "2026-02-23T05:35:56.755725",
+    "hash": "5182277f1ba8973f1fa816bf6c27a88e"
+  },
+  "c58138e5c444d44674ba02296cb62404": {
+    "headline": "AI breakthroughs accelerate autonomous vehicle development",
+    "body": "New machine learning models enable safer, more efficient self-driving cars. Multiple manufacturers testing full autonomous capabilities on public roads.",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:35:58.759255",
+    "hash": "c58138e5c444d44674ba02296cb62404"
+  },
+  "4220f9cdac1ae9c0a8efeb1613be2e70": {
+    "headline": "Quantum computers solve complex chemistry problems",
+    "body": "Latest quantum processor achieves breakthrough in molecular simulation. Potential to revolutionize drug discovery and materials science.",
+    "category": "technology",
+    "timestamp": "2026-02-23T05:36:44.814291",
+    "hash": "4220f9cdac1ae9c0a8efeb1613be2e70"
+  },
+  "2cc773d5c895434e08d261d1d046474d": {
+    "headline": "International climate accord strengthens emissions targets",
+    "body": "200+ nations agree to ambitious new carbon reduction goals. Framework includes technology transfer and funding for developing countries.",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:34:51.745698",
+    "hash": "2cc773d5c895434e08d261d1d046474d"
+  },
+  "858cb9a5b62ea288701c5a6bb42b579b": {
+    "headline": "Trade agreement resolves US-EU disputes",
+    "body": "Breakthrough negotiations end years-long trade tensions. Agreement boosts market access for tech companies and agricultural producers.",
+    "category": "politics",
+    "timestamp": "2026-02-23T05:36:46.820029",
+    "hash": "858cb9a5b62ea288701c5a6bb42b579b"
+  },
+  "8b75ba80bd0640353d16b2f332ee8362": {
+    "headline": "Global healthcare collaboration fights emerging diseases",
+    "body": "International consortium establishes real-time disease monitoring system. Early detection networks prevent potential pandemics across all continents.",
+    "category": "world",
+    "timestamp": "2026-02-23T05:34:53.751353",
+    "hash": "8b75ba80bd0640353d16b2f332ee8362"
+  },
+  "01207d58047322d3954c448b9d82c026": {
+    "headline": "African countries lead green energy revolution",
+    "body": "Solar installation capacity in Africa exceeds Europe for first time. Continent positioning itself as clean energy leader for global markets.",
+    "category": "world",
+    "timestamp": "2026-02-23T05:36:48.825598",
+    "hash": "01207d58047322d3954c448b9d82c026"
+  },
+  "cbfc103445efc28241704331abb40fcf": {
+    "headline": "National education system adopts AI-powered personalized learning",
+    "body": "Schools implement adaptive learning systems tailoring education to individual students. Student performance metrics improve significantly with personalized instruction.",
+    "category": "national",
+    "timestamp": "2026-02-23T05:34:55.757073",
+    "hash": "cbfc103445efc28241704331abb40fcf"
+  },
+  "4d3f15fc95140ff5b303346e532214e9": {
+    "headline": "Infrastructure modernization creates millions of jobs",
+    "body": "Major national project rebuilds roads, bridges, and utilities nationwide. Economic stimulus boosts employment and business growth.",
+    "category": "national",
+    "timestamp": "2026-02-23T05:36:50.826549",
+    "hash": "4d3f15fc95140ff5b303346e532214e9"
+  },
+  "2857093e49afd1243cc4702f14f84fe7": {
+    "headline": "They Helped Women Fight Online Abuse. They Were Barred From the U.S.",
+    "body": "The founders of HateAid, a German human-rights group that helps victims of online attacks, were accused by the Trump administration of being part of a \u201cglobal censorship-industrial complex.\u201d",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551046",
+    "hash": "2857093e49afd1243cc4702f14f84fe7"
+  },
+  "8b3794dcc87ed2fa759b7421199e81cf": {
+    "headline": "A.I. Complicates Old Internet Privacy Risks",
+    "body": "Artificial intelligence is convenient and easy to use, but you should think about what you say to the chatbots.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551070",
+    "hash": "8b3794dcc87ed2fa759b7421199e81cf"
+  },
+  "6597b460e39cb804b637f5d1135bffe8": {
+    "headline": "When Chatbots Are Used to Plan Violence, Is There a Duty to Warn?",
+    "body": "People are revealing sensitive personal information to A.I. chatbots \u2014 including plans to commit violent acts.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551079",
+    "hash": "6597b460e39cb804b637f5d1135bffe8"
+  },
+  "43f6528fabc3c0d4fb7598822ebf57d8": {
+    "headline": "Nvidia\u2019s Quarterly Profit Hits $43 Billion on Strong A.I. Chip Sales",
+    "body": "Total profit for the fiscal year was $120 billion, the company said. Three years ago, it was just $4.4 billion.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551085",
+    "hash": "43f6528fabc3c0d4fb7598822ebf57d8"
+  },
+  "f6bba0d1727634926e3c2c4af89b86aa": {
+    "headline": "Is A.I. Eating the Labor Market? + The Latest on the Pentagon, OpenClaw and Alpha School",
+    "body": "\u201cI think the mere fact that the markets can move so much, based on almost nothing, underscores how high anxiety is right now.\u201d",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551093",
+    "hash": "f6bba0d1727634926e3c2c4af89b86aa"
+  },
+  "4fc09f6316f7f365302874bbd0a666cb": {
+    "headline": "A World Where All Is Free? That\u2019s Elon Musk\u2019s Theory of \u2018Sustainable Abundance.\u2019",
+    "body": "The Tesla and SpaceX chief has told his followers that they will live in a world where robots will take care of every need and people do not have to work, in what has become his latest slogan.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551100",
+    "hash": "4fc09f6316f7f365302874bbd0a666cb"
+  },
+  "334f099d53135658995bf0ce4ed8e90f": {
+    "headline": "Elon Musk\u2019s Secret Web of Companies in Texas",
+    "body": "The megabillionaire was tied to about 90 companies in the state, which he uses for everything from paying nannies to buying land to supporting Donald Trump\u2019s re-election, according to a Times examination.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551107",
+    "hash": "334f099d53135658995bf0ce4ed8e90f"
+  },
+  "74138f885dc47171935f4faef28c03ba": {
+    "headline": "South Korea Clears Way for Google Maps to Fully Operate",
+    "body": "South Korea approved Google\u2019s request to export detailed map data, reversing a longstanding restriction that made the tool largely nonfunctional.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551113",
+    "hash": "74138f885dc47171935f4faef28c03ba"
+  },
+  "6c0ba09989f0ad2f5d759bef51b6677e": {
+    "headline": "India Built the World\u2019s Back Office. A.I. Is Starting to Shrink It.",
+    "body": "Artificial intelligence promises to automate the white-collar work that made India a tech powerhouse. The country is racing to adapt before it\u2019s too late.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551119",
+    "hash": "6c0ba09989f0ad2f5d759bef51b6677e"
+  },
+  "2fee05ee055e767145ab2783a3ceef72": {
+    "headline": "Google Workers Seek \u2018Red Lines\u2019 on Military A.I., Echoing Anthropic",
+    "body": "More than 100 Google A.I. employees sent a letter to Jeff Dean, a chief scientist, opposing Gemini\u2019s use for U.S. surveillance and some autonomous weapons.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:35.551125",
+    "hash": "2fee05ee055e767145ab2783a3ceef72"
+  },
+  "970be450cc1a58c667d2ef3adc6dafb5": {
+    "headline": "'I was on Instagram all day' - woman tells landmark trial",
+    "body": "The young woman, who accuses Meta and Google of making addictive social media platforms, has been speaking in court.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179088",
+    "hash": "970be450cc1a58c667d2ef3adc6dafb5"
+  },
+  "d5514d943c1f9f958ac68d8dc1468cb3": {
+    "headline": "Anthropic boss rejects Pentagon demand to drop AI safeguards",
+    "body": "Defense Secretary Pete Hegseth previously threatened to remove the firm from the department's supply chain.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179113",
+    "hash": "d5514d943c1f9f958ac68d8dc1468cb3"
+  },
+  "e1c1c34958f0c0d82ed6bdde78b42880": {
+    "headline": "Burger King rolls out AI headsets that track employee 'friendliness'",
+    "body": "The fast-food chain is testing OpenAI-powered headsets that monitor staff interactions with customers.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179122",
+    "hash": "e1c1c34958f0c0d82ed6bdde78b42880"
+  },
+  "68c354d220090a8063d9bad6795a0037": {
+    "headline": "Jack Dorsey's Block cuts thousands of jobs as it embraces AI",
+    "body": "The Twitter co-founder says he believes the majority of firms will make similar changes \"within the next year.\"",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179130",
+    "hash": "68c354d220090a8063d9bad6795a0037"
+  },
+  "6c5a7f714255fb70d2ce044dd5b76f21": {
+    "headline": "Instagram to alert parents if teens search for self-harm and suicide content",
+    "body": "Safety campaigners say Meta is \"passing the buck\" with its new feature for parents using Instagram's teen supervision tools.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179138",
+    "hash": "6c5a7f714255fb70d2ce044dd5b76f21"
+  },
+  "0bd4451e9af4d0b11c03605801ff9143": {
+    "headline": "Chip giant Nvidia defies AI concerns with record $215bn revenue",
+    "body": "Demand for Nvidia chips rose even as the company sets out to create AI products of its own.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179145",
+    "hash": "0bd4451e9af4d0b11c03605801ff9143"
+  },
+  "89e77f7b6b753e6ca36f655c23ca75e4": {
+    "headline": "Not even potholes will hold up self-driving cars, UK firm predicts",
+    "body": "Wayve says it's confident all cars will one day be autonomous, as it announced more than a \u00a31bn in additional investment.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179154",
+    "hash": "89e77f7b6b753e6ca36f655c23ca75e4"
+  },
+  "2ed843d2fe7e6b17820f7cc020ee922b": {
+    "headline": "Gucci criticised for 'AI slop' images ahead of major fashion show",
+    "body": "Users of social media - where the marketing campaign has been launched - say it is out of keeping with Gucci's reputation for luxury.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179161",
+    "hash": "2ed843d2fe7e6b17820f7cc020ee922b"
+  },
+  "4412f332332f5a56ef66d3e03c68adf1": {
+    "headline": "Discord delays age verification plans after user outcry",
+    "body": "Users were unhappy about plans for age verification to require facial or ID scans.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179169",
+    "hash": "4412f332332f5a56ef66d3e03c68adf1"
+  },
+  "be024a9221de492978c0b1ea782c4b5c": {
+    "headline": "US threatens Anthropic with deadline in dispute on AI safeguards",
+    "body": "The AI developer laid out red lines on military use of its products, a source said.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:37.179176",
+    "hash": "be024a9221de492978c0b1ea782c4b5c"
+  },
+  "36dd9d83827fa809a09aaf7c08534eb1": {
+    "headline": "Aventon Soltera 3 Electric Bike Review: A Fun Hybrid Single-Speed",
+    "body": "Aventon\u2019s latest single-speed hybrid bicycle is light, looks cool, and is the most bikey electric bike on the market right now.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242881",
+    "hash": "36dd9d83827fa809a09aaf7c08534eb1"
+  },
+  "d193dbd9be1c1cb0e6cfe644a1a88f13": {
+    "headline": "Huxe Will Give You a Personalized, Daily Audio Summary Powered by AI",
+    "body": "The app reads your email inbox and your meeting calendar, then gives you a short audio summary. It can help you spend less time scrolling, but of course, there are privacy drawbacks to consider.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242903",
+    "hash": "d193dbd9be1c1cb0e6cfe644a1a88f13"
+  },
+  "1ebfa7633c461de29dd5c58da9c608ce": {
+    "headline": "Aktiia Hilo Blood Pressure Monitor Review: Cuffless BP Tracking",
+    "body": "The Aktiia Hilo Blood Pressure Monitor is the first cuffless monitor to be cleared by the FDA. It\u2019s discreet, highly accurate, and simple to use",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242913",
+    "hash": "1ebfa7633c461de29dd5c58da9c608ce"
+  },
+  "66d79dd791039bde8df36bbe513ff515": {
+    "headline": "\u2018Love Is Blind\u2019 Embraces the Manosphere",
+    "body": "A show that started as an earnest if messy quest for love is now simply a mirror to the hell of modern dating.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242922",
+    "hash": "66d79dd791039bde8df36bbe513ff515"
+  },
+  "07fcc85e0c01c5859b4003f5681122dc": {
+    "headline": "Tin Can Is a Dumb Phone for Kids. Can Someone Teach Them How to Use It?",
+    "body": "With its twirly cord and landline-like features, the Tin Can is giving kids a crash course in phone etiquette. For example: Talk!",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242930",
+    "hash": "07fcc85e0c01c5859b4003f5681122dc"
+  },
+  "d9304a2c7dcb480f0f6e26ae2b7bbc01": {
+    "headline": "Best Red Light Therapy for Hair Growth: WIRED-Approved (2026)",
+    "body": "After 16 weeks of daily use, our WIRED testers saw visible hair regrowth with these red light therapy devices.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242938",
+    "hash": "d9304a2c7dcb480f0f6e26ae2b7bbc01"
+  },
+  "c6ab762dd3c6abf2716eca8662fa6c4e": {
+    "headline": "Data Broker Breaches Fueled Nearly $21 Billion in Identity-Theft Losses",
+    "body": "A report copublished by WIRED sparked a probe into opt-out pages hidden by data brokers. Now congressional Democrats say breaches tied to the industry have cost people tens of billions of dollars.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242945",
+    "hash": "c6ab762dd3c6abf2716eca8662fa6c4e"
+  },
+  "71459289fa9ced03abe4a8ac84eec91b": {
+    "headline": "6 Great Power Bank Deals for Your Thirsty Phone Battery",
+    "body": "We\u2019ve tested dozens of portable power banks, and several of our top picks are on sale right now.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242953",
+    "hash": "71459289fa9ced03abe4a8ac84eec91b"
+  },
+  "1cf8c670eb9c445c586d62ab0509ca65": {
+    "headline": "Preorder Google\u2019s Newest Phone and Get a Free $100 Gift Card",
+    "body": "If you\u2019re planning on upgrading to the newest midrange Pixel phone, this deal is worth your while.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242960",
+    "hash": "1cf8c670eb9c445c586d62ab0509ca65"
+  },
+  "30e259f3a5e3c491f9fdc4f86e770b51": {
+    "headline": "Lowe\u2019s Promo Codes and Deals: Up to $300 Off Appliances",
+    "body": "Find the latest Lowe\u2019s promo codes and offers, including up to $300 off select major appliances and $5 off $50 with sign-up, here at WIRED.",
+    "category": "technology",
+    "timestamp": "2026-02-27T21:28:38.242968",
+    "hash": "30e259f3a5e3c491f9fdc4f86e770b51"
+  },
+  "2c285ad2e6d9ad9d55904ae7e7000c31": {
+    "headline": "What Your DNA Reveals About the Sex Life of Neanderthals",
+    "body": "Most people alive today carry fragments of Neanderthal DNA in their genome. Now scientists are gaining a more intimate understanding of the ancient encounters that put it there.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293182",
+    "hash": "2c285ad2e6d9ad9d55904ae7e7000c31"
+  },
+  "c50e64a39d045f2d3974c8c4a4389fb9": {
+    "headline": "Bird Flu Strikes California Elephant Seals for the First Time",
+    "body": "Thirty seals, primarily weaned pups, have died since late last week, scientists said.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293202",
+    "hash": "c50e64a39d045f2d3974c8c4a4389fb9"
+  },
+  "fd25f4b8441f7de409ee9bf3a53e3519": {
+    "headline": "The Password That Lets Caterpillars Hide in an Ant\u2019s Lair",
+    "body": "Some butterfly species can\u2019t grow unless they trick ants into taking them home with a complex rhythmic signal.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293211",
+    "hash": "fd25f4b8441f7de409ee9bf3a53e3519"
+  },
+  "7534968bf0eb31be9a5e9409dfbda18f": {
+    "headline": "T. Rex Ran on Its Tiptoes \u2018Like an 8-Ton Chicken\u2019",
+    "body": "New findings about the anatomy of the dinosaur age\u2019s fiercest predator suggest it chased prey \u201clike an oversized bird.\u201d",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293220",
+    "hash": "7534968bf0eb31be9a5e9409dfbda18f"
+  },
+  "1af4e8a46e617b8b6da7587445146b3d": {
+    "headline": "Norway\u2019s Century-Long Watch on the Northern Lights",
+    "body": "The nation\u2019s northern region has led the scientific quest to understand the aurora borealis. This summer, a 10,000-antenna radar is expected to begin the next phase of exploration.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293230",
+    "hash": "1af4e8a46e617b8b6da7587445146b3d"
+  },
+  "0d36ab1c8b04d98782a841015e91c2da": {
+    "headline": "How a Horse Whinnies: With a Whistle and a Song",
+    "body": "Horses, with their high-pitched whinnies, seemed to buck the trend of larger animals producing lower sounds, but a new study explains the mechanics behind the noises a horse makes.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293238",
+    "hash": "0d36ab1c8b04d98782a841015e91c2da"
+  },
+  "b6468e1b61549e1ed00c25e330ddbd60": {
+    "headline": "The Evolution of Eyes Began With One",
+    "body": "Even Charles Darwin was puzzled by the evolution of the vertebrate eye. New research suggests that it traces back to a cyclopean invertebrate with a single eye atop the head.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293245",
+    "hash": "b6468e1b61549e1ed00c25e330ddbd60"
+  },
+  "b45fc9d99793e5c1e9d34c3c70fab72b": {
+    "headline": "Cities May Be \u2018Evolutionary Training Grounds\u2019 For Spotted Lanternflies",
+    "body": "Living in urban China may have given the insects the traits they needed to thrive in the United States, a new study suggests.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293254",
+    "hash": "b45fc9d99793e5c1e9d34c3c70fab72b"
+  },
+  "cad0fc6d2cd5449f5826a86f1311f7b9": {
+    "headline": "A Lonely Baby Monkey Wins Hearts, and Even a Few Friends",
+    "body": "Legions of fans from around the world have been cheering on Punch, a 7-month-old macaque who had been struggling to socialize at a zoo outside Tokyo.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293262",
+    "hash": "cad0fc6d2cd5449f5826a86f1311f7b9"
+  },
+  "43e969a2e2fc7aaa6ac13e30e1797b05": {
+    "headline": "Fighting Wildfires Could Soon Get Harder",
+    "body": "Simultaneous emergencies in different parts of the world could stop countries from sharing ground crews and equipment, new research warns.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:41.293269",
+    "hash": "43e969a2e2fc7aaa6ac13e30e1797b05"
+  },
+  "c390094b9f956529be57ec5d638803de": {
+    "headline": "Waitrose to suspend mackerel sales due to overfishing concerns",
+    "body": "The supermarket chain says it will stop sourcing fresh, chilled and frozen mackerel by 29 April.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878305",
+    "hash": "c390094b9f956529be57ec5d638803de"
+  },
+  "d1c53a604a82d90452a31eb656ec8cef": {
+    "headline": "Six planets on show in celestial 'parade'",
+    "body": "Six planets - Mercury, Venus, Saturn, Jupiter, Uranus and Neptune - will all be visible in the night sky.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878329",
+    "hash": "d1c53a604a82d90452a31eb656ec8cef"
+  },
+  "e10f9369c9fa0f528ce423863e742fef": {
+    "headline": "First writing may be 40,000 years earlier than thought",
+    "body": "Scientists believe they have found evidence of written thoughts of Stone Age people on ancient objects.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878338",
+    "hash": "e10f9369c9fa0f528ce423863e742fef"
+  },
+  "b155d4c1f6ddb98b95d3ff3e2991d5f7": {
+    "headline": "Earth's heat to power 10,000 homes in renewable energy first for UK",
+    "body": "Water super-heated by rocks will also provide the UK's first domestic supply of the critical mineral lithium.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878347",
+    "hash": "b155d4c1f6ddb98b95d3ff3e2991d5f7"
+  },
+  "742621a4861bb62414726a1c4dd2d0ef": {
+    "headline": "One in four councils to miss food waste collection deadline",
+    "body": "Local authorities blame the delays on a lack of funding and a shortage of bin lorries.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878354",
+    "hash": "742621a4861bb62414726a1c4dd2d0ef"
+  },
+  "5ea19e58a35ca5c9f4c51c7b8b6053d2": {
+    "headline": "Why scientists fear Emperor penguins' annual moult may be killing them",
+    "body": "Each year the birds must stay on floating ice long enough to replace their weather-beaten feathers.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878362",
+    "hash": "5ea19e58a35ca5c9f4c51c7b8b6053d2"
+  },
+  "9dab620df2a2ec66775609679b7d49a2": {
+    "headline": "Nasa astronauts' moon mission delayed due to rocket issue",
+    "body": "The mission to the far side of the Moon and back will be postponed after problems with were spotted with its rocket, a Nasa official said.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878370",
+    "hash": "9dab620df2a2ec66775609679b7d49a2"
+  },
+  "d2a549204e387d0f6528b9e16804e7b1": {
+    "headline": "Sewage spills threatening salmon survival, says MP",
+    "body": "Winchester's MP highlights sewage spills potentially affecting the endangered Atlantic salmon.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878377",
+    "hash": "d2a549204e387d0f6528b9e16804e7b1"
+  },
+  "4c34c0fa2259f3c37d18783442125f26": {
+    "headline": "Bill to permanently ban fracking approved by NI Executive",
+    "body": "The move brings Northern Ireland into line with policy elsewhere in the UK and in the Republic of Ireland.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878385",
+    "hash": "4c34c0fa2259f3c37d18783442125f26"
+  },
+  "2aa4384de0f85add70d7de2caf7fc89b": {
+    "headline": "Beaver 'engineers' released to create wetlands",
+    "body": "A family of beavers have been brought from Scotland to improve biodiversity in a Lincolnshire river.",
+    "category": "science",
+    "timestamp": "2026-02-27T21:28:42.878392",
+    "hash": "2aa4384de0f85add70d7de2caf7fc89b"
+  },
+  "50f5b1d419ce02d1ef483c7c85ee6ab4": {
+    "headline": "Pakistan Strikes Afghanistan in \u2018Open War\u2019 Against Taliban Regime",
+    "body": "The airstrikes came hours after Afghan troops had attacked Pakistani border positions and follow months of worsening relations between the neighboring countries.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898894",
+    "hash": "50f5b1d419ce02d1ef483c7c85ee6ab4"
+  },
+  "ed9198877824b4017677f03bdd5389e5": {
+    "headline": "With Possible Iran Strike Looming, U.S. Says Staff Can Leave Israel, and Urges Speed",
+    "body": "In an email to embassy workers Friday morning, Ambassador Mike Huckabee warned them that if they wanted to leave Israel, they \u201cshould do so TODAY.\u201d",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898916",
+    "hash": "ed9198877824b4017677f03bdd5389e5"
+  },
+  "b93bdea3a4de63859a7e8aa698831fe8": {
+    "headline": "A Trump Call Ignited Saudi-U.A.E. Feud",
+    "body": "A request made to President Trump about the war in Sudan is at the heart of a diplomatic dispute between Saudi Arabia and the United Arab Emirates.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898925",
+    "hash": "b93bdea3a4de63859a7e8aa698831fe8"
+  },
+  "684cf3fa42276925bb223ee079d560a1": {
+    "headline": "Iranians Cite Progress in Talks, but a Marathon Session Produces No Deal",
+    "body": "Representatives of the countries were in Geneva this week to discuss the fate of Iran\u2019s nuclear program.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898933",
+    "hash": "684cf3fa42276925bb223ee079d560a1"
+  },
+  "b5f7367ea6dd19c27b3aca59e80d7149": {
+    "headline": "Some Russians Go Without Heat or Power in Winter, as Energy System Falls Into Disrepair",
+    "body": "A dozen major blackouts and central heating cutoffs across the country have affected hundreds of thousands during a brutal winter.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898940",
+    "hash": "b5f7367ea6dd19c27b3aca59e80d7149"
+  },
+  "a076c875cc7b8a367039d078199fc3a5": {
+    "headline": "Hungary Plays Spoiler in Europe as Orban Strains for Votes at Home",
+    "body": "Facing a serious election challenge, Prime Minister Viktor Orban is holding up a big E.U. loan for Ukraine. Analysts say the timing is no coincidence.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898946",
+    "hash": "a076c875cc7b8a367039d078199fc3a5"
+  },
+  "5ee02e88e8049acd4c2598582feb4e46": {
+    "headline": "Israel Facing Prospect of War With a Depleted Missile Defense",
+    "body": "The June 2025 conflict with Iran depleted Israeli and U.S. stocks of antiballistic missiles. If there is another war, the pressure will be on to destroy Iranian missiles before they can be launched.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898953",
+    "hash": "5ee02e88e8049acd4c2598582feb4e46"
+  },
+  "e911eb33aedd2c65d0518834fe8470da": {
+    "headline": "After a Speedboat Shootout in Cuba, There are More Questions Than Answers",
+    "body": "The Cuban government\u2019s account of a supposed armed raid into its territory was called into question after one of the men identified as being on the boat turned up in Miami.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898961",
+    "hash": "e911eb33aedd2c65d0518834fe8470da"
+  },
+  "55617407d8eec20627498619a222f60c": {
+    "headline": "Green Party Defeats Labour in U.K. Special Election, in Blow to Starmer",
+    "body": "The result marks the first time the Greens have won a British parliamentary by-election and signals the frustration of left-leaning voters with Prime Minister Keir Starmer.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898967",
+    "hash": "55617407d8eec20627498619a222f60c"
+  },
+  "6b9413a785527c2757727f5544be76b3": {
+    "headline": "Amid Rhetoric About Rupture With U.S., Finland Urges Calm",
+    "body": "\u201cWe don\u2019t need a bulldozer,\u201d says Alexander Stubb, Finland\u2019s president and a golf partner of President Trump. \u201cReform doesn\u2019t mean destruction.\u201d",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:45.898975",
+    "hash": "6b9413a785527c2757727f5544be76b3"
+  },
+  "9c7cc5519eb6eec971c78de7a47e69f7": {
+    "headline": "Pakistan defence minister says country in 'open war' with Afghanistan after strikes",
+    "body": "The latest attacks by Pakistan follow months of clashes between the two countries. despite agreeing to a fragile ceasefire in October.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032765",
+    "hash": "9c7cc5519eb6eec971c78de7a47e69f7"
+  },
+  "87a758deccb0aa7aeb980db577ad0ba1": {
+    "headline": "What we know after latest escalation in Pakistan-Afghanistan tensions",
+    "body": "Bombings by Pakistan are the most significant development in tensions between the two neighbours - though the physical impact remains unclear.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032786",
+    "hash": "87a758deccb0aa7aeb980db577ad0ba1"
+  },
+  "cbfc84ab93e36e30df5f262ca526d8c1": {
+    "headline": "Why Trump means the Cuban Revolution faces its biggest threat yet",
+    "body": "Will a worsening internal crisis create the conditions for the Cuban Revolution to unravel from within?",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032795",
+    "hash": "cbfc84ab93e36e30df5f262ca526d8c1"
+  },
+  "a4fb54bf24e3070d62bed43b57c53e67": {
+    "headline": "UK withdraws Tehran embassy staff as US-Iran tension sparks concern across region",
+    "body": "The US embassy in Israel has also told some non-emergency staff they can leave the country if they wish.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032804",
+    "hash": "a4fb54bf24e3070d62bed43b57c53e67"
+  },
+  "304074cf60649179851ff2e0525ff5fd": {
+    "headline": "Drone jammed near French aircraft carrier was probably Russian, says Sweden",
+    "body": "Sweden's prime minister said it was a serious but not expected incident - and a \"Russian way of acting that we recognise from other places\".",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032811",
+    "hash": "304074cf60649179851ff2e0525ff5fd"
+  },
+  "41770ee008a52d7481f1e03b00d7d549": {
+    "headline": "Paramount set for $111bn Warner Bros takeover after Netflix drops bid",
+    "body": "Netflix's decision to back down from the bidding war clears the path for Paramount to win the takeover battle.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032818",
+    "hash": "41770ee008a52d7481f1e03b00d7d549"
+  },
+  "676ec31101e21fbb2d59bc17afb705f8": {
+    "headline": "Spanish opposition calls for disgraced ex-monarch to return from exile",
+    "body": "The 88-year-old Juan Carlos should spend his last years in dignity, the leader of Spain's main opposition party says.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032826",
+    "hash": "676ec31101e21fbb2d59bc17afb705f8"
+  },
+  "1b9bb45e809c7b5e8c095edde58d3c20": {
+    "headline": "'Obnoxious' AI chatbot talked about its mother, customers say",
+    "body": "Australian supermarket giant Woolworths tweaks its AI-powered assistant after users said it gave them the \"ick\".",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032833",
+    "hash": "1b9bb45e809c7b5e8c095edde58d3c20"
+  },
+  "12871793b8b5e140cfce26203f1c01cf": {
+    "headline": "At least 55 Ghanaians killed in Russia-Ukraine war, minister says",
+    "body": "This is the highest number of confirmed casualties from a single African country in the Ukraine-Russia war.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032850",
+    "hash": "12871793b8b5e140cfce26203f1c01cf"
+  },
+  "a18e7cc8ac0570ff83fee836745962d7": {
+    "headline": "Epstein tried to buy a palace in Morocco days before his arrest in 2019",
+    "body": "The disgraced financier was in talks to buy luxury abode Bin Ennakhi - but the purchase was never completed.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:28:47.032859",
+    "hash": "a18e7cc8ac0570ff83fee836745962d7"
+  },
+  "04461b9464da986597183b9631e1572b": {
+    "headline": "OpenAI Raises $110 Billion Led by Amazon, Nvidia and SoftBank, Extending A.I. Boom",
+    "body": "Amazon, Nvidia and SoftBank led the investment, valuing the parent of ChatGPT at $730 billion.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334612",
+    "hash": "04461b9464da986597183b9631e1572b"
+  },
+  "d5e123116ca008041eb360ba55652412": {
+    "headline": "The I.R.S. Shut Its Direct File, but Here Are Other Free Filing Options",
+    "body": "The agency still offers a Free File program that works with commercial tax software firms. Some companies also offer free tools for certain filers.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334634",
+    "hash": "d5e123116ca008041eb360ba55652412"
+  },
+  "85471c2f7867a59c3ab5a803ff5c3f87": {
+    "headline": "E.U. Pushes Ahead With South American Trade Deal Despite Legal Challenge",
+    "body": "The provisional application of the agreement with Brazil, Argentina, Paraguay and Uruguay is intended to diversify Europe\u2019s trading relationships.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334645",
+    "hash": "85471c2f7867a59c3ab5a803ff5c3f87"
+  },
+  "5dcae0e8a66bc17b33d2cf00680ddeb8": {
+    "headline": "Paramount Is Set to Win Warner Bros. Now Comes the Hard Part.",
+    "body": "The media company controlled by the Ellisons out-dueled Netflix for control of Warner Bros. Discovery. The next step is making the combined media empires work.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334653",
+    "hash": "5dcae0e8a66bc17b33d2cf00680ddeb8"
+  },
+  "8f6c08f4e421a8ac9b708a3cd26c4bcf": {
+    "headline": "How India Became One of the World\u2019s Biggest Economies",
+    "body": "India has grown rapidly despite its slow industrialization, and its economy is now nearly as big as Japan\u2019s.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334660",
+    "hash": "8f6c08f4e421a8ac9b708a3cd26c4bcf"
+  },
+  "a9bd68ad622cd629c4165960cdd0b3f4": {
+    "headline": "For CNN, a Takeover by Paramount Means a Suddenly Uncertain Future",
+    "body": "Paramount\u2019s apparent victory over Netflix in securing Warner Bros. Discovery has led to concerns within the CNN newsroom.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334669",
+    "hash": "a9bd68ad622cd629c4165960cdd0b3f4"
+  },
+  "1ddcba9a352ae16ac901536941fa2e67": {
+    "headline": "What Larry and David Ellison Would Own After Warner Bros. Takeover",
+    "body": "If Paramount can close its deal to buy Warner Bros. Discovery, Larry and David Ellison will influence nearly every corner of news, entertainment and tech.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334676",
+    "hash": "1ddcba9a352ae16ac901536941fa2e67"
+  },
+  "6f71acdd536ff280566b4e7e5c75805f": {
+    "headline": "The Web of Companies Owned by Elon Musk",
+    "body": "In mapping out Elon Musk\u2019s wealth, our investigation found that Mr. Musk is behind more than 90 companies in Texas. Kirsten Grind, a New York Times Investigations reporter, explains what her team found.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334691",
+    "hash": "6f71acdd536ff280566b4e7e5c75805f"
+  },
+  "9e889c8d22ef8aaf5753d103e99a96f7": {
+    "headline": "The Rise and Fall of a 3-D Printing Empire",
+    "body": "Desktop Metal, a billion-dollar start-up, promised to revolutionize manufacturing. It went bankrupt, and now has much humbler ambitions as the 3-D printing industry takes a sober turn.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:51.334697",
+    "hash": "9e889c8d22ef8aaf5753d103e99a96f7"
+  },
+  "606e325a3954c12671decf2397aa59cc": {
+    "headline": "Government to give go-ahead for \u00a31bn defence helicopter deal",
+    "body": "The chancellor has stepped in to protect jobs at the helicopter manufacturer in Somerset, the BBC understands.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:52.960713",
+    "hash": "606e325a3954c12671decf2397aa59cc"
+  },
+  "1217cadf363f15fb23f3d7ec0df5df96": {
+    "headline": "Dyson settles forced labour suit in landmark UK case",
+    "body": "Migrant workers alleged they were subjected to abusive treatment in a Malaysian factory for Dyson.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:52.960754",
+    "hash": "1217cadf363f15fb23f3d7ec0df5df96"
+  },
+  "a5129666f41aa03751405b3a2355b126": {
+    "headline": "Why you can't get a signal at festivals and sports matches",
+    "body": "Connecting up music and sports events to the internet is a massive undertaking.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:52.960764",
+    "hash": "a5129666f41aa03751405b3a2355b126"
+  },
+  "02f88178fe3de1f82cb989e9681143a3": {
+    "headline": "Tyrrells plans to give vegetable crisps the chop",
+    "body": "Parent company KP confirms the proposals may lead to the loss of a factory in Uttoxeter.",
+    "category": "business",
+    "timestamp": "2026-02-27T21:28:52.960773",
+    "hash": "02f88178fe3de1f82cb989e9681143a3"
+  },
+  "8ddfda9e3789ccc19b452a4e18010617": {
+    "headline": "Dispute Between Pentagon and Anthropic Intensifies as Deadline Looms",
+    "body": "Defense officials criticized the A.I. firm after it rejected their latest offer. Anthropic has until 5:01 p.m. on Friday to give them unrestricted access to its model.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716267",
+    "hash": "8ddfda9e3789ccc19b452a4e18010617"
+  },
+  "b0ae30dc3e96898f9cb48c73b028a3b0": {
+    "headline": "4 Takeaways About the U.S. Birthrate Decline",
+    "body": "There is good news buried behind the worries about population decline, some experts say.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716301",
+    "hash": "b0ae30dc3e96898f9cb48c73b028a3b0"
+  },
+  "3deb9bcbd45d6f8bd47835bc5154a460": {
+    "headline": "In Tuesday\u2019s North Carolina Primaries, the Left Is Aiming for Democrats",
+    "body": "From a Charlotte-area House race to three statehouse races, North Carolina liberals are signaling that their tolerance for Democratic stalwarts may be coming to an end.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716319",
+    "hash": "3deb9bcbd45d6f8bd47835bc5154a460"
+  },
+  "641e68038d87720d4875aa2611f7ca3c": {
+    "headline": "U.S. Birthrate Declines to an All-Time Low, but There\u2019s a Story of Success",
+    "body": "The political class is worried about the historic drop. But the biggest change is among the youngest women, who are the least ready to have children.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716323",
+    "hash": "641e68038d87720d4875aa2611f7ca3c"
+  },
+  "1c32747d98b2bc011e4b32a8f5e427df": {
+    "headline": "Trump\u2019s Foreign Policy: Resurrecting Empire",
+    "body": "President Trump\u2019s approach is a revival of the mission of empire \u2014 acquiring the territories and resources of sovereign peoples.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716327",
+    "hash": "1c32747d98b2bc011e4b32a8f5e427df"
+  },
+  "34dd791e1c352951b712641643013227": {
+    "headline": "Fact-check: In Trump\u2019s Case for an Attack on Iran, False or Unproven Claims",
+    "body": "Key elements of the Trump administration\u2019s arguments this week for another military campaign against Iran do not hold up.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716331",
+    "hash": "34dd791e1c352951b712641643013227"
+  },
+  "fabb3cd24ef5d5fff9131659652068f4": {
+    "headline": "Vance Continues to Criticize Democrats\u2019 Attitude During State of the Union",
+    "body": "Speaking in Wisconsin to support Republicans ahead of the midterm elections, Vice President JD Vance reminded his audience that Democrats had not stood up at the president\u2019s behest on Tuesday.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716335",
+    "hash": "fabb3cd24ef5d5fff9131659652068f4"
+  },
+  "8b82396a42a3022ba1e7f581821008b1": {
+    "headline": "Judge Says U.S. Is Intentionally Violating the Law on Immigration",
+    "body": "Judge Zahid N. Quraishi said federal prosecutors in New Jersey had lost credibility on immigration issues. He\u2019s the latest federal judge to show impatience with the Trump administration.",
+    "category": "politics",
+    "timestamp": "2026-02-27T21:28:57.716341",
+    "hash": "8b82396a42a3022ba1e7f581821008b1"
+  },
+  "0d9debdc8b1c3a0e7690e13c3af0cf29": {
+    "headline": "Chelsea v PSG, Man City v Real & Newcastle v Barca in Champions League last 16",
+    "body": "Chelsea will play holders Paris St-Germain in the Champions League last 16 while Manchester City will face Real Madrid in the knockout stages for a fifth straight season.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381441",
+    "hash": "0d9debdc8b1c3a0e7690e13c3af0cf29"
+  },
+  "82486f93f94c620152d5eda8c1f74e75": {
+    "headline": "Prem relegation scrapped from 2026-27 season",
+    "body": "Traditional promotion and relegation to and from the Prem will be scrapped from the 2026-27 season as landmark changes to the English game are voted through.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381492",
+    "hash": "82486f93f94c620152d5eda8c1f74e75"
+  },
+  "ea3fd526b4b30dd4026a0130f47b30e3": {
+    "headline": "Cadillac and Audi - the same ambition but two very different projects",
+    "body": "Cadillac and Audi enter F1 with the ultimate goal of becoming world champions. Both know they have some way to go before achieving that aim.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381504",
+    "hash": "ea3fd526b4b30dd4026a0130f47b30e3"
+  },
+  "75ad9d52f6c963dfa726b16271e31251": {
+    "headline": "'Borthwick relaxed but defiant amid England Six Nations slide'",
+    "body": "Instead of asking what has gone wrong for England in the Six Nations, the question is more why has it gone wrong?",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381512",
+    "hash": "75ad9d52f6c963dfa726b16271e31251"
+  },
+  "4f0aa3fcc109da68f88944fd8b4ee72f": {
+    "headline": "Gordon needs to stay 'fully focused' after Arsenal talk - Howe",
+    "body": "Head coach Eddie Howe has urged Anthony Gordon to stay \"fully focused\" after the Newcastle United forward was linked with a move to Arsenal.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381518",
+    "hash": "4f0aa3fcc109da68f88944fd8b4ee72f"
+  },
+  "55dc11d8d34b84ddce0236cf87dafaea": {
+    "headline": "How do Man City's Muslim players adapt to Ramadan and what help do they get?",
+    "body": "Muslims around the world are currently observing the Islamic holy month of Ramadan, including professional footballers, so how do Manchester City help their players?",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381527",
+    "hash": "55dc11d8d34b84ddce0236cf87dafaea"
+  },
+  "bb173be53b0673517a431997a334d387": {
+    "headline": "Italian Pavan seriously hurt after lift shaft fall",
+    "body": "Italian golfer Andrea Pavan says he has \"a lot of rehab and hard work\" ahead of him after he fell multiple floors down an open lift shaft before the start of the South African Open.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381534",
+    "hash": "bb173be53b0673517a431997a334d387"
+  },
+  "2fa8833c8a233c16b676be2dadf3d1dd": {
+    "headline": "'I would never say that' - US Olympian on White House AI video",
+    "body": "USA men's ice hockey player Brady Tkachuk distances himself from an AI-enhanced White House video in which he appears to disparage Canadians, saying \"those words would never come out of my mouth\".",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381542",
+    "hash": "2fa8833c8a233c16b676be2dadf3d1dd"
+  },
+  "77b9ff30fcae5e118a390dfd0c012cec": {
+    "headline": "Voll ton helps Australia win Healy's last ODI series",
+    "body": "Georgia Voll struck her second international century as Australia beat India by five wickets in the second ODI to complete the series win with a game to spare.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381549",
+    "hash": "77b9ff30fcae5e118a390dfd0c012cec"
+  },
+  "1720b6598717a91913c9ad388d80b61e": {
+    "headline": "'You're joking!' - Buttler's 'miserable run' continues with two-ball duck",
+    "body": "Jos Buttler's struggles continue at the T20 World Cup as the England batter is caught behind for a two-ball duck against New Zealand, making it five consecutive innings without reaching double figures.",
+    "category": "sports",
+    "timestamp": "2026-02-27T21:29:02.381556",
+    "hash": "1720b6598717a91913c9ad388d80b61e"
+  },
+  "766fd0c469e423f49e3bc9486ef7651e": {
+    "headline": "I Needed \u2018Heated Rivalry\u2019: Gay Romance Minus the Tragedy",
+    "body": "After a lifetime of settling for shame, secrecy and death onscreen, I had my doubts about \u201cHeated Rivalry.\u201d Then it seduced me, too.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601921",
+    "hash": "766fd0c469e423f49e3bc9486ef7651e"
+  },
+  "dee87b7e88e067b7145d51c5b16719a9": {
+    "headline": "How \u2018The Pitt\u2019 Grosses You Out",
+    "body": "The medical drama tests viewers with protruding bones, visible organs and buckets of blood. Here\u2019s how makeup and effects artists created seven gory afflictions.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601941",
+    "hash": "dee87b7e88e067b7145d51c5b16719a9"
+  },
+  "5fd2a0b9c3d7ec5e741643a21ac0c153": {
+    "headline": "Chris Fleming Uses Dance to Make Us Laugh in His HBO Special",
+    "body": "The kind of performer other stand-ups rave about, Chris Fleming turns to choreography to land jokes in his new HBO special.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601948",
+    "hash": "5fd2a0b9c3d7ec5e741643a21ac0c153"
+  },
+  "b48fd23203904b9566f6ae5f99f012f8": {
+    "headline": "\u2018Scream 7\u2019 Controversies: What You Need to Know",
+    "body": "The franchise\u2019s latest edition ran into trouble on the way to the screen. Here\u2019s what happened.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601954",
+    "hash": "b48fd23203904b9566f6ae5f99f012f8"
+  },
+  "fe9b26a353406192fa662355287246da": {
+    "headline": "TMZ Drives Celebrity News. Thank This L.A. Intersection.",
+    "body": "The website known for breaking news about famous deaths and juicy scandals has a name with roots in old Hollywood.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601960",
+    "hash": "fe9b26a353406192fa662355287246da"
+  },
+  "b5a90ea49cfcc65c0b7d87af34153ab2": {
+    "headline": "Resident Evil\u2019s \u2018Addictive Fear\u2019 Is Keenly Calibrated",
+    "body": "To go beyond jump scares, the director of Resident Evil Requiem has learned from \u201cWeapons,\u201d \u201cThe Shining\u201d and \u201cThe X-Files.\u201d",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601966",
+    "hash": "b5a90ea49cfcc65c0b7d87af34153ab2"
+  },
+  "57d98016c6bab628c8923d32e3e40748": {
+    "headline": "\u2018Murder in Glitterball City\u2019 and True Crime\u2019s Obsession With Location",
+    "body": "The two-part documentary on HBO is not just the story of a gruesome murder, but a portrait of the city, neighborhood and home where it happened.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601973",
+    "hash": "57d98016c6bab628c8923d32e3e40748"
+  },
+  "71ae0418eca2fd35a6e8bce188262edc": {
+    "headline": "\u2018Paul McCartney: Man on the Run\u2019 Tells One Side of the Story",
+    "body": "The Morgan Neville-directed film relies on new and archival interviews to cover familiar ground: the years after the Beatles broke up.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601979",
+    "hash": "71ae0418eca2fd35a6e8bce188262edc"
+  },
+  "5234fbd50fe0f9db4c51f1707033ede3": {
+    "headline": "\u2018DTF St. Louis\u2019 Review: Sex, Death and Jamba Juice",
+    "body": "Steven Conrad (\u201cPatriot\u201d) brings his oddball sensibility to the limited-crime-series genre for HBO.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601984",
+    "hash": "5234fbd50fe0f9db4c51f1707033ede3"
+  },
+  "b17867525ff01ee6686c9d792210fb34": {
+    "headline": "Watch the Final Scene of \u2018Train Dreams\u2019",
+    "body": "The director Clint Bentley discusses the conclusion to his film, which stars Joel Edgerton and is an Oscar nominee for best picture.",
+    "category": "entertainment",
+    "timestamp": "2026-02-27T21:29:31.601990",
+    "hash": "b17867525ff01ee6686c9d792210fb34"
+  },
+  "c72fd82973ae8844992d867e5689a34e": {
+    "headline": "Green victory shows insurgent parties are here to stay",
+    "body": "The party's historic win in Gorton and Denton by-election is clearest sign yet of changing political landscape.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179841",
+    "hash": "c72fd82973ae8844992d867e5689a34e"
+  },
+  "9e3e66437fb6fbe50c7e6ce362577d99": {
+    "headline": "Soham killer Huntley still in hospital after attack using makeshift weapon",
+    "body": "Huntley, who is serving a life sentence for murdering two schoolgirls, has significant head trauma, the BBC understands.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179865",
+    "hash": "9e3e66437fb6fbe50c7e6ce362577d99"
+  },
+  "a0aa86670871c98c3df3182b8a340a8c": {
+    "headline": "Why are Afghanistan and Pakistan fighting?",
+    "body": "The two sides have different versions of how and why the deadly dispute began.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179874",
+    "hash": "a0aa86670871c98c3df3182b8a340a8c"
+  },
+  "9cb4cf347d3d0e4e81cf649e26f29875": {
+    "headline": "How Hollywood and Maga aligned over Warner Bros deal",
+    "body": "Paramount beats Netflix to the major deal, pleasing figures in DC and LA alike, the BBC's culture and media editor writes.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179887",
+    "hash": "9cb4cf347d3d0e4e81cf649e26f29875"
+  },
+  "dc604a008957943ff9d208e0c18f1b14": {
+    "headline": "US Olympian says 'I would never say that' after White House AI video shows him insulting Canada",
+    "body": "USA men's ice hockey player Brady Tkachuk distances himself from an AI-enhanced White House video in which he appears to disparage Canadians, saying \"those words would never come out of my mouth\".",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179896",
+    "hash": "dc604a008957943ff9d208e0c18f1b14"
+  },
+  "a7e6dcb3eae3ae751ca78f095af44653": {
+    "headline": "Man arrested after Winston Churchill statue defaced with graffiti",
+    "body": "The statue of the former prime minster at Westminster was vandalised with slogans daubed in red paint.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179904",
+    "hash": "a7e6dcb3eae3ae751ca78f095af44653"
+  },
+  "f6f5979ea11f975b1f288619e1fe99dc": {
+    "headline": "I hugged my daughter's killer as we cried together in prison",
+    "body": "Chloe's mum visited her drug-driver killer Keilan Roberts in jail and says he will live with the guilt forever.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179911",
+    "hash": "f6f5979ea11f975b1f288619e1fe99dc"
+  },
+  "9dc3907dc4cdf923f12ef7a82228e4cb": {
+    "headline": "Ghosts TV sitcom to be brought back to life as a feature film",
+    "body": "Ghosts: The Possession of Button House will see the return of the show's writers, creators and stars.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179919",
+    "hash": "9dc3907dc4cdf923f12ef7a82228e4cb"
+  },
+  "7c1b62a51de9264a63eb0803a6c16aa3": {
+    "headline": "From plumber to Parliament, who is the Green Party's new MP?",
+    "body": "Spencer marked her victory by apologising to customers for potentially having to cancel work due to her Westminster move.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:29:35.179927",
+    "hash": "7c1b62a51de9264a63eb0803a6c16aa3"
+  },
+  "0c90905a901725a9ead0b9ace4890033": {
+    "headline": "Indian court clears former Delhi chief minister of corruption charges",
+    "body": "Arvind Kejriwal was arrested in March 2024, weeks before India's general election, and spent months in jail.",
+    "category": "world",
+    "timestamp": "2026-02-27T21:34:52.740363",
+    "hash": "0c90905a901725a9ead0b9ace4890033"
+  },
+  "d66a9a4e5ce3ed0204a76c11cf391016": {
+    "headline": "Henry Zeffman: Green victory shows insurgent parties are here to stay",
+    "body": "The party's historic win in Gorton and Denton by-election is clearest sign yet of changing political landscape.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:35:15.971245",
+    "hash": "d66a9a4e5ce3ed0204a76c11cf391016"
+  },
+  "2210bd64a55600bbb617a4d930cabb79": {
+    "headline": "Reform UK reports by-election 'family voting' concerns to police",
+    "body": "It comes after election observers raised concerns about \"extremely high\" levels of family voting.",
+    "category": "national",
+    "timestamp": "2026-02-27T21:35:15.971365",
+    "hash": "2210bd64a55600bbb617a4d930cabb79"
+  },
+  "c4ff4cead81c1dad82fa2efa6f019002": {
+    "headline": "Pentagon-Anthropic Standoff Is a Decisive Moment for How A.I. Will Be Used in War",
+    "body": "The Pentagon\u2019s contract dispute with Anthropic is part of a wider clash about the use of artificial intelligence for national security and who decides on any safeguards.",
+    "category": "technology",
+    "timestamp": "2026-02-28T00:14:35.195405",
+    "hash": "c4ff4cead81c1dad82fa2efa6f019002"
+  },
+  "506eb043c8ed877570edaafd90e497e5": {
+    "headline": "Block Cuts 40% of Its Work Force Because of Its Embrace of A.I.",
+    "body": "About 4,000 workers will lose their jobs as the payments company does more work with new artificial intelligence tools, its top executive said.",
+    "category": "technology",
+    "timestamp": "2026-02-28T00:14:35.195430",
+    "hash": "506eb043c8ed877570edaafd90e497e5"
+  },
+  "3da46c645193ff98730bdce8d43e547c": {
+    "headline": "Anthropic Says It Cannot \u2018Accede\u2019 to Pentagon in Talks Over A.I.",
+    "body": "Anthropic said it was standing firm on not having its A.I. used in certain scenarios by the Pentagon, which has imposed a Friday deadline on the company to give unfettered access to its technology.",
+    "category": "technology",
+    "timestamp": "2026-02-28T00:14:35.195433",
+    "hash": "3da46c645193ff98730bdce8d43e547c"
+  },
+  "c81481d6abbc799049ea9c068e37349e": {
+    "headline": "In Landmark Trial, Plaintiff Says Social Media Harm Started at Age 6",
+    "body": "The plaintiff, a 20-year-old identified only as K.G.M., took the stand to testify against Meta and Instagram in a bellwether case over tech addiction.",
+    "category": "technology",
+    "timestamp": "2026-02-28T00:14:35.195436",
+    "hash": "c81481d6abbc799049ea9c068e37349e"
+  },
+  "d71d66434e8ad89d1cc8457e76a14a11": {
+    "headline": "Wall Street Has AI Psychosis",
+    "body": "A \u201cthought experiment\u201d about the impacts of AI sent stocks tumbling earlier this week. It\u2019s probably going to keep happening.",
+    "category": "technology",
+    "timestamp": "2026-02-28T00:14:37.650790",
+    "hash": "d71d66434e8ad89d1cc8457e76a14a11"
+  },
+  "67c4298fe71bfedc18847529b37e1c1c": {
+    "headline": "NASA Aims for 2 Moon Landings in 2028 With New Artemis Schedule",
+    "body": "Jared Isaacman, the agency\u2019s administrator, said the Artemis III mission would move to 2027 and would no longer attempt a lunar landing.",
+    "category": "science",
+    "timestamp": "2026-02-28T00:14:42.001630",
+    "hash": "67c4298fe71bfedc18847529b37e1c1c"
+  },
+  "4438101cb5e55a6edd37081da615da4d": {
+    "headline": "Nasa announces change to its Moon landing plans",
+    "body": "It is adding an extra mission to its Artemis programme before attempting to land astronauts.",
+    "category": "science",
+    "timestamp": "2026-02-28T00:14:43.316226",
+    "hash": "4438101cb5e55a6edd37081da615da4d"
+  },
+  "a8865f7a325ecd5650c5f1543fe0ee6c": {
+    "headline": "How photographer captured six planets in 'parade'",
+    "body": "Josh Dury, from Bristol, photographed the planetary parade in Worth Matravers.",
+    "category": "science",
+    "timestamp": "2026-02-28T00:14:43.316271",
+    "hash": "a8865f7a325ecd5650c5f1543fe0ee6c"
+  },
+  "b2dadf30cefddc3b56de7ee69a4b7658": {
+    "headline": "Iran\u2019s Students Are Protesting Again. Here\u2019s Why.",
+    "body": "The unrest underlines the intensity of domestic discontent, even as Tehran\u2019s government grapples with the threat of U.S. strikes. Here\u2019s what to know.",
+    "category": "world",
+    "timestamp": "2026-02-28T00:14:47.611252",
+    "hash": "b2dadf30cefddc3b56de7ee69a4b7658"
+  },
+  "6417a8b3279fe2481b94ed5d52557779": {
+    "headline": "Were Duterte\u2019s Speeches Orders to Kill or Hyperbole?",
+    "body": "Judges at the International Criminal Court have heard starkly different interpretations this week of the words of former President Rodrigo Duterte of the Philippines.",
+    "category": "world",
+    "timestamp": "2026-02-28T00:14:47.611281",
+    "hash": "6417a8b3279fe2481b94ed5d52557779"
+  },
+  "6c564fe3ed0edb0948ea4fb0afa532fb": {
+    "headline": "Tram derails in Milan, leaving one dead and dozens injured",
+    "body": "The crowded tram was travelling in the centre of Milan at rush hour when it appeared to crash into the side of a building.",
+    "category": "world",
+    "timestamp": "2026-02-28T00:14:48.867242",
+    "hash": "6c564fe3ed0edb0948ea4fb0afa532fb"
+  },
+  "532ebfb195a4a72c28e40b654334653c": {
+    "headline": "UK withdraws Tehran embassy staff as concern grows over threat of US strikes",
+    "body": "The US embassy in Israel has also told some non-emergency staff they can leave the country if they wish.",
+    "category": "world",
+    "timestamp": "2026-02-28T00:14:48.867302",
+    "hash": "532ebfb195a4a72c28e40b654334653c"
+  },
+  "848a174c392622ac1ce5e616ba8c5001": {
+    "headline": "OpenAI vows safety policy changes after Tumbler Ridge shooting",
+    "body": "The tech firm has been criticised for not reporting the suspect's ChatGPT account to police despite it being flagged internally due to concerns over content.",
+    "category": "world",
+    "timestamp": "2026-02-28T00:14:48.867332",
+    "hash": "848a174c392622ac1ce5e616ba8c5001"
+  },
+  "746a2154dec16f54fef20388ca104184": {
+    "headline": "Overlooked No More: Bobby Garnett, \u2018Godfather\u2019 of Vintage Dealers",
+    "body": "His store, Bobby From Boston, transformed the way vintage men\u2019s wear is sold, serving as a model for a generation of retailers.",
+    "category": "business",
+    "timestamp": "2026-02-28T00:14:53.986266",
+    "hash": "746a2154dec16f54fef20388ca104184"
+  },
+  "c9099744c70a96322f0d920db1fe172e": {
+    "headline": "Trump Media Explores Spinning Off Truth Social",
+    "body": "The move would split off the money-losing social media platform as the company pursues a merger with a fusion power company.",
+    "category": "business",
+    "timestamp": "2026-02-28T00:14:53.986302",
+    "hash": "c9099744c70a96322f0d920db1fe172e"
+  },
+  "cac983055c53320f2ab909946095b5dd": {
+    "headline": "Jacks & Ahmed carry England to another thrilling win",
+    "body": "England take real momentum into the T20 World Cup semi-finals after Will Jacks and Rehan Ahmed secure a gripping four-wicket victory over New Zealand.",
+    "category": "sports",
+    "timestamp": "2026-02-28T00:31:08.118305",
+    "hash": "cac983055c53320f2ab909946095b5dd"
+  },
+  "999c165a3f2e62143739a732ca90e7c6": {
+    "headline": "Ahmed and Jacks rally to lead England to thrilling win over New Zealand",
+    "body": "Rehan Ahmed and Will Jacks lead England to an unlikely four-wicket win over New Zealand in a nail-biting finish at the Premadasa Stadium in Colombo.",
+    "category": "sports",
+    "timestamp": "2026-02-28T00:31:08.118345",
+    "hash": "999c165a3f2e62143739a732ca90e7c6"
+  },
+  "917633dd04d452db61bd4028ae01e20e": {
+    "headline": "'Very easy to abuse online without consequences'",
+    "body": "Chelsea boss Liam Rosenior condemns the racial abuse aimed at players - warning it is \"very easy\" for social media users to target them without punishment.",
+    "category": "sports",
+    "timestamp": "2026-02-28T00:31:08.118368",
+    "hash": "917633dd04d452db61bd4028ae01e20e"
+  },
+  "ec3c4620d2794b45fe36f9db0a0e8804": {
+    "headline": "Starmer vows to fight on after historic Green by-election win",
+    "body": "The result - in a seat Labour has held for nearly 100 years - heaps further pressure on the PM's position.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226245",
+    "hash": "ec3c4620d2794b45fe36f9db0a0e8804"
+  },
+  "e50193a6d997cf6279c307dfcd1b8ef6": {
+    "headline": "Private schools lose legal challenge over VAT changes",
+    "body": "A group of low-fee paying private schools have challenged the government's removal of the VAT exemption.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226285",
+    "hash": "e50193a6d997cf6279c307dfcd1b8ef6"
+  },
+  "7c968522532826fe5de8749c10bc7ad6": {
+    "headline": "'We were bullied for years before our son was killed'",
+    "body": "The parents of 14-year-old Ibrahima Seck say they were being harassed and bullied for years.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226294",
+    "hash": "7c968522532826fe5de8749c10bc7ad6"
+  },
+  "26849a025ffd2f31ae47aff278c7c4e9": {
+    "headline": "Cruz Beckham launches music career, having fun amid family drama",
+    "body": "Can David and Victoria's youngest son escape the \"nepo baby\" label and find success with his band?",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226302",
+    "hash": "26849a025ffd2f31ae47aff278c7c4e9"
+  },
+  "3bed33d9a122c9c967916ce03f600d85": {
+    "headline": "Trump 'not thrilled' with Iran after latest talks on nuclear programme",
+    "body": "President Trump said he was not happy with Iran's stance, but had not yet decided whether to attack.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226309",
+    "hash": "3bed33d9a122c9c967916ce03f600d85"
+  },
+  "c2c1e3e0b5e612d6921604b826520ac4": {
+    "headline": "Palestine Action arrest as Churchill statue defaced",
+    "body": "The Westminster statue of the former prime minister is vandalised with slogans daubed in red paint.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226317",
+    "hash": "c2c1e3e0b5e612d6921604b826520ac4"
+  },
+  "45c7ccda3002cbd4934978c3e2950665": {
+    "headline": "Letter featuring drawings by young Queen Elizabeth II sells for \u00a325k",
+    "body": "The letter was written when Princess Elizabeth would have been between 10 and 12 years old.",
+    "category": "national",
+    "timestamp": "2026-02-28T00:32:06.226330",
+    "hash": "45c7ccda3002cbd4934978c3e2950665"
+  },
+  "11f49d3f1fe9fa32dbd35191d37ef096": {
+    "headline": "Sam Altman backs rival Anthropic in fight with Pentagon",
+    "body": "The OpenAI leader, and much of the tech industry, is throwing support behind Anthropic.",
+    "category": "technology",
+    "timestamp": "2026-02-28T03:00:07.906782",
+    "hash": "11f49d3f1fe9fa32dbd35191d37ef096"
+  },
+  "0ff6e42b1f48766019ba2d1fe6d6420a": {
+    "headline": "The Best Roku Is $20 Off",
+    "body": "The Roku Ultra isn\u2019t just speedier, it also offers some advanced features that some viewers will find really handy.",
+    "category": "technology",
+    "timestamp": "2026-02-28T03:00:08.981746",
+    "hash": "0ff6e42b1f48766019ba2d1fe6d6420a"
+  },
+  "2a1dd06fcbe3f47451b33904fb5a9373": {
+    "headline": "What's an E-Bike? California Wants You to Know",
+    "body": "Cities want to stop kids from getting hurt. A lawmaker thinks warning them away from legal gray-area \u201ce-motos\u201d could help.",
+    "category": "technology",
+    "timestamp": "2026-02-28T03:00:08.981753",
+    "hash": "2a1dd06fcbe3f47451b33904fb5a9373"
+  },
+  "2b099885e59d6deaa358fb5062d2578b": {
+    "headline": "OpenAI Fires an Employee for Prediction Market Insider Trading",
+    "body": "Prediction markets like Polymarket and Kalshi are big business, and some Big Tech employees are testing boundaries by making trades based on insider knowledge.",
+    "category": "technology",
+    "timestamp": "2026-02-28T03:00:08.981757",
+    "hash": "2b099885e59d6deaa358fb5062d2578b"
+  },
+  "0a8cf3c68b6dd115cbc3cd61734d6e15": {
+    "headline": "Everything Larry and David Ellison Will Control If Paramount Buys Warner Bros.",
+    "body": "Paramount Skydance\u2019s sprawling media empire will get a major boost if the deal is approved.",
+    "category": "technology",
+    "timestamp": "2026-02-28T03:00:08.981760",
+    "hash": "0a8cf3c68b6dd115cbc3cd61734d6e15"
+  },
+  "b3ffedb61ed46d238969b9789cbd28c1": {
+    "headline": "NASA Shakes Up Artemis Schedule, Aiming for 2 Moon Landings in 2028",
+    "body": "A \u201cback to basics\u201d approach resembles the Apollo program of the 1960s, with more missions launching more often. NASA officials said that it would be safer and faster.",
+    "category": "science",
+    "timestamp": "2026-02-28T03:00:36.912370",
+    "hash": "b3ffedb61ed46d238969b9789cbd28c1"
+  },
+  "afb232c530347b87d13e06fac6713ed6": {
+    "headline": "Nasa announces change to its Moon landing plans",
+    "body": "It is adding an extra mission to its Artemis programme before landing astronauts on the Moon.",
+    "category": "science",
+    "timestamp": "2026-02-28T03:00:38.376316",
+    "hash": "afb232c530347b87d13e06fac6713ed6"
+  },
+  "3f0baa862e540386481a94910298eae9": {
+    "headline": "Tram derails in Milan, leaving two dead and dozens injured",
+    "body": "The crowded tram was travelling in the centre of Milan at rush hour when it appeared to crash into the side of a building.",
+    "category": "world",
+    "timestamp": "2026-02-28T03:19:09.666888",
+    "hash": "3f0baa862e540386481a94910298eae9"
+  },
+  "85394513acf9f9c65ed46f6eb4b4cc26": {
+    "headline": "Drone jammed near French aircraft carrier was Russian, says Sweden",
+    "body": "Sweden's prime minister said it was a serious but not unexpected incident - and a \"Russian way of acting that we recognise from other places\".",
+    "category": "world",
+    "timestamp": "2026-02-28T03:19:09.666905",
+    "hash": "85394513acf9f9c65ed46f6eb4b4cc26"
+  },
+  "30717c593584b49d51d5b48cdbd07946": {
+    "headline": "OpenAI vows safety policy changes after Tumbler Ridge shooting",
+    "body": "Canada's AI minister will meet CEO Sam Altman next week after the suspect's ChatGPT account was not flagged to police despite internal company concerns.",
+    "category": "world",
+    "timestamp": "2026-02-28T03:19:09.666910",
+    "hash": "30717c593584b49d51d5b48cdbd07946"
+  },
+  "ca7ba9c9b516da15e1dc28b41964b359": {
+    "headline": "How David Zaslav Pulled Off the Sale of Warner Bros. Discovery to Paramount",
+    "body": "Not long ago, Mr. Zaslav was widely criticized for his management of Warner Bros. Discovery. He overcame the doubters, cementing a blockbuster sale to Paramount.",
+    "category": "business",
+    "timestamp": "2026-02-28T03:19:13.978322",
+    "hash": "ca7ba9c9b516da15e1dc28b41964b359"
+  },
+  "b38722f3fb81e2140f002a2b350f00f6": {
+    "headline": "For CNN, a Takeover by Paramount Means a Suddenly Uncertain Future",
+    "body": "Paramount\u2019s apparent victory over Netflix in securing Warner Bros. Discovery has led to concerns within the CNN newsroom about editorial independence.",
+    "category": "business",
+    "timestamp": "2026-02-28T03:19:13.978411",
+    "hash": "b38722f3fb81e2140f002a2b350f00f6"
+  },
+  "b9bac10e4241a2a16c63b3fe2f1e4dd0": {
+    "headline": "Trump orders government to stop using Anthropic in battle over AI use",
+    "body": "The move announced on social media comes after a standoff between Anthropic's boss and the Ministry of Defense.",
+    "category": "business",
+    "timestamp": "2026-02-28T03:19:15.334541",
+    "hash": "b9bac10e4241a2a16c63b3fe2f1e4dd0"
+  },
+  "5a053a7b55c66fededd29703af8c51f2": {
+    "headline": "What the Warner Bros deal could mean for streaming, cinemas and news",
+    "body": "If Paramount's takeover of Warner Bros goes ahead it could significantly reshape Hollywood.",
+    "category": "business",
+    "timestamp": "2026-02-28T03:19:15.334577",
+    "hash": "5a053a7b55c66fededd29703af8c51f2"
+  },
+  "ca2fe6c1defa498ba63daa236ec3adf8": {
+    "headline": "Brewdog expected to announce sale early next week",
+    "body": "Staff are told Brewdog's German arm is not included in the sale and will now be liquidated but bars will trade as normal this weekend.",
+    "category": "business",
+    "timestamp": "2026-02-28T03:19:15.334604",
+    "hash": "ca2fe6c1defa498ba63daa236ec3adf8"
+  },
+  "c0ed153da933bf369a2199331e7cc3ee": {
+    "headline": "'Baz said play like Sehwag' - an England win that felt like the good times",
+    "body": "England's win over New Zealand felt a return to the good times under Brendon McCullum but there are only so many times you can go to the well, writes Matthew Henry.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414503",
+    "hash": "c0ed153da933bf369a2199331e7cc3ee"
+  },
+  "6cfe0662a4738978c63c8de660259e8c": {
+    "headline": "Usyk to defend title against kickboxer in Egypt",
+    "body": "Oleksandr Usyk will return to the ring in May when he defends his WBC heavyweight title against former kickboxing champion Rico Verhoeven at the Pyramids of Giza in Egypt.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414542",
+    "hash": "6cfe0662a4738978c63c8de660259e8c"
+  },
+  "eba6fd407c02284610d886bf0dd1ed39": {
+    "headline": "Messi tackled by pitch invader in Inter Miami game",
+    "body": "Argentina captain Lionel Messi is hauled to the ground by a pitch invader during Inter Miami's friendly in Puerto Rico.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414553",
+    "hash": "eba6fd407c02284610d886bf0dd1ed39"
+  },
+  "34d9529fc00e577a75e394c5623e2bde": {
+    "headline": "'No mercy' as Pulse start title defence with win",
+    "body": "London Pulse show a \"no-mercy mindset\" as they get their Netball Super League title defence off to a winning start with a 56-51 victory over Manchester Thunder at the Copper Box Arena.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414570",
+    "hash": "34d9529fc00e577a75e394c5623e2bde"
+  },
+  "1893a79e9eb070a77c9e8fa29e6bec98": {
+    "headline": "Man City & Man Utd set for Anderson battle - Saturday's gossip",
+    "body": "Manchester City and Manchester United want Nottingham Forest's Elliot Anderson, Inter Milan could revisit interest in Liverpool's Curtis Jones, plus more.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414579",
+    "hash": "1893a79e9eb070a77c9e8fa29e6bec98"
+  },
+  "fed7786638720343483a72c128eaa81f": {
+    "headline": "'He's broken pixels!' Extraordinary six from Brook crashes into stadium screen",
+    "body": "Harry Brook hits a humongous six for England against New Zealand, as the ball flies over square leg and into the stadium screen at the Premadasa Stadium in Colombo.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414587",
+    "hash": "fed7786638720343483a72c128eaa81f"
+  },
+  "7a61c562fce1d1002e7ce2fdbae71f62": {
+    "headline": "'He's a tough guy' - Rosenior supports Fofana after online racist abuse",
+    "body": "Chelsea head coach Liam Rosenior has urged his squad to ignore comments on social media after defender Wesley Fofana was subject to racist abuse following Chelsea's 1-1 draw against Burnley in the Premier League.",
+    "category": "sports",
+    "timestamp": "2026-02-28T03:35:53.414596",
+    "hash": "7a61c562fce1d1002e7ce2fdbae71f62"
+  },
+  "b3834d5f7392c9ea3ce8be6fef1fa0e9": {
+    "headline": "Anxious days inside Iran as speculation grows of US strikes",
+    "body": "To many, Iran now seems to be hovering in a tense limbo where everything could change suddenly.",
+    "category": "national",
+    "timestamp": "2026-02-28T03:36:26.528355",
+    "hash": "b3834d5f7392c9ea3ce8be6fef1fa0e9"
+  },
+  "da5331654f008b6a9b93264e9d4019c2": {
+    "headline": "New child cruelty register for parents after boy, 11, wins campaign",
+    "body": "Tony Hudgell, who lost both legs after his birth parents assaulted him, has fought to protect children.",
+    "category": "national",
+    "timestamp": "2026-02-28T03:36:26.528412",
+    "hash": "da5331654f008b6a9b93264e9d4019c2"
+  },
+  "da311cdc2e3b5d4990efccb21fba427c": {
+    "headline": "I Swear director says Baftas 'let down' Tourette's campaigner",
+    "body": "Kirk Jones says he initially thought a slur shouted during the ceremony was not broadcast.",
+    "category": "national",
+    "timestamp": "2026-02-28T03:36:26.528435",
+    "hash": "da311cdc2e3b5d4990efccb21fba427c"
+  },
+  "42b60ebc5fe70b62139b7a20577b7474": {
+    "headline": "In a Memoir Draft, Changpeng Zhao of Binance Details the Talks Leading to His Prison Time",
+    "body": "In a draft of his memoir, Changpeng Zhao, the founder of Binance, laid out the secret negotiations that led to his imprisonment and a run-in with ICE.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:56.026185",
+    "hash": "42b60ebc5fe70b62139b7a20577b7474"
+  },
+  "35103a5935b249b92e43ae6544722886": {
+    "headline": "Silicon Valley Rallies Behind Anthropic in A.I. Clash With Trump",
+    "body": "Actions by the president and the Pentagon appeared to drive a wedge between Washington and the tech industry, whose leaders and workers spoke out for the start-up.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:56.026216",
+    "hash": "35103a5935b249b92e43ae6544722886"
+  },
+  "57bdc9b2a0c0f0b59bd6847ad62ddadf": {
+    "headline": "OpenAI Reaches A.I. Agreement With Defense Dept. After Anthropic Clash",
+    "body": "The deal came hours after President Trump had ordered federal agencies to stop using artificial intelligence technology made by Anthropic, an OpenAI rival.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:56.026244",
+    "hash": "57bdc9b2a0c0f0b59bd6847ad62ddadf"
+  },
+  "fb0c30a1d9043d8252dde49afb32d4c9": {
+    "headline": "Instagram to Alert Parents to Teens\u2019 Self-Harm Searches",
+    "body": "Parents will receive notifications if a child has used the platform repeatedly to search for terms related to suicide or self-harm, but users must opt in to get them.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:56.026255",
+    "hash": "fb0c30a1d9043d8252dde49afb32d4c9"
+  },
+  "ce9f2720638aa43922c9ee3732594985": {
+    "headline": "Resident Evil is back - can it redefine the survival horror genre once more?",
+    "body": "Director Koshi Nakanishi says balancing action and horror within the game has been a huge challenge.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:57.331755",
+    "hash": "ce9f2720638aa43922c9ee3732594985"
+  },
+  "863a1b718249cfe424c88f426a46f5af": {
+    "headline": "Anthropic Hits Back After US Military Labels It a \u2018Supply Chain Risk\u2019",
+    "body": "Anthropic says it would be \u201clegally unsound\u201d for the Pentagon to blacklist its technology after talks over military use of its artificial intelligence models broke down.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:58.380355",
+    "hash": "863a1b718249cfe424c88f426a46f5af"
+  },
+  "9fd71e99522c26ffacf6d1bc0edbd1ae": {
+    "headline": "18 Best Wireless Chargers, All Tested and Reviewed (2026)",
+    "body": "Stop fumbling for cables in the dark. These WIRED-tested stands and pads will take the hassle out of refueling your phone, wireless earbuds, and watch.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:58.380384",
+    "hash": "9fd71e99522c26ffacf6d1bc0edbd1ae"
+  },
+  "40e9d375a6b71365a571c865d1490ced": {
+    "headline": "These Deals Can Have You Zipping Around on a New E-Scooter This Spring",
+    "body": "With spring just around the corner, now's the smart time to snag an electric scooter.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:58.380392",
+    "hash": "40e9d375a6b71365a571c865d1490ced"
+  },
+  "246c8ecfc2c53962f9044fabe3806175": {
+    "headline": "Trump Moves to Ban Anthropic From the US Government",
+    "body": "President Donald Trump\u2019s sudden order comes after the Defense Department pressured Anthropic to drop restrictions on how its AI can be used by the military.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:35:58.380403",
+    "hash": "246c8ecfc2c53962f9044fabe3806175"
+  },
+  "d6026cf981722300e2a142644d68731b": {
+    "headline": "Judge Approves $345 Million Verdict Against Greenpeace in Dakota Access Pipeline Suit",
+    "body": "Greenpeace has said the verdict could bankrupt it. The lawsuit was over the group\u2019s role in protests against the Dakota Access Pipeline.",
+    "category": "science",
+    "timestamp": "2026-02-28T13:36:03.180622",
+    "hash": "d6026cf981722300e2a142644d68731b"
+  },
+  "70a8563b96ea7a1bed7721fa544b305f": {
+    "headline": "Marine strategy must deliver action for seabirds, charity says",
+    "body": "The updated strategy should mean areas like Strangford Lough will be better protected in five years' time.",
+    "category": "science",
+    "timestamp": "2026-02-28T13:36:04.466633",
+    "hash": "70a8563b96ea7a1bed7721fa544b305f"
+  },
+  "f5f81b5ab472c700905f93fbd6d24bad": {
+    "headline": "Bill Clinton asked about hot tub photo and testifies he knew 'nothing' of Epstein crimes",
+    "body": "The former president told the committee that he would never have flown on Epstein's plane if he \"had any inkling of what he was doing\".",
+    "category": "world",
+    "timestamp": "2026-02-28T13:36:08.509673",
+    "hash": "f5f81b5ab472c700905f93fbd6d24bad"
+  },
+  "2edf5f429d7112f647d0fb34b4028d4b": {
+    "headline": "At least 15 killed after military plane carrying banknotes crashes in Bolivia",
+    "body": "Police fire tear gas to disperse crowds allegedly trying to take banknotes from the crash site.",
+    "category": "world",
+    "timestamp": "2026-02-28T13:36:08.509701",
+    "hash": "2edf5f429d7112f647d0fb34b4028d4b"
+  },
+  "18a27475d0e5e104e8f6e2adf3e9502d": {
+    "headline": "A 'delicate' balance for Canada and a 'win-win' for Modi as Carney visits India",
+    "body": "The two countries are repairing a strained relationship as they also seek to reduce their trade reliance on the US.",
+    "category": "world",
+    "timestamp": "2026-02-28T13:36:08.509718",
+    "hash": "18a27475d0e5e104e8f6e2adf3e9502d"
+  },
+  "09b37277ce6bf524560e80e6c096dcd7": {
+    "headline": "Aid groups in Gaza and West Bank thrown lifeline as Israel court pauses ban threat",
+    "body": "Dozens of well-known groups faced shutdown under a new Israeli law, although the reprieve might be temporary.",
+    "category": "world",
+    "timestamp": "2026-02-28T13:36:08.509726",
+    "hash": "09b37277ce6bf524560e80e6c096dcd7"
+  },
+  "e5ed7522c69781b1f4f74fc156183725": {
+    "headline": "DOJ charges 30 more people in Minnesota anti-ICE church protest",
+    "body": "Ex-CNN anchor Don Lemon was one of the original nine defendants arrested last month",
+    "category": "world",
+    "timestamp": "2026-02-28T13:36:08.509734",
+    "hash": "e5ed7522c69781b1f4f74fc156183725"
+  },
+  "da57ed8f70717fd24eeab42b7f65baac": {
+    "headline": "New Geothermal Technology Aims to Produce Clean Energy in Germany",
+    "body": "Developers are using a new geothermal technology in Germany to produce clean energy.",
+    "category": "business",
+    "timestamp": "2026-02-28T13:36:11.535904",
+    "hash": "da57ed8f70717fd24eeab42b7f65baac"
+  },
+  "6b1c8ea8c35793f004ffebb8b1acbfe5": {
+    "headline": "Justice Dept. Tries to Slow Down Legal Battle Over Tariff Refunds",
+    "body": "Earlier, President Trump suggested on social media that he could try to persuade the Supreme Court to reconsider its rejection of his tariffs.",
+    "category": "business",
+    "timestamp": "2026-02-28T13:36:11.535955",
+    "hash": "6b1c8ea8c35793f004ffebb8b1acbfe5"
+  },
+  "a0e19bcba568d508c5b337bc9f50344c": {
+    "headline": "Iris Cantor, Philanthropist and Art Collector, Dies at 95",
+    "body": "She and her husband, the financier B. Gerald Cantor, amassed one of the largest private collections of Rodin artworks, donating much of it to museums around the world.",
+    "category": "business",
+    "timestamp": "2026-02-28T13:36:11.535980",
+    "hash": "a0e19bcba568d508c5b337bc9f50344c"
+  },
+  "2557bf4161cd37f5126b238ce2f6b9ef": {
+    "headline": "Scouts Will Abandon D.E.I. Policies Under Agreement With Pentagon, Hegseth Says",
+    "body": "Scouting America said it had staved off a demand from the Pentagon to ban girls from the organization and change its name back to Boy Scouts of America.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829352",
+    "hash": "2557bf4161cd37f5126b238ce2f6b9ef"
+  },
+  "e7a5a52f0ea0beda2190b06c5d2917d6": {
+    "headline": "Radiohead Demands That ICE Remove Its Song From a Social Media Video",
+    "body": "The band condemned the Trump administration for using the song \u201cLet Down\u201d in a post showing victims of violent crimes that federal officials said had been committed by illegal immigrants.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829380",
+    "hash": "e7a5a52f0ea0beda2190b06c5d2917d6"
+  },
+  "1ba2f8d642f7daa3caddc0d19dea45f5": {
+    "headline": "\u2018We Got to Win the Midterms\u2019: Trump Takes His State of the Union Message on the Road",
+    "body": "During a visit to Texas, President Trump made clear that he would be driving home his depiction of Democrats as out of step ahead of the elections in November.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829388",
+    "hash": "1ba2f8d642f7daa3caddc0d19dea45f5"
+  },
+  "08627e6d9241c9f5d000769be90a708d": {
+    "headline": "Taiwan Arms Sale Approved by Congress Is Delayed as Trump Plans Visit to Beijing",
+    "body": "The package worth billions of dollars and endorsed by lawmakers is stalled at the State Department as the U.S. and China plan an April summit.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829394",
+    "hash": "08627e6d9241c9f5d000769be90a708d"
+  },
+  "e6a13786a73cbc9fd0605f15cef47143": {
+    "headline": "What Readers Are Saying About the Upcoming Texas Primary Elections",
+    "body": "Our readers in the state offer a window into the current center of the political universe.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829400",
+    "hash": "e6a13786a73cbc9fd0605f15cef47143"
+  },
+  "0c19f5d03ac34f0d474ec309b368ab29": {
+    "headline": "Near the White House, Hundreds of High School Students Protest ICE",
+    "body": "The demonstration at the Lincoln Memorial was the latest in a string of school walkouts across the country, which have resulted in arrests and condemnation from some officials, and plaudits from others.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829407",
+    "hash": "0c19f5d03ac34f0d474ec309b368ab29"
+  },
+  "5782d212161b82c2cdad2ec1511d5ff3": {
+    "headline": "Student Remains in Honduras After ICE Vows to Deport Her Again",
+    "body": "Any Lucia L\u00f3pez Belloza was deported by mistake. A judge ordered her return by Friday. When the Trump administration sent a plane, she decided not to get on.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829413",
+    "hash": "5782d212161b82c2cdad2ec1511d5ff3"
+  },
+  "0bb4fc2ecaf6eb06d746b8e5b7b88113": {
+    "headline": "This Year, It Will Be the \u2018Trump Kennedy Center Honors\u2019",
+    "body": "Despite plans to close the building this summer for a two-year reconstruction project, the renamed ceremony will be held elsewhere, the center\u2019s president said.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829420",
+    "hash": "0bb4fc2ecaf6eb06d746b8e5b7b88113"
+  },
+  "9533e796729d75bf563c5c8650125a8c": {
+    "headline": "An Update: Did a Brooklyn Couple Kill a Neighbor\u2019s Trees for a Better View in Maine?",
+    "body": "On Friday, the state approved a settlement that included a $3,000 fine but no acknowledgment of guilt for a tree poisoning that riled people in scenic Rockport, Maine.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829426",
+    "hash": "9533e796729d75bf563c5c8650125a8c"
+  },
+  "0562569920b44ee1b281653888a3e34a": {
+    "headline": "War Court Prosecutor Asks Panel to Overturn Torture Finding in 9/11 Case",
+    "body": "An appeals court heard a government effort to resurrect the 2007 interrogations of a prisoner at Guant\u00e1namo Bay.",
+    "category": "politics",
+    "timestamp": "2026-02-28T13:36:15.829432",
+    "hash": "0562569920b44ee1b281653888a3e34a"
+  },
+  "d242ab4d27d4b9c46725302af72769e1": {
+    "headline": "Emery's title 'dream' over - but will Villa salvage top-five hopes?",
+    "body": "Aston Villa boss Unai Emery concedes his Premier League title \"dreams\" are over, but will the club resurrect their Champions League hopes?",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221361",
+    "hash": "d242ab4d27d4b9c46725302af72769e1"
+  },
+  "f393b19192a6afecdb8039dadaa1306f": {
+    "headline": "The moment I told my mum I wanted to stop football - and how life changed",
+    "body": "England captain Leah Williamson tells presenter Kelly Somers about her journey in football - and life away from the game.",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221380",
+    "hash": "f393b19192a6afecdb8039dadaa1306f"
+  },
+  "dea367f09f11e0231291eb7d61273d5f": {
+    "headline": "'A mammoth mismatch' - Usyk to defend title against kickboxer",
+    "body": "Oleksandr Usyk will return to the ring in May when he defends his WBC heavyweight title against former kickboxing champion Rico Verhoeven at the Pyramids of Giza in Egypt.",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221388",
+    "hash": "dea367f09f11e0231291eb7d61273d5f"
+  },
+  "839cf6fc3da0d1909d0f473a14571749": {
+    "headline": "What next for Salah and Liverpool?",
+    "body": "Mohamed Salah is once again regularly starting for Liverpool but is this the start of a long goodbye for the record-breaking Egyptian at Anfield",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221393",
+    "hash": "839cf6fc3da0d1909d0f473a14571749"
+  },
+  "7993b0dfe592b313f1765c0b9d170cb8": {
+    "headline": "Paolini ends Boulter's winning run at Merida Open",
+    "body": "British number three Katie Boulter fails to build on a brilliant start against Jasmine Paolini in the Merida Open quarter-finals.",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221402",
+    "hash": "7993b0dfe592b313f1765c0b9d170cb8"
+  },
+  "91e40643abff71a7e65ca120845f1c1e": {
+    "headline": "Wolves beat Aston Villa to avoid Premier League fewest-points record",
+    "body": "Watch highlights as Wolves dent Aston Villa's Champions League qualification hopes with a 2-0 home win, ensuring they better the worst Premier League points tally set by Derby County.",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221406",
+    "hash": "91e40643abff71a7e65ca120845f1c1e"
+  },
+  "49350d19814bf1500d53e4d5ca076a5e": {
+    "headline": "Higgins stays on course for sixth Welsh Open title",
+    "body": "John Higgins remains on course for a sixth Welsh Open title after brushing aside Zhou Yuelong in the quarter-finals.",
+    "category": "sports",
+    "timestamp": "2026-02-28T13:36:20.221417",
+    "hash": "49350d19814bf1500d53e4d5ca076a5e"
+  },
+  "0a0098480e90e42e609c163d46134a2f": {
+    "headline": "Watch: Smoke rises in Tehran as explosions heard across country",
+    "body": "The BBC's Jon Donnison in Jerusalem reports as Trump says \"major combat operations\" have begun.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652848",
+    "hash": "0a0098480e90e42e609c163d46134a2f"
+  },
+  "c7b2bbdeb940de8f5cd43fbbb7409cf8": {
+    "headline": "Mahmood to press on with immigration reforms despite by-election defeat",
+    "body": "The home secretary is to double down on plans for Danish-style restrictions on asylum seekers.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652886",
+    "hash": "c7b2bbdeb940de8f5cd43fbbb7409cf8"
+  },
+  "327856b03db85bc4aebbd0935d94b376": {
+    "headline": "Man charged after Churchill statue defaced, police say",
+    "body": "Caspar San Giorgio, 38, of no fixed address was arrested on Friday, police say.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652904",
+    "hash": "327856b03db85bc4aebbd0935d94b376"
+  },
+  "9654eec18312bc71bac44f33e5e6bc67": {
+    "headline": "Boy assaulted by birth parents wins campaign for UK child cruelty register",
+    "body": "Tony Hudgell, who lost both legs after his birth parents assaulted him, has fought to protect children.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652912",
+    "hash": "9654eec18312bc71bac44f33e5e6bc67"
+  },
+  "2b32ba2cfd58e301facaca5ac2c98288": {
+    "headline": "The mystery man who links Andrew with Jeffrey Epstein",
+    "body": "For nearly a decade, David Stern acted as a key conduit between Jeffrey Epstein and Andrew Mountbatten-Windsor.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652920",
+    "hash": "2b32ba2cfd58e301facaca5ac2c98288"
+  },
+  "40ca983fc74e233050418d988245071c": {
+    "headline": "Neil Sedaka, singer of Breaking Up Is Hard To Do, dies at 86",
+    "body": "A skilled pianist nominated for five Grammy awards, Sedaka wrote hits through the 1950's and 60's.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652939",
+    "hash": "40ca983fc74e233050418d988245071c"
+  },
+  "9ad998b8f2c1d877c26aea462869a446": {
+    "headline": "Rent tops \u00a31,000 a month in more areas - find out where",
+    "body": "The cost of renting privately has surged in the last five years, but tenants may now see a slowdown.",
+    "category": "national",
+    "timestamp": "2026-02-28T13:36:28.652948",
+    "hash": "9ad998b8f2c1d877c26aea462869a446"
+  },
+  "3a1f91ef2ea1105d3f888708531a5c54": {
+    "headline": "Trump orders government to stop using Anthropic in battle over AI use",
+    "body": "The move announced on social media comes after a standoff between Anthropic's boss and the Department of Defense.",
+    "category": "technology",
+    "timestamp": "2026-02-28T13:59:57.642958",
+    "hash": "3a1f91ef2ea1105d3f888708531a5c54"
+  },
+  "12c52ee71b1441387bb8143ae256c7a0": {
+    "headline": "Trump orders government to stop using Anthropic in battle over AI use",
+    "body": "The move announced on social media comes after a standoff between Anthropic's boss and the US Department of Defense.",
+    "category": "world",
+    "timestamp": "2026-02-28T14:10:56.673010",
+    "hash": "12c52ee71b1441387bb8143ae256c7a0"
+  },
+  "7ede2a0af913f4d4b18b3885b0e85c33": {
+    "headline": "Benfica suspends five fans over racist incidents",
+    "body": "Benfica suspend five supporters for racist incidents following the recent Champions League game against Real Madrid.",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:11:10.995518",
+    "hash": "7ede2a0af913f4d4b18b3885b0e85c33"
+  },
+  "cb0fba5639d8505b4369d90eeefdac23": {
+    "headline": "The strange British phenomenon of the snatched backseat picture",
+    "body": "Andrew Mountbatten-Windsor is the latest in a long line of famous people photographed in the back of a car.",
+    "category": "national",
+    "timestamp": "2026-02-28T14:11:30.714691",
+    "hash": "cb0fba5639d8505b4369d90eeefdac23"
+  },
+  "0b1badd727a7420aecce359797a368b2": {
+    "headline": "Six things to look out for in tonight's Brit Awards ceremony",
+    "body": "Will there be a tribute to Ozzy Osbourne? And will Taylor Swift break her losing streak?",
+    "category": "national",
+    "timestamp": "2026-02-28T14:11:30.714704",
+    "hash": "0b1badd727a7420aecce359797a368b2"
+  },
+  "03c0e774899749c3ae36a5bc3fc4fecf": {
+    "headline": "Messi wrestled to ground by pitch invader",
+    "body": "Argentina captain Lionel Messi is hauled to the ground by a pitch invader during Inter Miami's friendly in Puerto Rico.",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:23:12.417851",
+    "hash": "03c0e774899749c3ae36a5bc3fc4fecf"
+  },
+  "1e786436c28efcc27f304c007ea4e888": {
+    "headline": "Benfica suspend five fans over racist incidents",
+    "body": "Benfica suspend five supporters for racist incidents following the recent Champions League game against Real Madrid.",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:23:12.417879",
+    "hash": "1e786436c28efcc27f304c007ea4e888"
+  },
+  "b62096a02d4bb96af0455bc2f915e3ab": {
+    "headline": "Carney Visiting India, Australia and Japan to Build Canada\u2019s \u2018Middle Power\u2019 Bonds",
+    "body": "Prime Minister Mark Carney visits India, Australia and Japan seeking deals to strengthen his country\u2019s links to Indo-Pacific powers and break Canada\u2019s dependence on the United States.",
+    "category": "world",
+    "timestamp": "2026-02-28T14:28:52.080969",
+    "hash": "b62096a02d4bb96af0455bc2f915e3ab"
+  },
+  "ad6c03f3228abe5e5d46f6f0fd936d38": {
+    "headline": "Cardiff beat Leinster for first time in four years",
+    "body": "Cardiff boost their URC play-off bid by ending champions Leinster's 11-game winning streak at the Arms Park.",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:29:08.977004",
+    "hash": "ad6c03f3228abe5e5d46f6f0fd936d38"
+  },
+  "6918f1e9f2829a9db6467790b9b60d90": {
+    "headline": "Live Updates: U.S. Attacks Iran as Trump Calls for Overthrow of Government",
+    "body": "Explosions resounded in Tehran as President Trump said that the United States had begun a large assault. Air-raid sirens blared in Israel, which also said it was striking Iran.",
+    "category": "world",
+    "timestamp": "2026-02-28T14:48:43.932925",
+    "hash": "6918f1e9f2829a9db6467790b9b60d90"
+  },
+  "7ca743180e1fe2855e025f91c38b84ac": {
+    "headline": "Emery's title 'dream' over - but will Villa salvage top-five hopes?",
+    "body": "Aston Villa boss Unai Emery concedes his Premier League title \"dreams\" are over, but will the club salvage their Champions League hopes?",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:49:01.721233",
+    "hash": "7ca743180e1fe2855e025f91c38b84ac"
+  },
+  "b0ceab564063a55a1fbc60c5ed35650a": {
+    "headline": "Wolves beat Villa to surpass lowest-ever points record",
+    "body": "Watch highlights as Wolves dent Aston Villa's Champions League qualification hopes with a 2-0 home win, ensuring they better the worst Premier League points tally set by Derby County.",
+    "category": "sports",
+    "timestamp": "2026-02-28T14:49:01.721322",
+    "hash": "b0ceab564063a55a1fbc60c5ed35650a"
+  },
+  "e8b9bb8308c4de80d73e111505b04cd4": {
+    "headline": "What we know so far",
+    "body": "Donald Trump has described \"major combat operations\", with explosions heard across Iran.",
+    "category": "national",
+    "timestamp": "2026-02-28T14:49:10.025982",
+    "hash": "e8b9bb8308c4de80d73e111505b04cd4"
+  },
+  "9111065e601ac02b0d6bfb7615c1cc0e": {
+    "headline": "'We use fear as a thrill': How Resident Evil is still supplying scares after 30 years",
+    "body": "Director Koshi Nakanishi says balancing action and horror within the game has been a huge challenge.",
+    "category": "technology",
+    "timestamp": "2026-02-28T15:23:36.987223",
+    "hash": "9111065e601ac02b0d6bfb7615c1cc0e"
+  },
+  "60ddd06f1fa4971991e876abdadce819": {
+    "headline": "US and Israel Launch Strikes Against Iran",
+    "body": "US president Donald Trump said a \u201cmajor combat operation\u201d against Iran had begun as he called for the country\u2019s government to be overthrown.",
+    "category": "technology",
+    "timestamp": "2026-02-28T15:23:38.351917",
+    "hash": "60ddd06f1fa4971991e876abdadce819"
+  },
+  "feb0045b745de4ed3825eb710143ec58": {
+    "headline": "What we know about the joint US-Israel attack on Iran",
+    "body": "Donald Trump has described \"major combat operations\", with explosions heard across Iran.",
+    "category": "world",
+    "timestamp": "2026-02-28T15:23:48.624905",
+    "hash": "feb0045b745de4ed3825eb710143ec58"
+  },
+  "b2952d8a3162ed74846c0317b0a61c45": {
+    "headline": "Resident Evil Requiem's director on redefining the survival horror genre",
+    "body": "Director Koshi Nakanishi says balancing action and horror within the game has been a huge challenge.",
+    "category": "technology",
+    "timestamp": "2026-02-28T15:29:15.991656",
+    "hash": "b2952d8a3162ed74846c0317b0a61c45"
+  },
+  "7b829255efb892d876e178638734fc8a": {
+    "headline": "The British Watch Brand Apiar Goes Beyond Traditional Constraints",
+    "body": "The tech-focused leaders of the British brand Apiar aim to stretch beyond watchmaking\u2019s traditional material and manufacturing constraints.",
+    "category": "technology",
+    "timestamp": "2026-02-28T15:37:23.788117",
+    "hash": "7b829255efb892d876e178638734fc8a"
+  },
+  "74910b603ce30ea3f85fc48c435c3c39": {
+    "headline": "This Ruroc Helmet Ruined My Ski Holiday",
+    "body": "Branded intimidating and scary, this full-face Ruroc headgear for the slopes made me a pariah on the piste.",
+    "category": "technology",
+    "timestamp": "2026-02-28T15:37:26.199706",
+    "hash": "74910b603ce30ea3f85fc48c435c3c39"
+  },
+  "28b0e80c80ac335590525106942dd3ff": {
+    "headline": "Can Nations Agree How to Mine the Sea? This Is the Year, She Says.",
+    "body": "Leticia Carvalho heads a global authority that\u2019s been struggling to set rules for a decade. President Trump\u2019s aggressive push on ocean mining makes her task more urgent.",
+    "category": "science",
+    "timestamp": "2026-02-28T15:37:30.874435",
+    "hash": "28b0e80c80ac335590525106942dd3ff"
+  },
+  "53fa5bc42855a3c5eb84b5e8376ea506": {
+    "headline": "Netflix Lost Warner. Maybe That\u2019s a Good Thing.",
+    "body": "It is entirely possible, analysts say, that Netflix will be better off by bailing from its $83 billion deal with Warner Bros. Discovery.",
+    "category": "business",
+    "timestamp": "2026-02-28T15:37:42.522499",
+    "hash": "53fa5bc42855a3c5eb84b5e8376ea506"
+  },
+  "a889916da44c5b8389c9478c08d3c0af": {
+    "headline": "Abrupt Change for Warner Bros. Prompts Many Grim Faces",
+    "body": "Employees at the company had started to warm to the idea of Netflix as its corporate owner. Now they face the prospect of major cuts under Paramount.",
+    "category": "business",
+    "timestamp": "2026-02-28T15:37:42.522532",
+    "hash": "a889916da44c5b8389c9478c08d3c0af"
+  },
+  "79a87ff6e1d8fc1d2986d7ff8ea79c88": {
+    "headline": "QAnon Faithful See Validation in the Epstein Files",
+    "body": "The nearly decade-old conspiracy theory does not align neatly with the facts emerging from the documents. That does not seem to matter.",
+    "category": "business",
+    "timestamp": "2026-02-28T15:37:42.522541",
+    "hash": "79a87ff6e1d8fc1d2986d7ff8ea79c88"
+  },
+  "30ae7698e1c6405fd78f0e643fc09e83": {
+    "headline": "4 Ways to Enjoy Your Savings in Retirement Without Going Broke",
+    "body": "Once paychecks stop, it can be frightening to shift out of the savings habit. But there are strategies to enjoy your nest egg and make it last.",
+    "category": "business",
+    "timestamp": "2026-02-28T15:37:42.522548",
+    "hash": "30ae7698e1c6405fd78f0e643fc09e83"
+  },
+  "73f5e4df2f2c8396598907768a6dc85c": {
+    "headline": "Pentagon Watchdog Stalls Proposal to Review Targeting in Trump\u2019s Boat Strikes",
+    "body": "A new inspector general delayed a decision on whether to approve the project and is said to have raised its potential political ramifications, in a test of the watchdog system in President Trump\u2019s second term.",
+    "category": "politics",
+    "timestamp": "2026-02-28T15:37:48.940473",
+    "hash": "73f5e4df2f2c8396598907768a6dc85c"
+  },
+  "06515d677df8da1bb96cbf4814697ab3": {
+    "headline": "How the ICE Raids Turned Minnesota Politics Upside Down",
+    "body": "Several top state and federal offices are up for grabs amid a period of crisis with few if any precedents in the state\u2019s history.",
+    "category": "politics",
+    "timestamp": "2026-02-28T15:37:48.940506",
+    "hash": "06515d677df8da1bb96cbf4814697ab3"
+  },
+  "46a37e68635573b330bd2d63cef2225b": {
+    "headline": "Kash Patel\u2019s Girlfriend Seeks Fame and Fortune, Escorted by an F.B.I. SWAT Team",
+    "body": "Former F.B.I. officials say Mr. Patel beefed up field office staffing near his girlfriend in Nashville and ordered a team to ferry her on errands and to events.",
+    "category": "politics",
+    "timestamp": "2026-02-28T15:37:48.940519",
+    "hash": "46a37e68635573b330bd2d63cef2225b"
+  },
+  "44d96df2ba84d268659bc60ea701e9ef": {
+    "headline": "Could the Supreme Court\u2019s Voting Rights Act Decision Affect the Midterms?",
+    "body": "The court is set to decide a major case that could scramble the country\u2019s congressional maps. One crucial factor for this year\u2019s elections is when the ruling lands.",
+    "category": "politics",
+    "timestamp": "2026-02-28T15:37:48.940530",
+    "hash": "44d96df2ba84d268659bc60ea701e9ef"
+  },
+  "bd691c9cc9b209a868ef44943d4863be": {
+    "headline": "Promoted York claim another shock win as drop-goal sinks Hull FC",
+    "body": "Danny Richardson's drop-goal earns York Knights a second shock win in three weeks as they won at Hull FC.",
+    "category": "sports",
+    "timestamp": "2026-02-28T15:37:54.676041",
+    "hash": "bd691c9cc9b209a868ef44943d4863be"
+  },
+  "3b017570e521f8bc96e59f0f644a13b3": {
+    "headline": "West Ham must sell players in summer after \u00a3104m loss",
+    "body": "West Ham will need to sell players this summer even if they avoid relegation from the Premier League, after revealing a \u00a3104.2m loss for the last financial year.",
+    "category": "sports",
+    "timestamp": "2026-02-28T15:43:37.374696",
+    "hash": "3b017570e521f8bc96e59f0f644a13b3"
+  },
+  "fb917c2c9f7af7275e3d45852cdab84d": {
+    "headline": "Live Updates: U.S. Attacks Iran as Trump Calls for Overthrow of Government",
+    "body": "People raced to shelter from explosions in Tehran as President Trump announced a \u201cmassive and ongoing\u201d assault. Israel said it had joined the attack, as the Middle East braced for Iranian retaliation.",
+    "category": "world",
+    "timestamp": "2026-02-28T15:51:58.826257",
+    "hash": "fb917c2c9f7af7275e3d45852cdab84d"
+  },
+  "0f2b0d87fed36d78c98ae8c442c07583": {
+    "headline": "The Bloody Rise and Fall of Mexico\u2019s Top Crime Boss",
+    "body": "El Mencho\u2019s brutality and business acumen put him atop the cartel world, until he made a fatal mistake.",
+    "category": "world",
+    "timestamp": "2026-02-28T15:51:58.826290",
+    "hash": "0f2b0d87fed36d78c98ae8c442c07583"
+  },
+  "6b9834c26df21c33dec45dd142e8a612": {
+    "headline": "Trump Gives Green Light to Private Oil Sales to Cuba",
+    "body": "After blocking foreign oil shipments, the Trump administration is now allowing small amounts of oil to enter Cuba \u2014 as long as they circumvent government hands.",
+    "category": "world",
+    "timestamp": "2026-02-28T15:51:58.826302",
+    "hash": "6b9834c26df21c33dec45dd142e8a612"
+  },
+  "cb6dbb6501d6fe4ffcb19e115278d9ae": {
+    "headline": "The third man who links Andrew with Jeffrey Epstein",
+    "body": "For nearly a decade, David Stern acted as a key conduit between Jeffrey Epstein and Andrew Mountbatten-Windsor.",
+    "category": "national",
+    "timestamp": "2026-02-28T15:53:26.724023",
+    "hash": "cb6dbb6501d6fe4ffcb19e115278d9ae"
+  },
+  "006815242bff6bc904fc954c7787768d": {
+    "headline": "What we know about the joint US-Israel attack on Iran",
+    "body": "Iran has retaliated with a missile barrage towards Israel, while explosions have been heard in Qatar, Bahrain, Saudi Arabia, and the UAE.",
+    "category": "world",
+    "timestamp": "2026-02-28T16:06:00.897783",
+    "hash": "006815242bff6bc904fc954c7787768d"
+  },
+  "37c4c5487d80b23ec2b5d94ae7586631": {
+    "headline": "'It feels like my brain is trying to be the class clown' - the reality of Tourette's",
+    "body": "After a week of Tourette's in the spotlight, BBC News speaks to people with the condition about what it's like to live with.",
+    "category": "national",
+    "timestamp": "2026-02-28T16:06:24.041709",
+    "hash": "37c4c5487d80b23ec2b5d94ae7586631"
+  },
+  "24ccf3e540c9d48a3a608e7d954b995b": {
+    "headline": "Which Water Filter Pitchers Filter PFAS? How to Check",
+    "body": "Checking up on the claims of water filter makers can be a discomfiting maze. Here's how to verify independent water filter certifications.",
+    "category": "technology",
+    "timestamp": "2026-02-28T16:11:29.573325",
+    "hash": "24ccf3e540c9d48a3a608e7d954b995b"
+  },
+  "f6d86fe31e65c9e944e6dba522afc8f3": {
+    "headline": "Polanksi and Farage don't agree. But they have more in common than you might think",
+    "body": "Despite huge political differences, the Green and Reform leaders have much in common, writes Laura Kuenssberg.",
+    "category": "national",
+    "timestamp": "2026-02-28T16:18:59.743194",
+    "hash": "f6d86fe31e65c9e944e6dba522afc8f3"
+  },
+  "eaecdb4229bb54a0c5183fc3b666899f": {
+    "headline": "Starmer chairs Cobra meeting over US-Israeli strikes on Iran",
+    "body": "A government spokesperson says it does not want \"further escalation\" in the region.",
+    "category": "national",
+    "timestamp": "2026-02-28T16:24:44.653642",
+    "hash": "eaecdb4229bb54a0c5183fc3b666899f"
+  },
+  "a709558c401ee9abec15a54fd1c5ea89": {
+    "headline": "F1 to revise engine rule at centre of row",
+    "body": "Mercedes' rivals succeed in securing a rule change following a pre-season technical row over engine performance.",
+    "category": "sports",
+    "timestamp": "2026-02-28T16:32:32.102197",
+    "hash": "a709558c401ee9abec15a54fd1c5ea89"
+  },
+  "ac815357a70006af82a24ef2c6d1e29e": {
+    "headline": "Captured off guard: The art of the snatched backseat car photo",
+    "body": "Andrew Mountbatten-Windsor is the latest in a long line of famous people photographed in the back of a car.",
+    "category": "national",
+    "timestamp": "2026-02-28T16:32:40.420011",
+    "hash": "ac815357a70006af82a24ef2c6d1e29e"
+  },
+  "e093849f68f737e4f68ab04b76832644": {
+    "headline": "EveryPlate\u2019s Meal Kit Offers Affordable Vegetarian Options",
+    "body": "HelloFresh\u2019s budget subsidiary surprised me with its basic but tasty vegetarian meal selection.",
+    "category": "technology",
+    "timestamp": "2026-02-28T16:37:47.484925",
+    "hash": "e093849f68f737e4f68ab04b76832644",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "HelloFresh"
+        ],
+        "text": "HelloFresh has a budget subsidiary.",
+        "time_reference": null,
+        "type": "statement"
+      },
+      {
+        "confidence": 0.9,
+        "entities": [
+          "EveryPlate"
+        ],
+        "text": "EveryPlate offers affordable vegetarian options.",
+        "time_reference": null,
+        "type": "statement"
+      }
+    ]
+  },
+  "6fb272278dd0919852dd34f826562bb2": {
+    "headline": "The Best Laptop Cooling Pad and Why You Should Buy One",
+    "body": "Most laptop cooling pads are useless, but if you get the right one, it can make a huge impact on how long your gaming laptop lasts.",
+    "category": "technology",
+    "timestamp": "2026-02-28T17:12:37.947901",
+    "hash": "6fb272278dd0919852dd34f826562bb2"
+  },
+  "561bcfba2d1c69c59ebccdb41e23f67b": {
+    "headline": "Area Man Accidentally Hacks 6,700 Camera-Enabled Robot Vacuums",
+    "body": "Plus: The top US cyber agency falls into shambles, AI models develop an upsetting penchant for nuclear weapons, and more.",
+    "category": "technology",
+    "timestamp": "2026-02-28T17:12:37.947952",
+    "hash": "561bcfba2d1c69c59ebccdb41e23f67b",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "Area Man"
+        ],
+        "text": "6,700 camera-enabled robot vacuums were hacked.",
+        "time_reference": null,
+        "type": "event"
+      }
+    ]
+  },
+  "0a8114fbeb4e20a71038aca0f57e68a3": {
+    "headline": "Polanski and Farage don't agree. But they have more in common than you might think",
+    "body": "Despite huge political differences, the Green and Reform leaders have much in common, writes Laura Kuenssberg.",
+    "category": "national",
+    "timestamp": "2026-02-28T17:13:11.857637",
+    "hash": "0a8114fbeb4e20a71038aca0f57e68a3",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "Laura Kuenssberg"
+        ],
+        "text": "Laura Kuenssberg wrote an article.",
+        "time_reference": null,
+        "type": "statement"
+      }
+    ]
+  },
+  "f1e3039f5eb6853f88477787bef506cc": {
+    "headline": "Formula 1's new golden age of celebrity may have just begun",
+    "body": "As the eighth series of Netflix's hugely popular Drive To Survive is released this weekend, has Formula 1 become one big celebrity playground?",
+    "category": "national",
+    "timestamp": "2026-02-28T17:13:11.857688",
+    "hash": "f1e3039f5eb6853f88477787bef506cc",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "Netflix"
+        ],
+        "text": "The eighth series of Netflix's Drive To Survive was released this weekend.",
+        "time_reference": null,
+        "type": "event"
+      }
+    ]
+  },
+  "c8040aa77aa87662eaa905e410c2c930": {
+    "headline": "Starmer chairs Cobra meeting over US-Israeli strikes on Iran",
+    "body": "A government spokesperson says it does not want \"further escalation\" as air travel disrupted.",
+    "category": "national",
+    "timestamp": "2026-02-28T17:30:13.273144",
+    "hash": "c8040aa77aa87662eaa905e410c2c930"
+  },
+  "70e47edc309a2cace03f196a955309e1": {
+    "headline": "Formula 1's new golden age of celebrity may have just begun",
+    "body": "As the eighth series of Netflix's hugely popular Drive To Survive is released this weekend, has Formula 1 become one big star playground?",
+    "category": "national",
+    "timestamp": "2026-02-28T17:30:13.273192",
+    "hash": "70e47edc309a2cace03f196a955309e1",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "Netflix"
+        ],
+        "text": "The eighth series of Netflix's Drive To Survive was released this weekend.",
+        "time_reference": null,
+        "type": "event"
+      }
+    ]
+  },
+  "8671cc71ee6d0a2db06f1d61a4d15e6a": {
+    "headline": "The Best MicroSD Cards for Your Camera, Switch, and More",
+    "body": "Everything you need to know about memory cards for cameras, video game systems, and more.",
+    "category": "technology",
+    "timestamp": "2026-02-28T17:35:20.322109",
+    "hash": "8671cc71ee6d0a2db06f1d61a4d15e6a",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [],
+        "text": "Everything is needed to know about memory cards.",
+        "time_reference": null,
+        "type": "statement"
+      }
+    ]
+  },
+  "03bb6c747c5869c4e56e5748eab69b24": {
+    "headline": "'Everybody knew what they were part of' - Williamson on Euro 2022",
+    "body": "Leah Williamson speaks to Kelly Somers on The Football Interview.",
+    "category": "sports",
+    "timestamp": "2026-02-28T17:35:47.048437",
+    "hash": "03bb6c747c5869c4e56e5748eab69b24",
+    "claims": [
+      {
+        "confidence": 0.9,
+        "entities": [
+          "Euro 2022"
+        ],
+        "text": "Euro 2022 was a notable event.",
+        "time_reference": null,
+        "type": "event"
+      }
+    ]
+  },
+  "bbd44dcf811d7d2e9aa5c1852032562b": {
+    "headline": "Live Updates: U.S. Attacks Iran as Trump Calls for Overthrow of Government",
+    "body": "Israel joined the major U.S.-led assault as President Trump pledged to eliminate Iran\u2019s nuclear program and devastate its military. Iran vowed retaliation and several Arab states that host U.S. military bases said they had been attacked.",
+    "category": "world",
+    "timestamp": "2026-02-28T17:46:26.623294",
+    "hash": "bbd44dcf811d7d2e9aa5c1852032562b"
+  },
+  "9bab7e62830ae062161c521703a91aeb": {
+    "headline": "Iran launches retaliatory strikes at targets across Middle East",
+    "body": "Huge plumes of black smoke were seen rising from an area near the headquarters of the US Navy's Fifth Fleet in Manama, Bahrain.",
+    "category": "national",
+    "timestamp": "2026-02-28T17:46:50.167712",
+    "hash": "9bab7e62830ae062161c521703a91aeb"
+  }
+}
