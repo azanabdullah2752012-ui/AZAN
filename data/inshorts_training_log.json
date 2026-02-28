@@ -100,5 +100,11 @@
     "articles_trained": 14,
     "total_articles": 330,
     "total_training_pairs": 60
+  },
+  {
+    "timestamp": "2026-02-28T18:00:06.078910",
+    "articles_trained": 20,
+    "total_articles": 335,
+    "total_training_pairs": 60
   }
 ]
