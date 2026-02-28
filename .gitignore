@@ -6,3 +6,9 @@ venv/
 .venv/
 webui/.venv/
 __pycache__/
+# Logs
+logs/
+*.log
+
+# Auto training data
+data/auto_training_log.json
