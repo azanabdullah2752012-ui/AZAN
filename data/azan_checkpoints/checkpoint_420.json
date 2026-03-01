@@ -1,0 +1,171 @@
+{
+  "iteration": 420,
+  "timestamp": "2026-03-01T06:52:40.596091",
+  "total_reward": 1881.6051502172454,
+  "avg_reward": 4.4800122624220124,
+  "qa_learned_count": 420,
+  "qa_pairs": [
+    {
+      "id": "qa_411",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T06:48:10.519348",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_412",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T06:48:40.526149",
+      "reward": 4.99
+    },
+    {
+      "id": "qa_413",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T06:49:10.533912",
+      "reward": 3.92
+    },
+    {
+      "id": "qa_414",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T06:49:40.544515",
+      "reward": 4.91
+    },
+    {
+      "id": "qa_415",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-03-01T06:50:10.554362",
+      "reward": 4.5
+    },
+    {
+      "id": "qa_416",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T06:50:40.560519",
+      "reward": 4.48
+    },
+    {
+      "id": "qa_417",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T06:51:10.565762",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_418",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-03-01T06:51:40.577308",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_419",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-03-01T06:52:10.585942",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_420",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-03-01T06:52:40.596068",
+      "reward": 4.64
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "iteration": 590,
+  "timestamp": "2026-03-01T09:01:47.266521",
+  "total_reward": 2640.8787480886276,
+  "avg_reward": 4.476065674726487,
+  "qa_learned_count": 590,
+  "qa_pairs": [
+    {
+      "id": "qa_581",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T08:57:17.115866",
+      "reward": 4.09
+    },
+    {
+      "id": "qa_582",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T08:57:47.130855",
+      "reward": 4.63
+    },
+    {
+      "id": "qa_583",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-03-01T08:58:17.152377",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_584",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T08:58:47.173457",
+      "reward": 3.7
+    },
+    {
+      "id": "qa_585",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-03-01T08:59:17.186097",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_586",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-03-01T08:59:47.204130",
+      "reward": 4.21
+    },
+    {
+      "id": "qa_587",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-03-01T09:00:17.215808",
+      "reward": 4.89
+    },
+    {
+      "id": "qa_588",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T09:00:47.232922",
+      "reward": 4.94
+    },
+    {
+      "id": "qa_589",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T09:01:17.245014",
+      "reward": 4.43
+    },
+    {
+      "id": "qa_590",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T09:01:47.266490",
+      "reward": 5.0
+    }
+  ]
+}

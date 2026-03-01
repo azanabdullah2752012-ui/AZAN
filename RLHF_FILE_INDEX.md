@@ -43,7 +43,7 @@ cat RLHF_QUICK_COMMANDS.sh
 
 ### Step 2: Run the Demo (2 min)
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python demo_rlhf.py
 ```
@@ -205,22 +205,22 @@ Question about government,Ideal answer
 
 ### Run Demo
 ```bash
-cd /Users/azan/Desktop/AZAN && source .venv/bin/activate && python demo_rlhf.py
+cd /Applications/AZAN && source .venv/bin/activate && python demo_rlhf.py
 ```
 
 ### Run Full Training
 ```bash
-cd /Users/azan/Desktop/AZAN && source .venv/bin/activate && python src/train_rlhf.py
+cd /Applications/AZAN && source .venv/bin/activate && python src/train_rlhf.py
 ```
 
 ### View Training Report
 ```bash
-cat /Users/azan/Desktop/AZAN/model/rlhf_training_report.json | python -m json.tool
+cat /Applications/AZAN/model/rlhf_training_report.json | python -m json.tool
 ```
 
 ### Create Ollama Model
 ```bash
-ollama create llama3_president_rlhf -f /Users/azan/Desktop/AZAN/model/Modelfile_RLHF
+ollama create llama3_president_rlhf -f /Applications/AZAN/model/Modelfile_RLHF
 ```
 
 ### Test Model

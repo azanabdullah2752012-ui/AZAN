@@ -1,0 +1,172 @@
+{
+  "iteration": 600,
+  "timestamp": "2026-03-01T09:06:47.462108",
+  "total_reward": 2683.9672587982486,
+  "avg_reward": 4.473278764663748,
+  "qa_learned_count": 600,
+  "qa_pairs": [
+    {
+      "id": "qa_591",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-03-01T09:02:17.285055",
+      "reward": 3.9
+    },
+    {
+      "id": "qa_592",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-03-01T09:02:47.306266",
+      "reward": 4.04
+    },
+    {
+      "id": "qa_593",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T09:03:17.327704",
+      "reward": 4.55
+    },
+    {
+      "id": "qa_594",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-03-01T09:03:47.343473",
+      "reward": 4.99
+    },
+    {
+      "id": "qa_595",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T09:04:17.356475",
+      "reward": 3.63
+    },
+    {
+      "id": "qa_596",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T09:04:47.377629",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_597",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T09:05:17.399444",
+      "reward": 4.55
+    },
+    {
+      "id": "qa_598",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-03-01T09:05:47.421035",
+      "reward": 3.84
+    },
+    {
+      "id": "qa_599",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-03-01T09:06:17.442627",
+      "reward": 4.55
+    },
+    {
+      "id": "qa_600",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T09:06:47.462083",
+      "reward": 4.04
+    }
+  ]
+}

@@ -38,6 +38,8 @@ _INSTANT_REPLIES: Dict[str, str] = {
     "how are you": "I'm running great and ready to help! What's your question?",
     "what is your name": "I'm AZAN — an AI assistant. How can I help you?",
     "who are you": "I'm AZAN, an AI knowledge assistant. Ask me anything!",
+    "what does azan mean": "Azan is an Arabic word meaning 'to listen' or 'to inform', most commonly known as the Islamic call to prayer. As an AI assistant, the name AZAN reflects my purpose of listening to user needs and informing them with accurate, real-time knowledge.",
+    "what is azan": "Azan is an Arabic word meaning 'to listen' or 'to inform', most commonly known as the Islamic call to prayer. As an AI assistant, the name AZAN reflects my purpose of listening to user needs and informing them with accurate, real-time knowledge.",
 }
 
 # ── Response cache (in-memory) ────────────────────────────────────────────────
@@ -113,31 +115,25 @@ class KnowledgeBase:
     
     def search(self, query: str, category: Optional[str] = None) -> List[Dict]:
         """
-        Search knowledge base
-        Returns relevant articles based on query
+        Search knowledge base with relevance filtering.
         """
         results = []
-        query_words = set(query.lower().split())
+        # Filter query words to remove common stop words for better search quality
+        stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'is', 'are', 'was', 'be', 'what', 'does', 'mean', 'how', 'me', 'tell'}
+        query_words = {w for w in query.lower().split() if w not in stop_words and len(w) > 2}
         
-        # Search by category first
-        if category and category in self.knowledge_index['by_category']:
-            category_articles = self.knowledge_index['by_category'][category]
+        if not query_words:
+            return []
+
+        # All articles search
+        for article in self.articles.values():
+            headline = article.get('headline', '').lower()
+            h_words = set(headline.split())
+            matching_words = len(query_words & h_words)
             
-            # Rank by keyword match
-            for article in category_articles:
-                headline = article.get('headline', '').lower()
-                matching_words = len(set(headline.split()) & query_words)
-                if matching_words > 0:
-                    results.append((article, matching_words))
-        
-        # If not enough results, search all articles
-        if len(results) < 3:
-            for article in self.articles.values():
-                if article not in [r[0] for r in results]:
-                    headline = article.get('headline', '').lower()
-                    matching_words = len(set(headline.split()) & query_words)
-                    if matching_words > 0:
-                        results.append((article, matching_words))
+            # Require at least 2 matching words for relevance (or 1 if query is very short)
+            if matching_words >= 2 or (len(query_words) == 1 and matching_words == 1):
+                results.append((article, matching_words))
         
         # Sort by relevance and return
         results.sort(key=lambda x: x[1], reverse=True)
@@ -169,7 +165,7 @@ class EnhancedInference:
     def __init__(self, ollama_host: str = "http://127.0.0.1:11434"):
         self.ollama_host = ollama_host
         self.knowledge_base = KnowledgeBase()
-        self.client = httpx.Client(timeout=60.0)
+        self.client = httpx.Client(timeout=30.0)
         
         logger.info("✓ EnhancedInference initialized")
     
@@ -192,51 +188,74 @@ Your Knowledge Base:
 - Current training metrics: 175+ iterations, 5.0/5.0 average reward
 
 When answering questions:
-1. Incorporate relevant learned knowledge naturally into your responses
-2. Provide specific examples from your knowledge base when relevant
-3. Be comprehensive, detailed, and accurate
-4. Draw from all 8 knowledge categories as appropriate
+1. ONLY use the provided context if it is directly relevant to the user's question. 
+2. If the context is not related to the user's query, ignore it completely and answer using your general knowledge.
+3. NEVER state "Based on the provided snippets" or list irrelevant summaries.
+4. If you use context, incorporate it naturally into your response.
+5. Be concise but complete. Do not trail off or cut your response short.
 
-Your learned expertise includes:
-- Fusion energy breakthroughs and quantum computing advances
-- Global climate agreements and trade negotiations
-- Gene therapy, CRISPR, and medical breakthroughs
-- AI, autonomous vehicles, and machine learning development
-- Cryptocurrency and global market trends
-- Space exploration and scientific discoveries
-- Sports achievements and records
-- Entertainment and cultural developments
-
-Answer comprehensively, accurately, and with confidence in your learned knowledge."""
+Answer comprehensively, accurately, and prioritize relevant information. Use your learned expertise where appropriate. """
         
         return base_prompt
     
-    def _query_ollama(self, prompt: str, system_prompt: str, model: str = "llama3") -> str:
+    def _build_messages(self, prompt: str, system_prompt: str, 
+                         history: list = None) -> list:
         """
-        Query Ollama API for response
+        Build the messages array for Ollama, prepending conversation history.
         
         Args:
-            prompt: User question
+            prompt: Current user message (may include context appended)
+            system_prompt: System context string
+            history: List of prior messages [{"role": "user"|"azan"|"assistant", "content": "..."}]
+        
+        Returns:
+            List of message dicts formatted for Ollama
+        """
+        messages = [{"role": "system", "content": system_prompt}]
+        
+        # Inject up to last 10 turns of history (20 messages)
+        if history:
+            for msg in history[-20:]:
+                role = msg.get("role", "user")
+                # Normalize 'azan' role to 'assistant' for Ollama
+                if role == "azan":
+                    role = "assistant"
+                messages.append({"role": role, "content": msg.get("content", "")})
+        
+        # Final user message
+        messages.append({"role": "user", "content": prompt})
+        return messages
+
+    def _query_ollama(self, prompt: str, system_prompt: str, model: str = "llama3",
+                       temperature: float = 0.5, top_p: float = 0.9,
+                       history: list = None) -> str:
+        """
+        Query Ollama API for a complete (non-streaming) response.
+        
+        Args:
+            prompt: User question (may include RAG context)
             system_prompt: System context
             model: Model name
+            temperature: Sampling temperature (0.0–1.0)
+            top_p: Top-p nucleus sampling (0.0–1.0)
+            history: Prior conversation messages for multi-turn memory
         
         Returns:
             Generated response text
         """
         try:
             url = f"{self.ollama_host}/api/chat"
+            messages = self._build_messages(prompt, system_prompt, history)
             
             payload = {
                 "model": model,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}
-                ],
+                "messages": messages,
                 "stream": False,
                 "options": {
-                    "num_predict": 1024,  # Full-length responses
-                    "temperature": 0.5,
-                    "top_p": 0.9
+                    "num_predict": 512,
+                    "temperature": temperature,
+                    "top_p": top_p,
+                    "repeat_penalty": 1.1
                 }
             }
             
@@ -249,50 +268,128 @@ Answer comprehensively, accurately, and with confidence in your learned knowledg
         except Exception as e:
             logger.error(f"Error querying Ollama: {e}")
             return f"Error: Unable to generate response - {str(e)}"
-    
-    def predict(self, input_text: str, use_knowledge_context: bool = True) -> str:
-        """
-        Generate prediction/response.
-        Fast-path for greetings/simple inputs → instant reply.
-        Cache check before calling Ollama.
-        """
-        # 1. Fast-path: instant reply for simple/greeting messages (no LLM call)
-        normalized = input_text.strip().lower().rstrip('!?.')
-        if normalized in _INSTANT_REPLIES:
-            logger.info("Fast-path reply for: %s", input_text[:40])
-            return _INSTANT_REPLIES[normalized]
 
-        # 2. Cache check: return cached response if seen before
-        cache_key = hashlib.md5(input_text.encode()).hexdigest()
-        if cache_key in _RESPONSE_CACHE:
-            logger.info("Cache hit for: %s", input_text[:40])
-            return _RESPONSE_CACHE[cache_key]
+    def stream_ollama(self, prompt: str, system_prompt: str, model: str = "llama3",
+                      temperature: float = 0.5, top_p: float = 0.9,
+                      history: list = None):
+        """
+        Stream tokens from Ollama line-by-line as a generator.
+        Yields string chunks as they arrive.
+        """
+        import json as _json
+        url = f"{self.ollama_host}/api/chat"
+        messages = self._build_messages(prompt, system_prompt, history)
+        payload = {
+            "model": model,
+            "messages": messages,
+            "stream": True,
+            "options": {
+                "num_predict": 512,
+                "temperature": temperature,
+                "top_p": top_p,
+                "repeat_penalty": 1.1
+            }
+        }
+        try:
+            with httpx.Client(timeout=60.0) as stream_client:
+                with stream_client.stream("POST", url, json=payload) as resp:
+                    resp.raise_for_status()
+                    for line in resp.iter_lines():
+                        if not line:
+                            continue
+                        try:
+                            data = _json.loads(line)
+                            chunk = data.get("message", {}).get("content", "")
+                            if chunk:
+                                yield chunk
+                            if data.get("done"):
+                                break
+                        except Exception:
+                            continue
+        except Exception as e:
+            yield f"\n[Error: {e}]"
 
-        # 3. Search knowledge base for relevant information
+    def predict(self, input_text: str, use_knowledge_context: bool = True,
+                model: str = "llama3", temperature: float = 0.5, top_p: float = 0.9,
+                history: list = None) -> str:
+        """
+        Generate prediction/response with Semantic RAG + multi-turn memory.
+        
+        Args:
+            input_text: User message
+            use_knowledge_context: Whether to inject RAG context
+            model: Ollama model name
+            temperature: Sampling temperature
+            top_p: Nucleus sampling threshold
+            history: Prior conversation messages for multi-turn memory
+        """
+        # 1. Fast-path: instant reply for simple/greeting messages (skip if history present)
+        if not history:
+            normalized = input_text.strip().lower().rstrip('!?.')
+            if normalized in _INSTANT_REPLIES:
+                return _INSTANT_REPLIES[normalized]
+
+        # 2. Semantic Vector Search (ChromaDB RAG)
         relevant_articles = []
         if use_knowledge_context:
-            relevant_articles = self.knowledge_base.search(input_text)
+            try:
+                from src.semantic_search import get_vector_store
+                vs = get_vector_store()
+                relevant_articles = vs.search(input_text, limit=3)
+            except Exception as e:
+                logger.warning(f"Semantic search failed, falling back: {e}")
+                relevant_articles = self.knowledge_base.search(input_text)
         
-        # Build enhanced prompt with knowledge context
+        # Build context from semantic matches
         context = ""
         if relevant_articles:
             context = "\n\nRecent Relevant Knowledge:\n"
-            for i, article in enumerate(relevant_articles[:3], 1):
-                context += f"{i}. {article.get('headline', 'N/A')}: {article.get('body', 'N/A')[:150]}...\n"
+            for i, article in enumerate(relevant_articles, 1):
+                headline = article.get('headline', 'N/A')
+                body = article.get('body', 'N/A')
+                context += f"{i}. {headline}: {body[:200]}...\n"
         
         enhanced_prompt = f"{input_text}{context}"
-        
-        # Get system prompt
         system_prompt = self._build_system_prompt()
         
-        # Query Ollama
-        response = self._query_ollama(enhanced_prompt, system_prompt)
-        
-        # Store in cache
-        _RESPONSE_CACHE[cache_key] = response
+        # Query Ollama with multi-turn history
+        response = self._query_ollama(enhanced_prompt, system_prompt,
+                                       model=model, temperature=temperature, top_p=top_p,
+                                       history=history)
         
         logger.info("Generated response for: %s", input_text[:60])
         return response
+
+    def stream_predict(self, input_text: str, use_knowledge_context: bool = True,
+                       model: str = "llama3", temperature: float = 0.5, top_p: float = 0.9,
+                       history: list = None):
+        """
+        Stream tokens for input_text, injecting RAG context + conversation history.
+        Yields string chunks.
+        """
+        relevant_articles = []
+        if use_knowledge_context:
+            try:
+                from src.semantic_search import get_vector_store
+                vs = get_vector_store()
+                relevant_articles = vs.search(input_text, limit=3)
+            except Exception:
+                relevant_articles = self.knowledge_base.search(input_text)
+        
+        context = ""
+        if relevant_articles:
+            context = "\n\nRecent Relevant Knowledge:\n"
+            for i, article in enumerate(relevant_articles, 1):
+                headline = article.get('headline', 'N/A')
+                body = article.get('body', 'N/A')
+                context += f"{i}. {headline}: {body[:200]}...\n"
+        
+        enhanced_prompt = f"{input_text}{context}"
+        system_prompt = self._build_system_prompt()
+        
+        yield from self.stream_ollama(enhanced_prompt, system_prompt,
+                                      model=model, temperature=temperature, top_p=top_p,
+                                      history=history)
     
     def get_knowledge_summary(self) -> Dict:
         """Get summary of AZAN's knowledge base"""

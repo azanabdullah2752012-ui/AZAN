@@ -162,7 +162,7 @@ Training 10 questions:
 ## Configuration Options
 
 ### To Modify Cache Behavior
-Edit `/Users/azan/Desktop/AZAN/src/training_dashboard.py`:
+Edit `/Applications/AZAN/src/training_dashboard.py`:
 
 ```python
 # In generate_model_response() method:

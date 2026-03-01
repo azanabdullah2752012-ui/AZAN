@@ -347,7 +347,7 @@ curl http://localhost:8000/api/rl/knowledge | jq '.pairs_by_category'
 ps aux | grep uvicorn
 
 # Restart server
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 pkill -f "uvicorn.*webui.app"
 nohup python -m uvicorn webui.app:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
 ```
@@ -364,10 +364,10 @@ ollama serve
 ### RL Training Not Starting
 ```bash
 # Check server logs
-tail -f /Users/azan/Desktop/AZAN/server.log
+tail -f /Applications/AZAN/server.log
 
 # Verify training data exists
-ls -lh /Users/azan/Desktop/AZAN/data/rl_training_data.json
+ls -lh /Applications/AZAN/data/rl_training_data.json
 ```
 
 ### Chat Returning Outdated Info

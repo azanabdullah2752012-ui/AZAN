@@ -8,7 +8,7 @@ This document summarizes the complete AZAN Curated Reinforcement Learning system
 
 ## 📦 Deliverables
 
-### Core System (3 Modules - 1,250+ Lines)
+### Core System (6 Modules - 2,250+ Lines)
 
 #### 1. ✅ `src/azan_rl_pipeline.py` (650+ lines)
 **Purpose:** Autonomous RL training engine
@@ -46,6 +46,33 @@ This document summarizes the complete AZAN Curated Reinforcement Learning system
 - Auto-refresh (5-second intervals)
 - Dark theme modern UI
 - Responsive design
+
+#### 4. ✅ `src/math_engine.py` (400+ lines)
+**Purpose:** Advanced symbolic math engine
+**Features:**
+- Symbolic calculus (differentiation, integration)
+- Matrix algebra (determinants, inverses, eigenvalues)
+- ODE solving (dsolve)
+- Limits and series expansions
+- Multivariable gradients
+
+#### 5. ✅ `src/physics_engine.py` (500+ lines)
+**Purpose:** Symbolic physics problem solver
+**Domains:**
+- Kinematics (SUVAT equations)
+- Forces (Newtons laws, friction)
+- Electromagnetism (Coulomb, Ohms law)
+- Thermodynamics (Ideal gas law)
+- Waves & Optics (Snell's law, wave speed)
+- Unit conversions
+
+#### 6. ✅ `src/task_executor.py` (220+ lines)
+**Purpose:** Agentic task orchestration
+**Commands:**
+- `scrape`: URL extraction and indexing
+- `summarize`: Knowledge base summarization
+- `solve_math`: Direct symbolic math execution
+- `solve_physics`: Specialized physics problem solving
 
 ---
 
@@ -401,6 +428,9 @@ See live training in real-time.
 - `src/azan_rl_pipeline.py` - 650+ lines
 - `src/azan_rl_inference.py` - 300+ lines
 - `src/azan_dashboard.py` - 600+ lines
+- `src/math_engine.py` - 400+ lines
+- `src/physics_engine.py` - 500+ lines
+- `src/task_executor.py` - 220+ lines
 
 ### Configuration & Data (4 Items)
 - `data/azan_knowledge_base.json` - 45+ items

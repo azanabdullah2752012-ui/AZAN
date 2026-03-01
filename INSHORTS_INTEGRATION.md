@@ -202,7 +202,7 @@ The Inshorts training works alongside existing political auto-training:
 
 ```bash
 # 1. Start server
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python -m uvicorn webui.app:app --port 8000
 

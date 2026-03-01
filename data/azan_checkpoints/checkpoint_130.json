@@ -1,0 +1,172 @@
+{
+  "iteration": 130,
+  "timestamp": "2026-02-28T20:25:26.197083",
+  "total_reward": 582.1245321587395,
+  "avg_reward": 4.477881016605688,
+  "qa_learned_count": 130,
+  "qa_pairs": [
+    {
+      "id": "qa_121",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-02-28T20:20:56.159960",
+      "reward": 4.99
+    },
+    {
+      "id": "qa_122",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T20:21:26.163033",
+      "reward": 3.79
+    },
+    {
+      "id": "qa_123",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T20:21:56.166286",
+      "reward": 4.03
+    },
+    {
+      "id": "qa_124",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-02-28T20:22:26.168030",
+      "reward": 4.75
+    },
+    {
+      "id": "qa_125",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-02-28T20:22:56.174663",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_126",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-02-28T20:23:26.181044",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_127",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-02-28T20:23:56.182755",
+      "reward": 4.79
+    },
+    {
+      "id": "qa_128",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-02-28T20:24:26.187091",
+      "reward": 4.57
+    },
+    {
+      "id": "qa_129",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T20:24:56.193709",
+      "reward": 4.27
+    },
+    {
+      "id": "qa_130",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T20:25:26.197066",
+      "reward": 4.64
+    }
+  ]
+}

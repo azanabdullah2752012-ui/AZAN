@@ -222,7 +222,7 @@ Manages entire training lifecycle:
 
 ### 1. **Start the Server**
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python -m uvicorn webui.app:app --reload --host 0.0.0.0 --port 8000
 ```

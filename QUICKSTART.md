@@ -145,7 +145,7 @@ AZAN/
 **Server not responding?**
 ```bash
 # Start it again
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 pkill -f "uvicorn.*webui.app"
 nohup python -m uvicorn webui.app:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
 ```

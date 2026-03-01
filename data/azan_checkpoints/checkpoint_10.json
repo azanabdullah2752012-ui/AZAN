@@ -1,0 +1,173 @@
+{
+  "iteration": 10,
+  "timestamp": "2026-02-28T19:24:10.958745",
+  "total_reward": 46.440339735575414,
+  "avg_reward": 4.6440339735575416,
+  "qa_learned_count": 10,
+  "qa_pairs": [
+    {
+      "id": "qa_1",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-02-28T19:19:40.929773",
+      "reward": 3.7
+    },
+    {
+      "id": "qa_2",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-02-28T19:20:10.930504",
+      "reward": 4.59
+    },
+    {
+      "id": "qa_3",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T19:20:40.932683",
+      "reward": 4.84
+    },
+    {
+      "id": "qa_4",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-02-28T19:21:10.938489",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_5",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-02-28T19:21:40.939728",
+      "reward": 4.97
+    },
+    {
+      "id": "qa_6",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T19:22:10.940851",
+      "reward": 4.83
+    },
+    {
+      "id": "qa_7",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-02-28T19:22:40.944193",
+      "reward": 4.86
+    },
+    {
+      "id": "qa_8",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-02-28T19:23:10.950258",
+      "reward": 4.16
+    },
+    {
+      "id": "qa_9",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-02-28T19:23:40.952628",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_10",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T19:24:10.958695",
+      "reward": 4.48
+    }
+  ]
+}

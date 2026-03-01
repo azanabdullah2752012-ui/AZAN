@@ -1,0 +1,169 @@
+{
+  "iteration": 480,
+  "timestamp": "2026-03-01T07:22:41.110699",
+  "total_reward": 2148.3259565025005,
+  "avg_reward": 4.475679076046876,
+  "qa_learned_count": 480,
+  "qa_pairs": [
+    {
+      "id": "qa_471",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T07:18:11.034272",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_472",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T07:18:41.042479",
+      "reward": 3.65
+    },
+    {
+      "id": "qa_473",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T07:19:11.052757",
+      "reward": 4.24
+    },
+    {
+      "id": "qa_474",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-03-01T07:19:41.058094",
+      "reward": 4.49
+    },
+    {
+      "id": "qa_475",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-03-01T07:20:11.064005",
+      "reward": 4.45
+    },
+    {
+      "id": "qa_476",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T07:20:41.074060",
+      "reward": 4.78
+    },
+    {
+      "id": "qa_477",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-03-01T07:21:11.084303",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_478",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T07:21:41.095178",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_479",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-03-01T07:22:11.105378",
+      "reward": 3.95
+    },
+    {
+      "id": "qa_480",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T07:22:41.110681",
+      "reward": 4.55
+    }
+  ]
+}

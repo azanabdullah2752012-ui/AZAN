@@ -1,0 +1,171 @@
+{
+  "iteration": 80,
+  "timestamp": "2026-02-28T20:01:17.025896",
+  "total_reward": 356.8845626193312,
+  "avg_reward": 4.46105703274164,
+  "qa_learned_count": 80,
+  "qa_pairs": [
+    {
+      "id": "qa_71",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-02-28T19:56:46.973507",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_72",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-02-28T19:57:16.979348",
+      "reward": 4.01
+    },
+    {
+      "id": "qa_73",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T19:57:46.986756",
+      "reward": 3.68
+    },
+    {
+      "id": "qa_74",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-02-28T19:58:16.992506",
+      "reward": 3.62
+    },
+    {
+      "id": "qa_75",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-02-28T19:58:46.999620",
+      "reward": 3.85
+    },
+    {
+      "id": "qa_76",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-02-28T19:59:17.003278",
+      "reward": 4.0
+    },
+    {
+      "id": "qa_77",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-02-28T19:59:47.010696",
+      "reward": 4.26
+    },
+    {
+      "id": "qa_78",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-02-28T20:00:17.018123",
+      "reward": 3.93
+    },
+    {
+      "id": "qa_79",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-02-28T20:00:47.022976",
+      "reward": 4.58
+    },
+    {
+      "id": "qa_80",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-02-28T20:01:17.025834",
+      "reward": 4.81
+    }
+  ]
+}

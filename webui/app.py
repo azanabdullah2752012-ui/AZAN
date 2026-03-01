@@ -17,8 +17,8 @@ from typing import Optional
 from pathlib import Path
 from datetime import datetime
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import HTMLResponse, FileResponse
+from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi.responses import HTMLResponse, FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -26,12 +26,13 @@ from pydantic import BaseModel, Field
 from src.inference import predict_chat
 from src.training_dashboard import dashboard
 from src.rl_pipeline import initialize_rl_pipeline, get_rl_pipeline
-from src.rl_inference import initialize_inference, predict as rl_predict
+from src.rl_inference import initialize_inference, predict as rl_predict, get_inference_engine
 
 # Import AZAN curated RL system
 try:
     from src.azan_rl_pipeline import initialize_rl_pipeline as init_azan_rl, get_rl_engine, get_rl_trainer
     from src.azan_rl_inference import initialize_inference_engine as init_azan_inference, get_inference_engine
+    from src.database import get_database  # Import SQLite database
     AZAN_RL_AVAILABLE = True
 except ImportError as e:
     logger.warning(f"AZAN RL modules not available: {e}")
@@ -59,108 +60,27 @@ app.add_middleware(
 
 @app.on_event("startup")
 def startup_event():
-    """Initialize auto-training scheduler and RL pipeline on startup."""
-    # Initialize AZAN Curated RL System (Priority)
+    """Initialize systems on startup. Background training paused for performance."""
     if AZAN_RL_AVAILABLE:
         try:
-            engine, trainer = init_azan_rl(update_interval=30)
-            trainer.start()
-            logger.info("✅ AZAN Curated RL Pipeline started (Indian Constitution, UN Treaties, Military Strategies, Political Definitions)")
-        except Exception as e:
-            logger.warning(f"Could not start AZAN RL pipeline: {e}")
-        
-        try:
+            logger.info("⏸ AZAN Curated RL Pipeline initialization (training paused)")
             init_azan_inference()
-            logger.info("✅ AZAN Data-Only Inference Engine initialized")
         except Exception as e:
-            logger.warning(f"Could not initialize AZAN inference: {e}")
+            logger.warning(f"Startup error in AZAN inference: {e}")
     
     try:
-        # Initialize RL pipeline with 60-second update interval
-        rl_pipeline = initialize_rl_pipeline(update_interval=60)
-        rl_pipeline.start_training()
-        logger.info("✅ RL Pipeline started on server startup")
-    except Exception as e:
-        logger.warning(f"Could not start RL pipeline: {e}")
-    
-    try:
-        # Initialize RL inference engine
         initialize_inference()
-        logger.info("✅ RL Inference engine initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize RL inference: {e}")
-    
-    try:
-        # Initialize restricted inference (training data only)
         from src.restricted_inference import initialize_restricted_inference
         initialize_restricted_inference()
-        logger.info("✅ Restricted Inference engine initialized (training data only)")
-    except Exception as e:
-        logger.warning(f"Could not initialize restricted inference: {e}")
-    
-    try:
-        # Initialize user feedback system
         from src.user_feedback import initialize_feedback
         initialize_feedback()
-        logger.info("✅ User Feedback system initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize feedback system: {e}")
-    
-    try:
-        # Initialize semantic search engine
         from src.semantic_search import initialize_semantic_search
         initialize_semantic_search()
-        logger.info("✅ Semantic Search engine initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize semantic search: {e}")
-    
-    try:
-        # Initialize RSS feed integrator and updater
-        from src.rss_feed_integrator import initialize_feed_integrator, initialize_feed_updater
+        from src.rss_feed_integrator import initialize_feed_integrator
         initialize_feed_integrator()
-        initialize_feed_updater(update_interval=900)  # 15 minutes
-        logger.info("✅ RSS Feed integrator and updater initialized")
+        logger.info("✅ Core systems initialized")
     except Exception as e:
-        logger.warning(f"Could not initialize RSS feeds: {e}")
-    
-    try:
-        # Initialize RLHF pipeline
-        from src.rlhf_pipeline import initialize_rlhf, initialize_rlhf_scheduler
-        initialize_rlhf()
-        initialize_rlhf_scheduler(check_interval=3600)  # 1 hour
-        logger.info("✅ RLHF pipeline and scheduler initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize RLHF: {e}")
-    
-    try:
-        # Initialize fine-tuning system
-        from src.fine_tuning import initialize_finetuning, initialize_finetuning_scheduler
-        initialize_finetuning()
-        initialize_finetuning_scheduler(check_interval=86400)  # 1 day
-        logger.info("✅ Fine-tuning system initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize fine-tuning: {e}")
-    
-    try:
-        # Initialize feed context integration
-        from src.feed_context_integration import initialize_context_manager
-        initialize_context_manager()
-        logger.info("✅ Feed context integration initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize feed context: {e}")
-    
-    try:
-        from src.auto_training_scheduler import get_scheduler
-        scheduler = get_scheduler()
-        
-        # Check if auto-training is enabled in config
-        if scheduler.config.get("enabled", True):
-            scheduler.start()
-            logger.info("✅ Auto-training scheduler started on server startup")
-        else:
-            logger.info("⚠️ Auto-training is disabled in configuration")
-    except Exception as e:
-        logger.warning(f"Could not start auto-training scheduler: {e}")
+        logger.warning(f"General startup error: {e}")
 
 
 @app.on_event("shutdown")
@@ -184,6 +104,9 @@ class ChatRequest(BaseModel):
     """Request model for chat endpoint."""
     prompt: str = Field(..., min_length=1, max_length=2000, description="User message")
     model: str = Field("llama3", description="Model to use for inference")
+    session_id: str = Field("default_session", description="Unique session ID for chat history")
+    temperature: Optional[float] = Field(0.5, ge=0.0, le=1.0, description="Sampling temperature")
+    top_p: Optional[float] = Field(0.9, ge=0.0, le=1.0, description="Top-p nucleus sampling")
 
 
 class ChatResponse(BaseModel):
@@ -218,653 +141,798 @@ class TrainingResponse(BaseModel):
 
 @app.get("/", response_class=HTMLResponse)
 def read_root() -> str:
-    """Serve the main HTML dashboard with chat, training, and analytics."""
+    """Serve the AZAN AI Chat — Phase 4+5 Pro UX with Agentic features."""
     return """<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZAN - AI Chat & RLHF Training Dashboard</title>
+    <title>AZAN AI Chat</title>
+    <meta name="description" content="AZAN — AI Assistant powered by RL-enhanced knowledge, semantic RAG, and autonomous learning.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ===== THEME VARIABLES ===== */
+        [data-theme="dark"] {
+            --bg-primary: #0a0a14;
+            --bg-secondary: #12121f;
+            --bg-card: #16162a;
+            --bg-input: #1a1a30;
+            --bg-hover: #1e1e38;
+            --text-primary: #e0e0f0;
+            --text-secondary: #8888aa;
+            --text-muted: #555570;
+            --accent: #7c5cfc;
+            --accent-glow: rgba(124, 92, 252, 0.25);
+            --accent-dim: #5a3fd4;
+            --green: #34d399;
+            --orange: #fb923c;
+            --red: #f87171;
+            --border: #222240;
+            --msg-user-bg: #7c5cfc;
+            --msg-azan-bg: #1e1e38;
+            --radius: 10px;
         }
-        
+        [data-theme="light"] {
+            --bg-primary: #f4f4f8;
+            --bg-secondary: #ffffff;
+            --bg-card: #f0f0f5;
+            --bg-input: #e8e8f0;
+            --bg-hover: #dddde8;
+            --text-primary: #1a1a2e;
+            --text-secondary: #555580;
+            --text-muted: #888899;
+            --accent: #6c4ce0;
+            --accent-glow: rgba(108, 76, 224, 0.15);
+            --accent-dim: #5a3fd4;
+            --green: #16a34a;
+            --orange: #ea580c;
+            --red: #dc2626;
+            --border: #d0d0e0;
+            --msg-user-bg: #6c4ce0;
+            --msg-azan-bg: #e8e8f0;
+            --radius: 10px;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-        }
-        
-        .container {
-            display: flex;
-            width: 100%;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             height: 100vh;
-        }
-        
-        .sidebar {
-            width: 250px;
-            background: #2c3e50;
-            border-right: 2px solid #34495e;
-            overflow-y: auto;
-            padding: 20px;
-            color: #ecf0f1;
-        }
-        
-        .sidebar h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #667eea;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .nav-item {
-            padding: 12px 15px;
-            margin: 8px 0;
-            cursor: pointer;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            border-left: 3px solid transparent;
-        }
-        
-        .nav-item:hover {
-            background: #34495e;
-            border-left-color: #667eea;
-        }
-        
-        .nav-item.active {
-            background: #667eea;
-            border-left-color: #667eea;
-            font-weight: bold;
-        }
-        
-        .main-content {
-            flex: 1;
             display: flex;
-            flex-direction: column;
-            background: white;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .header h1 {
-            font-size: 28px;
-            font-weight: 600;
-        }
-        
-        .content-area {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-            display: none;
-        }
-        
-        .content-area.active {
-            display: block;
-        }
-        
-        .chat-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .messages {
-            flex: 1;
-            overflow-y: auto;
-            margin-bottom: 20px;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-        
-        .message {
-            margin: 12px 0;
-            animation: slideIn 0.3s ease;
-        }
-        
-        .message.user {
-            text-align: right;
-        }
-        
-        .message-bubble {
-            display: inline-block;
-            padding: 12px 16px;
-            border-radius: 12px;
-            max-width: 70%;
-            word-wrap: break-word;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .message.user .message-bubble {
-            background: #667eea;
-            color: white;
-        }
-        
-        .message.bot .message-bubble {
-            background: #e9ecef;
-            color: #2c3e50;
-        }
-        
-        .input-area {
-            display: flex;
-            gap: 10px;
-        }
-        
-        input[type="text"], textarea {
-            flex: 1;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 14px;
-            transition: border-color 0.3s;
-        }
-        
-        input[type="text"]:focus, textarea:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-        
-        button {
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-        
-        button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-        
-        .loading {
-            text-align: center;
-            color: #667eea;
-            padding: 20px;
-        }
-        
-        .training-form {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        
-        .form-group textarea {
-            width: 100%;
-            min-height: 100px;
-            resize: vertical;
-        }
-        
-        .training-result {
-            background: white;
-            border: 2px solid #667eea;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        
-        .reward-score {
-            font-size: 48px;
-            color: #667eea;
-            font-weight: bold;
-            text-align: center;
-            margin: 20px 0;
-        }
-        
-        .reward-breakdown {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .breakdown-item {
-            background: #f8f9fa;
-            padding: 12px;
-            border-radius: 6px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .breakdown-item-value {
-            color: #667eea;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-        
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .stat-card h3 {
-            font-size: 14px;
-            opacity: 0.9;
-            margin-bottom: 10px;
-        }
-        
-        .stat-value {
-            font-size: 32px;
-            font-weight: bold;
-        }
-        
-        .history-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background 0.3s, color 0.3s;
         }
-        
-        .history-table th {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            text-align: left;
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 280px;
+            min-width: 280px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 18px 14px;
+            gap: 14px;
+            overflow-y: auto;
+            transition: background 0.3s;
         }
-        
-        .history-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
+        .sidebar::-webkit-scrollbar { width: 4px; }
+        .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+        .logo-row { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 700; color: var(--accent); }
+        .logo sub { font-size: 10px; color: var(--text-muted); font-weight: 400; vertical-align: baseline; }
+
+        .theme-toggle {
+            background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
+            width: 34px; height: 34px; border-radius: 8px; cursor: pointer; font-size: 16px;
+            display: flex; align-items: center; justify-content: center; transition: all 0.2s;
         }
-        
-        .reward-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 12px;
+        .theme-toggle:hover { background: var(--accent); color: #fff; }
+
+        .new-chat-btn {
+            width: 100%; padding: 10px; background: var(--accent); color: #fff;
+            border: none; border-radius: 8px; font-weight: 600; font-size: 13px;
+            cursor: pointer; transition: all 0.2s;
         }
-        
-        .reward-high {
-            background: #d4edda;
-            color: #155724;
+        .new-chat-btn:hover { background: var(--accent-dim); transform: translateY(-1px); }
+
+        .sidebar-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 12px; transition: background 0.3s;
         }
-        
-        .reward-medium {
-            background: #fff3cd;
-            color: #856404;
+        .sidebar-card h3 {
+            font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px;
+            color: var(--text-muted); margin-bottom: 10px;
         }
-        
-        .reward-low {
-            background: #f8d7da;
-            color: #721c24;
+
+        .status-row { display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 6px; }
+        .status-row .label { color: var(--text-secondary); }
+        .status-row .value { color: var(--text-primary); font-weight: 500; }
+        .badge { padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 600; }
+        .badge-online { background: rgba(52,211,153,.15); color: var(--green); }
+        .badge-training { background: rgba(251,146,60,.15); color: var(--orange); }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: center; }
+        .stat-box { background: var(--bg-input); border-radius: 8px; padding: 8px 4px; }
+        .stat-box .num { font-size: 20px; font-weight: 700; color: var(--accent); }
+        .stat-box .lbl { font-size: 8px; text-transform: uppercase; color: var(--text-muted); letter-spacing: .5px; margin-top: 2px; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+        .tag { background: var(--bg-input); border: 1px solid var(--border); color: var(--text-secondary);
+               padding: 3px 9px; border-radius: 6px; font-size: 10px; cursor: default; transition: all .2s; }
+
+        /* Settings panel */
+        .settings-group { margin-bottom: 10px; }
+        .settings-group label { font-size: 11px; color: var(--text-secondary); display: block; margin-bottom: 4px; }
+        .settings-group select, .settings-group input[type=range] {
+            width: 100%; background: var(--bg-input); color: var(--text-primary);
+            border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 12px;
+            outline: none; cursor: pointer;
         }
-        
-        .error-message {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            border-left: 4px solid #721c24;
+        .settings-group select:focus { border-color: var(--accent); }
+        .range-row { display: flex; align-items: center; gap: 8px; }
+        .range-row input[type=range] { flex: 1; accent-color: var(--accent); padding: 0; border: none; background: transparent; }
+        .range-row .range-val { font-size: 11px; color: var(--accent); font-weight: 600; min-width: 28px; text-align: right; }
+
+        /* Upload zone */
+        .upload-zone {
+            border: 2px dashed var(--border); border-radius: 8px; padding: 14px;
+            text-align: center; cursor: pointer; transition: all .2s; position: relative;
         }
-        
-        .success-message {
-            background: #d4edda;
-            color: #155724;
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            border-left: 4px solid #155724;
+        .upload-zone:hover, .upload-zone.dragover { border-color: var(--accent); background: var(--accent-glow); }
+        .upload-zone p { font-size: 11px; color: var(--text-muted); }
+        .upload-zone .icon { font-size: 22px; margin-bottom: 4px; }
+        .upload-zone input { display: none; }
+        .upload-status { font-size: 10px; color: var(--green); margin-top: 4px; }
+
+        /* Session list */
+        .session-list { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; max-height: 150px; overflow-y: auto; }
+        .session-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 7px 9px; border-radius: 6px; font-size: 11px;
+            color: var(--text-secondary); cursor: pointer; transition: background .2s;
         }
-        
-        .select-model {
-            padding: 10px;
-            border: 2px solid #ddd;
-            border-radius: 6px;
-            font-size: 14px;
-            width: 100%;
+        .session-item:hover { background: var(--bg-hover); }
+        .session-item.active { background: var(--accent-glow); color: var(--text-primary); }
+        .session-item .del-btn {
+            background: none; border: none; color: var(--text-muted); cursor: pointer;
+            font-size: 13px; padding: 0 3px; opacity: 0; transition: opacity .2s;
         }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .session-item:hover .del-btn { opacity: 1; }
+        .session-item .del-btn:hover { color: var(--red); }
+
+        /* ===== MAIN CHAT ===== */
+        .main { flex: 1; display: flex; flex-direction: column; }
+
+        .chat-header {
+            padding: 14px 24px; border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--bg-secondary); transition: background .3s;
         }
+        .chat-header h1 { font-size: 18px; font-weight: 700; }
+        .chat-header p { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+        .header-actions { display: flex; gap: 8px; align-items: center; }
+        .clear-btn {
+            background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted);
+            width: 34px; height: 34px; border-radius: 8px; cursor: pointer; font-size: 15px;
+            display: flex; align-items: center; justify-content: center; transition: all .2s;
+        }
+        .clear-btn:hover { color: var(--red); border-color: var(--red); }
+
+        .messages {
+            flex: 1; overflow-y: auto; padding: 20px 24px; display: flex;
+            flex-direction: column; gap: 12px;
+        }
+        .messages::-webkit-scrollbar { width: 5px; }
+        .messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+        .msg { display: flex; flex-direction: column; animation: fadeIn .3s ease; }
+        .msg.user { align-items: flex-end; }
+        .msg.azan { align-items: flex-start; }
+        .msg-bubble {
+            max-width: 70%; padding: 12px 16px; border-radius: 14px;
+            font-size: 14px; line-height: 1.55; word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+        .msg.user .msg-bubble { background: var(--msg-user-bg); color: #fff; border-bottom-right-radius: 4px; }
+        .msg.azan .msg-bubble { background: var(--msg-azan-bg); color: var(--text-primary); border-bottom-left-radius: 4px; }
+        .msg-meta { font-size: 10px; color: var(--text-muted); margin-top: 3px; display: flex; align-items: center; gap: 6px; }
+
+        /* Fact-check badges */
+        .badge-verified { background: rgba(52,211,153,.15); color: var(--green); padding: 1px 7px; border-radius: 10px; font-size: 9px; font-weight: 600; }
+        .badge-unverified { background: rgba(251,146,60,.15); color: var(--orange); padding: 1px 7px; border-radius: 10px; font-size: 9px; font-weight: 600; }
+
+        .typing-indicator { display: flex; gap: 4px; padding: 4px 0; }
+        .typing-indicator span { width: 7px; height: 7px; background: var(--text-muted); border-radius: 50%; animation: bounce .6s infinite alternate; }
+        .typing-indicator span:nth-child(2) { animation-delay: .15s; }
+        .typing-indicator span:nth-child(3) { animation-delay: .3s; }
+        @keyframes bounce { to { transform: translateY(-6px); opacity: .5; } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+        .input-bar {
+            padding: 14px 24px; border-top: 1px solid var(--border);
+            display: flex; gap: 10px; align-items: center;
+            background: var(--bg-secondary); transition: background .3s;
+        }
+        .input-bar input {
+            flex: 1; padding: 12px 16px; background: var(--bg-input);
+            border: 1px solid var(--border); border-radius: 10px;
+            color: var(--text-primary); font-size: 14px; outline: none;
+            transition: border-color .2s;
+        }
+        .input-bar input:focus { border-color: var(--accent); }
+        .input-bar input::placeholder { color: var(--text-muted); }
+        .send-btn {
+            width: 44px; height: 44px; background: var(--accent); color: #fff;
+            border: none; border-radius: 10px; cursor: pointer; font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+            transition: all .2s;
+        }
+        .send-btn:hover { background: var(--accent-dim); transform: scale(1.05); }
+        .send-btn:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+        /* Cmd hint */
+        .cmd-hint { font-size: 10px; color: var(--text-muted); padding: 0 24px 6px; }
+        .cmd-hint code { background: var(--bg-card); padding: 1px 5px; border-radius: 3px; font-size: 10px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>🎯 AZAN</h2>
-            <div class="nav-item active" onclick="switchTab('chat')">💬 Chat</div>
-            <div class="nav-item" onclick="switchTab('train')">📚 Train AI</div>
-            <div class="nav-item" onclick="switchTab('models')">🤖 Models</div>
-        </div>
-        
-        <div class="main-content">
-            <div class="header">
-                <h1>🎯 AZAN AI Chat & RLHF Training System</h1>
-            </div>
-            
-            <!-- CHAT TAB -->
-            <div id="chat" class="content-area active">
-                <div class="chat-container">
-                    <div class="messages" id="chatMessages"></div>
-                    <div class="input-area">
-                        <input type="text" id="chatInput" placeholder="Ask me anything..." onkeypress="handleChatKeypress(event)">
-                        <button onclick="sendChat()">Send</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- TRAINING TAB -->
-            <div id="train" class="content-area">
-                <h2>🎓 Interactive RLHF Training</h2>
-                <p style="margin-bottom: 20px;">Train the AI by providing Q&A pairs. System generates responses and rates quality.</p>
-                
-                <div class="training-form">
-                    <div class="form-group">
-                        <label>Question</label>
-                        <textarea id="trainQuestion" placeholder="Ask a question..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Ideal Answer</label>
-                        <textarea id="trainAnswer" placeholder="What's the ideal answer?"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Model</label>
-                        <select id="trainModel" class="select-model">
-                            <option value="llama3">Llama3 (Base)</option>
-                            <option value="llama3_president_rlhf">Presidential Advisor</option>
-                        </select>
-                    </div>
 
-                    <div class="form-group" style="display: flex; align-items: center;">
-                        <input type="checkbox" id="quickMode" style="margin-right: 10px; width: auto;">
-                        <label for="quickMode" style="margin: 0;">⚡ Quick Mode (10x faster with cached responses)</label>
-                    </div>
-                    
-                    <button onclick="submitTraining()" style="width: 100%; margin-top: 10px;">🚀 Train</button>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-row">
+            <div class="logo">✦ AZAN <sub>v3.0</sub></div>
+            <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn" title="Toggle theme">🌙</button>
+        </div>
+
+        <button class="new-chat-btn" onclick="newChat()">+ New Chat</button>
+
+        <!-- System Status -->
+        <div class="sidebar-card">
+            <h3>◆ System Status</h3>
+            <div class="status-row"><span class="label">Status</span><span class="badge badge-online">Online</span></div>
+            <div class="status-row"><span class="label">Model</span><span class="value" id="sysModel">llama3</span></div>
+            <div class="status-row"><span class="label">Database</span><span class="value" id="sysDbSize">—</span></div>
+            <div class="status-row"><span class="label">Vectors</span><span class="value" id="sysVectors">—</span></div>
+        </div>
+
+        <!-- Knowledge Base -->
+        <div class="sidebar-card">
+            <h3>✦ Knowledge Base</h3>
+            <div class="stats-grid">
+                <div class="stat-box"><div class="num" id="statArticles">0</div><div class="lbl">Articles</div></div>
+                <div class="stat-box"><div class="num" id="statPairs">0</div><div class="lbl">Training<br>Pairs</div></div>
+                <div class="stat-box"><div class="num" id="statSessions">0</div><div class="lbl">Sessions</div></div>
+            </div>
+            <div class="tags">
+                <span class="tag">business</span><span class="tag">technology</span>
+                <span class="tag">politics</span><span class="tag">world</span><span class="tag">science</span>
+                <span class="tag">sports</span><span class="tag">entertainment</span><span class="tag">national</span>
+            </div>
+        </div>
+
+        <!-- AI Settings (Phase 4) -->
+        <div class="sidebar-card">
+            <h3>⚙ AI Settings</h3>
+            <div class="settings-group">
+                <label>Model</label>
+                <select id="modelSelect" onchange="updateModelLabel()">
+                    <option value="llama3" selected>Loading models...</option>
+                </select>
+                <button id="pullModelsBtn" onclick="pullModel()" style="width: 100%; padding: 4px; margin-top: 5px; font-size: 10px; background: var(--bg-input); color: var(--text-secondary); border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">Pull Selected Model</button>
+            </div>
+            <div class="settings-group">
+                <label>Temperature</label>
+                <div class="range-row">
+                    <input type="range" id="tempSlider" min="0" max="100" value="50"
+                           oninput="document.getElementById('tempVal').textContent=(this.value/100).toFixed(2)">
+                    <span class="range-val" id="tempVal">0.50</span>
                 </div>
-                
-                <div id="trainingResult"></div>
             </div>
-            
-            <!-- DASHBOARD TAB -->
-            <div id="dashboard" class="content-area">
-                <h2>📊 Training Dashboard</h2>
-                <div class="dashboard-grid" id="dashboardStats"></div>
-                <h3 style="margin: 20px 0;">Recent Sessions</h3>
-                <table class="history-table" id="historyTable">
-                    <thead>
-                        <tr><th>Model</th><th>Date</th><th>Examples</th><th>Avg Reward</th><th>Status</th></tr>
-                    </thead>
-                    <tbody id="historyBody"><tr><td colspan="5" style="text-align:center;">Loading...</td></tr></tbody>
-                </table>
+            <div class="settings-group">
+                <label>Top-P</label>
+                <div class="range-row">
+                    <input type="range" id="topPSlider" min="0" max="100" value="90"
+                           oninput="document.getElementById('topPVal').textContent=(this.value/100).toFixed(2)">
+                    <span class="range-val" id="topPVal">0.90</span>
+                </div>
             </div>
-            
-            <!-- MODELS TAB -->
-            <div id="models" class="content-area">
-                <h2>🤖 Model Comparison</h2>
-                <div id="modelComparison" style="color: #999;">Loading models...</div>
+        </div>
+
+        <!-- Auto-Training Status (Phase 4) -->
+        <div class="sidebar-card">
+            <h3>🧠 Auto-Training</h3>
+            <div class="status-row"><span class="label">Status</span><span class="badge badge-training" id="trainStatus">Active</span></div>
+            <div class="status-row"><span class="label">Sessions</span><span class="value" id="trainCount">—</span></div>
+            <div class="status-row"><span class="label">Last Run</span><span class="value" id="trainLast">—</span></div>
+            <div class="status-row"><span class="label">Avg Reward</span><span class="value" id="trainReward">—</span></div>
+        </div>
+
+        <!-- Document Upload (Phase 3+4) -->
+        <div class="sidebar-card">
+            <h3>📄 Learn from Documents</h3>
+            <div class="upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()">
+                <div class="icon">📁</div>
+                <p>Drop PDF / Markdown here</p>
+                <input type="file" id="fileInput" accept=".pdf,.md,.markdown,.txt" onchange="uploadFile(this)">
             </div>
-            
-            <!-- ANALYTICS TAB -->
-            <div id="analytics" class="content-area">
-                <h2>📈 Training Analytics</h2>
-                <div class="dashboard-grid" id="analyticsStats"></div>
+            <div class="upload-status" id="uploadStatus"></div>
+        </div>
+
+        <!-- Sessions -->
+        <div class="sidebar-card">
+            <h3>◉ Chat Sessions</h3>
+            <div class="session-list" id="sessionList"><span style="color:var(--text-muted);font-size:11px;">Loading…</span></div>
+        </div>
+    </aside>
+
+    <!-- MAIN CHAT -->
+    <div class="main">
+        <div class="chat-header">
+            <div>
+                <h1>AZAN AI Chat</h1>
+                <p>Powered by Semantic RAG · RL-enhanced Knowledge · <span id="headerModel">Llama3</span></p>
             </div>
+            <div class="header-actions">
+                <button class="clear-btn" onclick="clearChat()" title="Clear chat">🗑</button>
+            </div>
+        </div>
+
+        <div class="messages" id="messages"></div>
+
+        <div class="cmd-hint">💡 Commands: <code>solve x^2+5x+6</code> · <code>integrate sin(x)</code> · <code>limit sin(x)/x as x-&gt;0</code> · <code>physics v=20 u=0 t=5 find a</code> · <code>convert 100 celsius to fahrenheit</code></div>
+        <div class="input-bar">
+            <input type="text" id="chatInput" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')sendChat()" autocomplete="off">
+            <button class="send-btn" id="sendBtn" onclick="sendChat()">➤</button>
         </div>
     </div>
 
-    <script>
-        const API_BASE = window.location.origin;
-        
-        function switchTab(tabName) {
-            document.querySelectorAll('.content-area').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
-            if (tabName === 'dashboard') loadDashboard();
-            if (tabName === 'models') loadModelComparison();
-            if (tabName === 'analytics') loadAnalytics();
+<script>
+const API = window.location.origin;
+let currentSession = 'sess_' + Date.now();
+
+// ==================== THEME ====================
+function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('azan-theme', next);
+    document.getElementById('themeBtn').textContent = next === 'dark' ? '🌙' : '☀️';
+}
+(function initTheme() {
+    const saved = localStorage.getItem('azan-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    document.getElementById('themeBtn').textContent = saved === 'dark' ? '🌙' : '☀️';
+})();
+
+// ==================== SIDEBAR DATA ====================
+async function loadSidebarStats() {
+    try {
+        const res = await fetch(API + '/api/db/summary');
+        const d = await res.json();
+        document.getElementById('statArticles').textContent = d.articles || 0;
+        document.getElementById('statPairs').textContent = d.training_pairs || 0;
+        document.getElementById('statSessions').textContent = d.sessions || 0;
+        document.getElementById('sysDbSize').textContent = (d.db_size_kb || 0) + ' KB';
+        if (d.vector_store && d.vector_store.total_vectors !== undefined) {
+            document.getElementById('sysVectors').textContent = d.vector_store.total_vectors;
         }
-        
-        function handleChatKeypress(event) {
-            if (event.key === 'Enter' && !event.shiftKey) {
-                event.preventDefault();
-                sendChat();
-            }
+    } catch(e) { console.error(e); }
+}
+
+async function loadTrainingStatus() {
+    try {
+        const res = await fetch(API + '/auto-training/status');
+        const d = await res.json();
+        const badge = document.getElementById('trainStatus');
+        badge.textContent = d.is_running ? 'Active' : 'Stopped';
+        badge.className = 'badge ' + (d.is_running ? 'badge-training' : 'badge-online');
+        document.getElementById('trainCount').textContent = d.training_count || 0;
+        if (d.last_training_time) {
+            const t = new Date(d.last_training_time);
+            document.getElementById('trainLast').textContent = t.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
         }
+    } catch(e) {}
+    try {
+        const res2 = await fetch(API + '/auto-training/stats');
+        const s = await res2.json();
+        document.getElementById('trainReward').textContent = s.average_reward || '—';
+    } catch(e) {}
+}
+
+async function loadSessions() {} // overridden in Phase 7 script below
+
+function switchSession(sid) { currentSession = sid; loadSessionHistory(sid); loadSessions(); }
+
+async function loadSessionHistory(sid) {
+    const msgs = document.getElementById('messages');
+    msgs.innerHTML = '';
+    try {
+        const res = await fetch(API + '/chat/history/' + sid);
+        const d = await res.json();
+        if (d.history) d.history.forEach(m => addMessage(m.content, m.role === 'user' ? 'user' : 'azan', false));
+    } catch(e) { console.error(e); }
+}
+
+async function deleteSession(sid) {
+    try { await fetch(API + '/api/sessions/' + sid, { method: 'DELETE' }); if (sid === currentSession) newChat(); loadSessions(); loadSidebarStats(); } catch(e) {}
+}
+
+function newChat() {
+    currentSession = 'sess_' + Date.now();
+    document.getElementById('messages').innerHTML = '';
+    addMessage("Hello! I'm AZAN, your AI assistant. How can I help you today?", 'azan', false);
+    loadSessions();
+}
+
+async function loadModels() {
+    try {
+        const res = await fetch(API + '/dashboard/models-list');
+        const d = await res.json();
+        const sel = document.getElementById('modelSelect');
+        const currentModel = sel.value || 'llama3';
         
-        async function sendChat() {
-            const input = document.getElementById('chatInput');
-            const message = input.value.trim();
-            if (!message) return;
+        if (d.models && d.models.length > 0) {
+            sel.innerHTML = d.models.map(m => {
+                const name = m.includes(':') ? m.split(':')[0] : m;
+                const isSelected = m === currentModel || name === currentModel ? ' selected' : '';
+                return `<option value="${m}"${isSelected}>${name.charAt(0).toUpperCase() + name.slice(1)}</option>`;
+            }).join('');
             
-            addChatMessage(message, 'user');
-            input.value = '';
-            
-            const loadingEl = document.createElement('div');
-            loadingEl.className = 'message bot';
-            loadingEl.innerHTML = '<div class="message-bubble">⏳ Thinking...</div>';
-            document.getElementById('chatMessages').appendChild(loadingEl);
-            
-            try {
-                const response = await fetch(`${API_BASE}/chat`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ prompt: message })
-                });
-                
-                const data = await response.json();
-                loadingEl.remove();
-                addChatMessage(data.response, 'bot');
-            } catch (error) {
-                loadingEl.remove();
-                addChatMessage('Error: ' + error.message, 'bot');
-            }
-        }
-        
-        function addChatMessage(text, sender) {
-            const messagesDiv = document.getElementById('chatMessages');
-            const messageEl = document.createElement('div');
-            messageEl.className = 'message ' + sender;
-            messageEl.innerHTML = `<div class="message-bubble">${escapeHtml(text)}</div>`;
-            messagesDiv.appendChild(messageEl);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-        
-        async function submitTraining() {
-            const question = document.getElementById('trainQuestion').value.trim();
-            const answer = document.getElementById('trainAnswer').value.trim();
-            const model = document.getElementById('trainModel').value;
-            const quickMode = document.getElementById('quickMode').checked;
-            
-            if (!question || !answer) {
-                showTrainingResult('Fill in both question and answer', false);
-                return;
-            }
-            
-            const trainBtn = event.target;
-            const originalText = trainBtn.textContent;
-            trainBtn.disabled = true;
-            trainBtn.textContent = quickMode ? '⚡ Quick Training...' : '🚀 Training...';
-            
-            document.getElementById('trainingResult').innerHTML = '<div class="loading">⏳ ' + (quickMode ? 'Quick ' : '') + 'Training...</div>';
-            
-            try {
-                const response = await fetch(`${API_BASE}/train`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question, ideal_answer: answer, model, quick_mode: quickMode })
-                });
-                
-                const data = await response.json();
-                
-                if (data.success) {
-                    displayTrainingResult(data);
-                    document.getElementById('trainQuestion').value = '';
-                    document.getElementById('trainAnswer').value = '';
-                } else {
-                    showTrainingResult(data.error, false);
+            // Add non-installed popular models if not present
+            const popular = ['mistral', 'gemma2', 'phi3', 'codellama'];
+            popular.forEach(p => {
+                if (!d.models.some(m => m.startsWith(p))) {
+                    sel.innerHTML += `<option value="${p}" style="color:var(--text-muted);">(Not installed) ${p.charAt(0).toUpperCase() + p.slice(1)}</option>`;
                 }
-            } catch (error) {
-                showTrainingResult('Error: ' + error.message, false);
-            } finally {
-                trainBtn.disabled = false;
-                trainBtn.textContent = originalText;
+            });
+        }
+        updateModelLabel();
+    } catch(e) { console.error(e); }
+}
+
+async function pullModel() {
+    const model = document.getElementById('modelSelect').value;
+    const btn = document.getElementById('pullModelsBtn');
+    btn.textContent = 'Pulling ' + model + '...';
+    btn.disabled = true;
+    try {
+        const res = await fetch(API + '/api/models/pull', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ model: model })
+        });
+        const d = await res.json();
+        if (d.status === 'success') {
+            alert('Model pulled successfully! Refreshing list.');
+            await loadModels();
+        } else {
+            alert('Failed to pull model: ' + d.message);
+        }
+    } catch(e) {
+        alert('Error pulling model: ' + e.message);
+    }
+    btn.textContent = 'Pull Selected Model';
+    btn.disabled = false;
+}
+
+function updateModelLabel() {
+    const sel = document.getElementById('modelSelect');
+    if (sel.options[sel.selectedIndex]) {
+        document.getElementById('sysModel').textContent = sel.options[sel.selectedIndex].text;
+        document.getElementById('headerModel').textContent = sel.options[sel.selectedIndex].text.replace('(Not installed) ', '');
+    }
+}
+
+// NOTE: sendChat, addMessage, clearChat, scrollDown, escapeHtml, loadSessions, and INIT
+// are defined in the Phase 7 <script> block below this one.
+</script>
+
+<style>
+/* ===== MARKDOWN STYLES ===== */
+.msg-bubble pre { background: #0d1117; border-radius: 6px; padding: 10px 12px; overflow-x: auto; margin: 8px 0; }
+.msg-bubble pre code { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12px; background: none; padding: 0; }
+.msg-bubble code:not(pre code) { background: rgba(124,92,252,.2); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.msg-bubble h1, .msg-bubble h2, .msg-bubble h3 { margin: 10px 0 4px; font-weight: 700; }
+.msg-bubble h1 { font-size: 1.1em; } .msg-bubble h2 { font-size: 1em; } .msg-bubble h3 { font-size: .95em; }
+.msg-bubble p { margin: 5px 0; }
+.msg-bubble ul, .msg-bubble ol { padding-left: 20px; margin: 5px 0; }
+.msg-bubble li { margin: 3px 0; }
+.msg-bubble blockquote { border-left: 3px solid var(--accent); padding-left: 10px; color: var(--text-secondary); margin: 6px 0; }
+.msg-bubble table { border-collapse: collapse; width: 100%; margin: 8px 0; }
+.msg-bubble th, .msg-bubble td { border: 1px solid var(--border); padding: 5px 8px; font-size: 12px; }
+.msg-bubble th { background: var(--bg-input); font-weight: 600; }
+.msg-bubble strong { color: var(--text-primary); }
+.stream-cursor::after { content: '▋'; animation: blink .7s steps(1) infinite; color: var(--accent); margin-left: 1px; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+</style>
+
+<script>
+// ==================== STREAMING SEND CHAT (Phase 7) ====================
+async function sendChat() {
+    const input = document.getElementById('chatInput');
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    addMessage(msg, 'user');
+    input.value = '';
+    document.getElementById('sendBtn').disabled = true;
+
+    const typing = document.createElement('div');
+    typing.className = 'msg azan';
+    typing.id = 'typingIndicator';
+    typing.innerHTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
+    document.getElementById('messages').appendChild(typing);
+    scrollDown();
+
+    // Detect agentic commands (non-streaming)
+    const lc = msg.toLowerCase();
+    const chatBody = {
+        prompt: msg,
+        session_id: currentSession,
+        model: document.getElementById('modelSelect').value,
+        temperature: parseFloat(document.getElementById('tempSlider').value) / 100,
+        top_p: parseFloat(document.getElementById('topPSlider').value) / 100
+    };
+
+    let agentCommand = null;
+    let agentBody = null;
+
+    if (lc.startsWith('fact-check ') || lc.startsWith('factcheck ')) {
+        agentCommand = '/api/agent/fact-check';
+        agentBody = { claim: msg.replace(/^(fact-?check\s+)/i, '') };
+    } else if (lc.startsWith('scrape ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'scrape', args: { url: msg.replace(/^scrape\s+/i, '').trim() } };
+    } else if (lc.startsWith('solve ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^solve\s+/i, '').trim(), task: 'auto' } };
+    } else if (lc.startsWith('integrate ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^integrate\s+/i, '').trim(), task: 'integrate' } };
+    } else if (lc.startsWith('differentiate ') || lc.startsWith('diff ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^(?:differentiate|diff)\s+/i, '').trim(), task: 'differentiate' } };
+    } else if (lc.startsWith('limit ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^limit\s+/i, '').trim(), task: 'limit' } };
+    } else if (lc.startsWith('series ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^series\s+/i, '').trim(), task: 'series' } };
+    } else if (lc.startsWith('physics ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_physics', args: { problem: msg.replace(/^physics\s+/i, '').trim(), domain: 'auto' } };
+    } else if (lc.startsWith('calc ') || lc.startsWith('calculate ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'solve_math', args: { expression: msg.replace(/^(?:calc|calculate)\s+/i, '').trim(), task: 'auto' } };
+    } else if (lc.startsWith('convert ')) {
+        agentCommand = '/api/agent/execute';
+        agentBody = { command: 'unit_convert', args: { problem: msg.replace(/^convert\s+/i, '').trim() } };
+    }
+
+    try {
+        if (agentCommand) {
+            // Non-streaming agentic commands
+            const res = await fetch(API + agentCommand, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(agentBody)
+            });
+            const data = await res.json();
+            typing.remove();
+            if (agentCommand === '/api/agent/fact-check') {
+                const verdict = data.verdict || 'unverified';
+                const badge = verdict === 'confirmed' ? 'verified' : 'unverified';
+                addMessage(data.reasoning || data.detail || JSON.stringify(data), 'azan', true, badge);
+            } else {
+                addMessage(data.result || data.detail || JSON.stringify(data), 'azan');
             }
-        }
-        
-        function displayTrainingResult(result) {
-            const resultDiv = document.getElementById('trainingResult');
-            const score = result.reward_score;
-            let badgeClass = score >= 4 ? 'reward-high' : score >= 3 ? 'reward-medium' : 'reward-low';
-            
-            let breakdown = '';
-            if (result.reward_breakdown) {
-                const bd = result.reward_breakdown;
-                const items = ['relevance', 'depth', 'leadership', 'policy', 'balance', 'quality_signals', 'reference_similarity', 'structure'];
-                breakdown = '<div class="reward-breakdown">';
-                items.forEach(item => {
-                    if (item in bd) {
-                        breakdown += `<div class="breakdown-item"><strong>${item.replace(/_/g, ' ')}</strong><div class="breakdown-item-value">${bd[item]}</div></div>`;
-                    }
-                });
-                breakdown += '</div>';
-            }
-            
-            resultDiv.innerHTML = `
-                <div class="training-result">
-                    <div class="success-message">✅ Training complete!</div>
-                    <div class="reward-score">${score.toFixed(2)} <span style="font-size: 24px;">/5.0</span></div>
-                    <div style="text-align: center; margin-bottom: 20px;">
-                        <span class="reward-badge ${badgeClass}">${score >= 4 ? '⭐⭐⭐⭐ Excellent' : score >= 3 ? '⭐⭐⭐ Good' : '⭐⭐ Needs Work'}</span>
-                    </div>
-                    <h4>Model Response:</h4>
-                    <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; margin: 10px 0;">${escapeHtml(result.model_response)}</div>
-                    ${breakdown}
-                </div>
-            `;
-        }
-        
-        function showTrainingResult(message, success = true) {
-            const resultDiv = document.getElementById('trainingResult');
-            resultDiv.innerHTML = `<div class="${success ? 'success-message' : 'error-message'}">${success ? '✅' : '❌'} ${escapeHtml(message)}</div>`;
-        }
-        
-        async function loadDashboard() {
-            try {
-                const response = await fetch(`${API_BASE}/dashboard/summary`);
-                const data = await response.json();
-                
-                const statsDiv = document.getElementById('dashboardStats');
-                statsDiv.innerHTML = `<div class="stat-card"><h3>Total Sessions</h3><div class="stat-value">${data.total_sessions}</div></div>`;
-                
-                const historyBody = document.getElementById('historyBody');
-                if (data.sessions && data.sessions.length > 0) {
-                    historyBody.innerHTML = data.sessions.map(s => {
-                        const reward = s.average_reward;
-                        let badgeClass = reward >= 4 ? 'reward-high' : reward >= 3 ? 'reward-medium' : 'reward-low';
-                        return `<tr><td><strong>${s.model_name}</strong></td><td>${new Date(s.created_at).toLocaleDateString()}</td><td>${s.total_examples}</td><td><span class="reward-badge ${badgeClass}">${reward.toFixed(2)}/5.0</span></td><td>${s.status}</td></tr>`;
-                    }).join('');
-                } else {
-                    historyBody.innerHTML = '<tr><td colspan="5" style="text-align: center;">No sessions yet</td></tr>';
+        } else {
+            // === STREAMING CHAT ===
+            typing.remove();
+            const msgDiv = createStreamingBubble();
+
+            const res = await fetch(API + '/chat/stream', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(chatBody)
+            });
+
+            const reader = res.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+            let fullText = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                buffer += decoder.decode(value, { stream: true });
+                const lines = buffer.split('\n');
+                buffer = lines.pop() || '';
+                for (const line of lines) {
+                    if (!line.startsWith('data: ')) continue;
+                    try {
+                        const data = JSON.parse(line.slice(6));
+                        if (data.token) {
+                            fullText += data.token;
+                            renderMarkdownInBubble(msgDiv, fullText, true);
+                            scrollDown();
+                        }
+                        if (data.done) {
+                            renderMarkdownInBubble(msgDiv, fullText, false);
+                        }
+                    } catch(e) {}
                 }
-            } catch (error) {
-                console.error('Error:', error);
             }
         }
-        
-        async function loadModelComparison() {
-            try {
-                const response = await fetch(`${API_BASE}/dashboard/models`);
-                const data = await response.json();
-                
-                const container = document.getElementById('modelComparison');
-                if (data.models && data.models.length > 0) {
-                    container.innerHTML = data.models.map(m => `
-                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
-                            <h3>${m.name}</h3>
-                            <p>Avg Reward: ${m.average_reward.toFixed(2)}/5.0</p>
-                            <p>Total Trainings: ${m.total_trainings}</p>
-                        </div>
-                    `).join('');
-                } else {
-                    container.innerHTML = '<p style="color: #999;">No models trained yet</p>';
+        loadSessions();
+        loadSidebarStats();
+    } catch(e) {
+        try { typing.remove(); } catch(_) {}
+        addMessage('Error: ' + e.message, 'azan');
+    }
+    document.getElementById('sendBtn').disabled = false;
+    document.getElementById('chatInput').focus();
+}
+
+// ==================== MARKDOWN RENDERING ====================
+function initMarked() {
+    if (typeof marked !== 'undefined') {
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            highlight: function(code, lang) {
+                if (typeof hljs !== 'undefined' && lang && hljs.getLanguage(lang)) {
+                    try { return hljs.highlight(code, { language: lang }).value; } catch(e) {}
                 }
-            } catch (error) {
-                console.error('Error:', error);
+                return code;
             }
+        });
+    }
+}
+initMarked();
+
+function renderMd(text) {
+    if (typeof marked === 'undefined') return escapeHtml(text);
+    try { return marked.parse(text); }
+    catch(e) { return escapeHtml(text); }
+}
+
+function createStreamingBubble() {
+    const msgs = document.getElementById('messages');
+    const div = document.createElement('div');
+    div.className = 'msg azan';
+    const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    div.innerHTML = '<div class="msg-bubble stream-cursor"></div><div class="msg-meta">' + time + '</div>';
+    msgs.appendChild(div);
+    scrollDown();
+    return div.querySelector('.msg-bubble');
+}
+
+function renderMarkdownInBubble(bubble, text, streaming) {
+    bubble.innerHTML = renderMd(text);
+    if (streaming) { bubble.classList.add('stream-cursor'); }
+    else { bubble.classList.remove('stream-cursor'); }
+    if (typeof hljs !== 'undefined') {
+        bubble.querySelectorAll('pre code').forEach(b => { try { hljs.highlightElement(b); } catch(e) {} });
+    }
+}
+
+function addMessage(text, role, animate = true, factBadge = null) {
+    const msgs = document.getElementById('messages');
+    const div = document.createElement('div');
+    div.className = 'msg ' + role;
+    if (!animate) div.style.animation = 'none';
+    const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    let badgeHtml = '';
+    if (role === 'azan' && factBadge) {
+        const cls = factBadge === 'verified' ? 'badge-verified' : 'badge-unverified';
+        const label = factBadge === 'verified' ? '✓ Verified' : '⚠ Unverified';
+        badgeHtml = '<span class="' + cls + '">' + label + '</span>';
+    }
+    // AI messages get markdown rendering, user messages get escaped HTML
+    const content = role === 'azan' ? renderMd(text) : escapeHtml(text);
+    div.innerHTML = '<div class="msg-bubble">' + content + '</div><div class="msg-meta">' + time + ' ' + badgeHtml + '</div>';
+    if (role === 'azan' && typeof hljs !== 'undefined') {
+        div.querySelectorAll('pre code').forEach(b => { try { hljs.highlightElement(b); } catch(e) {} });
+    }
+    msgs.appendChild(div);
+    scrollDown();
+}
+
+function clearChat() { deleteSession(currentSession); }
+function scrollDown() { const m = document.getElementById('messages'); m.scrollTop = m.scrollHeight; }
+function escapeHtml(t) { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+function clearChat() { deleteSession(currentSession); }
+function scrollDown() { const m = document.getElementById('messages'); m.scrollTop = m.scrollHeight; }
+
+// ==================== FILE UPLOAD ====================
+const uploadZone = document.getElementById('uploadZone');
+['dragover','dragenter'].forEach(e => uploadZone.addEventListener(e, ev => { ev.preventDefault(); uploadZone.classList.add('dragover'); }));
+['dragleave','drop'].forEach(e => uploadZone.addEventListener(e, ev => { ev.preventDefault(); uploadZone.classList.remove('dragover'); }));
+uploadZone.addEventListener('drop', ev => { if (ev.dataTransfer.files.length) uploadFileObj(ev.dataTransfer.files[0]); });
+
+function uploadFile(input) { if (input.files.length) uploadFileObj(input.files[0]); }
+
+async function uploadFileObj(file) {
+    const status = document.getElementById('uploadStatus');
+    status.textContent = 'Uploading ' + file.name + '...';
+    status.style.color = 'var(--text-secondary)';
+    const form = new FormData();
+    form.append('file', file);
+    try {
+        const res = await fetch(API + '/api/documents/upload', { method: 'POST', body: form });
+        const d = await res.json();
+        if (d.success) {
+            status.textContent = '✓ ' + d.chunks + ' chunks indexed from ' + file.name;
+            status.style.color = 'var(--green)';
+            loadSidebarStats();
+        } else {
+            status.textContent = '✗ ' + (d.detail || d.error || 'Failed');
+            status.style.color = 'var(--red)';
         }
-        
-        async function loadAnalytics() {
-            try {
-                const response = await fetch(`${API_BASE}/dashboard/analytics`);
-                const data = await response.json();
-                
-                const statsDiv = document.getElementById('analyticsStats');
-                statsDiv.innerHTML = `
-                    <div class="stat-card"><h3>Avg Reward</h3><div class="stat-value">${data.average_reward.toFixed(2)}</div></div>
-                    <div class="stat-card"><h3>Highest</h3><div class="stat-value">${data.highest_reward.toFixed(2)}</div></div>
-                    <div class="stat-card"><h3>Total</h3><div class="stat-value">${data.total_trainings}</div></div>
-                `;
-            } catch (error) {
-                console.error('Error:', error);
-            }
+    } catch(e) {
+        status.textContent = '✗ Upload failed';
+        status.style.color = 'var(--red)';
+    }
+}
+
+function timeAgo(ts) {
+    if (!ts) return '';
+    const diff = (Date.now() - new Date(ts + ' UTC').getTime()) / 1000;
+    if (diff < 60) return 'just now';
+    if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+    return Math.floor(diff / 86400) + 'd ago';
+}
+
+async function loadSessions() {
+    try {
+        const res = await fetch(API + '/api/sessions');
+        const d = await res.json();
+        const list = document.getElementById('sessionList');
+        if (!d.sessions || d.sessions.length === 0) {
+            list.innerHTML = '<span style="color:var(--text-muted);font-size:11px;">No sessions yet</span>';
+            return;
         }
-        
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-        
-        loadDashboard();
-    </script>
+        list.innerHTML = d.sessions.map(s => {
+            const active = s.session_id === currentSession ? ' active' : '';
+            const title = (s.title || 'Untitled').substring(0, 26);
+            const when = timeAgo(s.last_activity);
+            return '<div class="session-item' + active + '" onclick="switchSession(\'' + s.session_id + '\')">' +
+                '<div style="display:flex;justify-content:space-between;align-items:center;gap:4px;">' +
+                '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + escapeHtml(title) + '</span>' +
+                '<span style="font-size:9px;color:var(--text-muted);flex-shrink:0;">' + when + '</span>' +
+                '</div>' +
+                '<button class="del-btn" onclick="event.stopPropagation();deleteSession(\'' + s.session_id + '\')")>✕</button>' +
+                '</div>';
+        }).join('');
+    } catch(e) { console.error(e); }
+}
+
+// ==================== INIT ====================
+loadSidebarStats();
+loadSessions();
+loadTrainingStatus();
+loadModels();
+addMessage("Hello! I'm AZAN, your AI assistant. How can I help you today?", 'azan', false);
+document.getElementById('chatInput').focus();
+setInterval(loadTrainingStatus, 30000);
+setInterval(loadSidebarStats, 60000);
+setInterval(loadSessions, 15000);
+</script>
+
 </body>
 </html>"""
+
+
 
 
 # ============================================================================
@@ -874,21 +942,198 @@ def read_root() -> str:
 @app.post("/chat", response_model=ChatResponse)
 def chat_endpoint(request: ChatRequest) -> ChatResponse:
     """
-    Chat endpoint for real-time AI responses.
-    Uses RL-enhanced inference with learned knowledge base.
+    Chat endpoint with multi-turn memory.
+    Loads last N messages from SQLite and passes them to Ollama for context.
     """
     try:
-        # Use RL-enhanced inference with knowledge base
-        response = rl_predict(request.prompt)
-        return ChatResponse(response=response, model=request.model)
+        # 1. Load conversation history from SQLite for multi-turn memory
+        history = []
+        try:
+            db = get_database()
+            raw_history = db.get_chat_history(request.session_id, limit=20)
+            history = [{"role": m["role"], "content": m["content"]} for m in raw_history]
+        except Exception as e:
+            logger.warning(f"Could not load history: {e}")
+
+        # 2. Use RL-enhanced inference with knowledge base + history
+        try:
+            engine = get_inference_engine()
+            response_text = engine.predict(
+                request.prompt,
+                model=request.model,
+                temperature=request.temperature or 0.5,
+                top_p=request.top_p or 0.9,
+                history=history
+            )
+        except Exception as e:
+            logger.warning(f"RL Inference failed, falling back: {e}")
+            response_text = predict_chat(request.prompt, model_name=request.model, speed_mode=True)
+
+        # 3. Store in Chat History (SQLite)
+        try:
+            db = get_database()
+            db.add_chat_message(request.session_id, "user", request.prompt, request.model)
+            db.add_chat_message(request.session_id, "azan", response_text, request.model)
+        except Exception as e:
+            logger.warning(f"Failed to log chat to database: {e}")
+
+        return ChatResponse(response=response_text, model=request.model)
+
     except Exception as e:
         logger.error(f"Chat error: {e}")
-        # Fallback to original inference if RL fails
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/chat/stream")
+def chat_stream_endpoint(request: ChatRequest):
+    """
+    Streaming chat endpoint using Server-Sent Events.
+    Streams tokens from Ollama token-by-token so the UI can display words as they arrive.
+    """
+    import json as _json
+
+    # 1. Load history
+    history = []
+    try:
+        db = get_database()
+        raw_history = db.get_chat_history(request.session_id, limit=20)
+        history = [{"role": m["role"], "content": m["content"]} for m in raw_history]
+    except Exception as e:
+        logger.warning(f"Could not load history for streaming: {e}")
+
+    # 2. Log user message immediately
+    try:
+        db = get_database()
+        db.add_chat_message(request.session_id, "user", request.prompt, request.model)
+    except Exception as e:
+        logger.warning(f"Failed to log user message: {e}")
+
+    full_response = []
+
+    def event_generator():
+        # Stream from RL inference engine
         try:
-            response = predict_chat(request.prompt, model_name=request.model, speed_mode=True)
-            return ChatResponse(response=response, model=request.model)
+            engine = get_inference_engine()
+            for chunk in engine.stream_predict(
+                request.prompt,
+                model=request.model,
+                temperature=request.temperature or 0.5,
+                top_p=request.top_p or 0.9,
+                history=history
+            ):
+                full_response.append(chunk)
+                yield f"data: {_json.dumps({'token': chunk})}\n\n"
+        except Exception as e:
+            logger.error(f"Streaming error: {e}")
+            yield f"data: {_json.dumps({'token': f'[Error: {e}]'})}\n\n"
+
+        # Save full response to DB after streaming completes
+        full_text = "".join(full_response)
+        try:
+            db = get_database()
+            db.add_chat_message(request.session_id, "azan", full_text, request.model)
+        except Exception as e:
+            logger.warning(f"Failed to log streamed response: {e}")
+
+        # Send done signal
+        yield f"data: {_json.dumps({'done': True})}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
+
+
+@app.get("/chat/history/{session_id}")
+def get_history(session_id: str = "default_session"):
+    """Get chat history for a session from SQLite."""
+    try:
+        db = get_database()
+        history = db.get_chat_history(session_id)
+        return {"session_id": session_id, "history": history}
+    except Exception as e:
+        logger.error(f"Error fetching history: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
+# ============================================================================
+# ROUTE 2b: SESSION MANAGEMENT
+# ============================================================================
+
+@app.get("/api/sessions")
+def list_sessions(limit: int = 50):
+    """List all chat sessions with message counts."""
+    try:
+        db = get_database()
+        sessions = db.get_all_sessions(limit=limit)
+        return {"sessions": sessions, "count": len(sessions)}
+    except Exception as e:
+        logger.error(f"Error listing sessions: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.delete("/api/sessions/{session_id}")
+def delete_session(session_id: str):
+    """Delete a session and all its chat history."""
+    try:
+        db = get_database()
+        success = db.delete_session(session_id)
+        if success:
+            return {"status": "deleted", "session_id": session_id}
+        raise HTTPException(status_code=404, detail="Session not found")
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error deleting session: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ============================================================================
+# ROUTE 2c: FEEDBACK ANALYTICS
+# ============================================================================
+
+@app.get("/api/feedback/analytics")
+def get_feedback_analytics():
+    """Get feedback analytics: rating distribution, average, trends."""
+    try:
+        db = get_database()
+        stats = db.get_feedback_stats()
+        summary = db.get_db_summary()
+        stats["total_chat_messages"] = summary.get("chat_history", 0)
+        stats["total_sessions"] = summary.get("sessions", 0)
+        return stats
+    except Exception as e:
+        logger.error(f"Error getting feedback analytics: {e}")
+        return {"error": str(e)}
+
+
+# ============================================================================
+# ROUTE 2d: DATABASE SUMMARY
+# ============================================================================
+
+@app.get("/api/db/summary")
+def get_db_summary_endpoint():
+    """Get overall database and vector store summary."""
+    try:
+        db = get_database()
+        summary = db.get_db_summary()
+        
+        # Add Vector Store Stats (Phase 3)
+        try:
+            from src.semantic_search import get_vector_store
+            vs = get_vector_store()
+            summary["vector_store"] = vs.get_stats()
         except:
-            raise HTTPException(status_code=500, detail=str(e))
+            summary["vector_store"] = {"status": "Not available"}
+            
+        return summary
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 # ============================================================================
@@ -1083,6 +1328,123 @@ def get_auto_training_stats() -> dict:
     """Get statistics about auto-training sessions."""
     from src.political_trainer import get_auto_trainer
     return get_auto_trainer().get_training_stats()
+
+
+@app.get("/api/math/stats")
+def get_math_stats():
+    """Get AZAN's math problem solving statistics."""
+    from src.math_trainer import get_math_trainer
+    return get_math_trainer().get_training_stats()
+
+
+@app.post("/api/math/train")
+def trigger_math_training(payload: dict):
+    """Manually train AZAN on a specific math problem with symbolic verification."""
+    question = payload.get("question", "")
+    response = payload.get("response", "")
+    ground_truth = payload.get("ground_truth", "")
+    
+    if not all([question, response, ground_truth]):
+        raise HTTPException(status_code=400, detail="Missing required math training fields.")
+        
+    from src.math_trainer import get_math_trainer
+    return get_math_trainer().evaluate_step_by_step(question, response, ground_truth)
+
+
+@app.post("/api/physics/solve")
+def solve_physics_problem(payload: dict):
+    """Solve a physics problem."""
+    problem = payload.get("problem", "")
+    domain = payload.get("domain", "auto")
+    if not problem:
+        raise HTTPException(status_code=400, detail="Missing 'problem' field")
+    from src.physics_engine import get_physics_engine
+    return get_physics_engine().solve(problem, domain)
+
+
+@app.get("/api/physics/constants")
+def get_physics_constants():
+    """Get all physical constants."""
+    from src.physics_engine import CONSTANTS
+    return {"constants": CONSTANTS}
+
+
+# ============================================================================
+# ROUTE 5b: DOCUMENT UPLOAD (Phase 3)
+# ============================================================================
+
+@app.post("/api/documents/upload")
+async def upload_document(file: UploadFile = File(...)):
+    """Upload a PDF or Markdown document for processing and indexing."""
+    allowed = {".pdf", ".md", ".markdown", ".txt"}
+    ext = Path(file.filename).suffix.lower()
+    if ext not in allowed:
+        raise HTTPException(status_code=400, detail=f"Unsupported file type: {ext}. Allowed: {', '.join(allowed)}")
+    
+    contents = await file.read()
+    if len(contents) > 10 * 1024 * 1024:  # 10 MB limit
+        raise HTTPException(status_code=400, detail="File too large (max 10 MB)")
+    
+    from src.document_processor import process_document
+    result = process_document(file.filename, contents)
+    
+    if not result.get("success"):
+        raise HTTPException(status_code=422, detail=result.get("error", "Processing failed"))
+    return result
+
+
+@app.get("/api/documents/stats")
+def get_document_stats_endpoint():
+    """Get stats about uploaded/processed documents."""
+    from src.document_processor import get_document_stats
+    return get_document_stats()
+
+
+# ============================================================================
+# ROUTE 5c: AGENTIC ENDPOINTS (Phase 5)
+# ============================================================================
+
+@app.post("/api/agent/fact-check")
+def agent_fact_check(payload: dict):
+    """Fact-check a claim against the knowledge base."""
+    claim = payload.get("claim", "")
+    if not claim:
+        raise HTTPException(status_code=400, detail="Missing 'claim' field")
+    from src.fact_checker import fact_check
+    return fact_check(claim)
+
+
+@app.post("/api/agent/execute")
+def agent_execute_task(payload: dict):
+    """Execute an agentic task (scrape, summarize, etc)."""
+    command = payload.get("command", "")
+    args = payload.get("args", {})
+    if not command:
+        raise HTTPException(status_code=400, detail="Missing 'command' field")
+    from src.task_executor import execute_task
+    return execute_task(command, args)
+
+
+@app.post("/api/models/pull")
+def pull_ollama_model(payload: dict):
+    """Pull a model from Ollama."""
+    model = payload.get("model", "")
+    if not model:
+        raise HTTPException(status_code=400, detail="Missing 'model' field")
+    
+    import subprocess
+    try:
+        logger.info(f"Pulling model: {model}")
+        # Run pull in background to avoid timeout, but for now we wait a bit
+        # In a real app, this should be a background task
+        process = subprocess.run(["ollama", "pull", model], capture_output=True, text=True, timeout=300)
+        if process.returncode == 0:
+            return {"status": "success", "message": f"Successfully pulled {model}"}
+        else:
+            return {"status": "error", "message": process.stderr}
+    except Exception as e:
+        logger.error(f"Error pulling model: {e}")
+        return {"status": "error", "message": str(e)}
 
 
 # ============================================================================

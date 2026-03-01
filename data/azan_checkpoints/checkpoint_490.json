@@ -1,0 +1,173 @@
+{
+  "iteration": 490,
+  "timestamp": "2026-03-01T07:27:41.201132",
+  "total_reward": 2193.344054847976,
+  "avg_reward": 4.476212356832605,
+  "qa_learned_count": 490,
+  "qa_pairs": [
+    {
+      "id": "qa_481",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T07:23:11.122255",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_482",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T07:23:41.133762",
+      "reward": 4.41
+    },
+    {
+      "id": "qa_483",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T07:24:11.144523",
+      "reward": 4.24
+    },
+    {
+      "id": "qa_484",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T07:24:41.151843",
+      "reward": 4.4
+    },
+    {
+      "id": "qa_485",
+      "source_id": "pd_003",
+      "source": "Political Definitions",
+      "category": "governance",
+      "question": "What is Diplomacy?",
+      "answer": "Art and practice of conducting negotiations between states/entities. Includes negotiation, treaty-making, representation, and conflict resolution without military force.",
+      "key_terms": [
+        "diplomacy",
+        "negotiation",
+        "treaty",
+        "ambassador"
+      ],
+      "timestamp": "2026-03-01T07:25:11.157387",
+      "reward": 3.82
+    },
+    {
+      "id": "qa_486",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T07:25:41.167739",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_487",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-03-01T07:26:11.178244",
+      "reward": 4.67
+    },
+    {
+      "id": "qa_488",
+      "source_id": "un_001",
+      "source": "UN Charter",
+      "category": "international_law",
+      "question": "What is UN Purposes and Principles?",
+      "answer": "Article 1-2: UN aims to maintain international peace, develop friendly relations, achieve cooperation, and promote human rights without distinction.",
+      "key_terms": [
+        "peace",
+        "security",
+        "human rights",
+        "cooperation"
+      ],
+      "timestamp": "2026-03-01T07:26:41.188474",
+      "reward": 4.47
+    },
+    {
+      "id": "qa_489",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-03-01T07:27:11.194663",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_490",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-03-01T07:27:41.201108",
+      "reward": 4.0
+    }
+  ]
+}

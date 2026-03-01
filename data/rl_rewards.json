@@ -11583,5 +11583,3405 @@
     "timestamp": "2026-02-24T05:22:13.357924",
     "reward": 5.0,
     "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:19:40.937826",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:19:40.978823",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:19:41.020011",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:19:41.054313",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:19:41.084676",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:20:41.128433",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:20:41.155928",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:20:41.185295",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:20:41.238568",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:20:41.343192",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:21:41.396190",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:21:41.423320",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:21:41.449770",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:21:41.476556",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:21:41.504030",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:22:41.532637",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:22:41.560333",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:22:41.586765",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:22:41.613373",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:22:41.639631",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:23:41.669811",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:23:41.697076",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:23:41.723830",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:23:41.750649",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:23:41.777714",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:24:41.807649",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:24:41.834346",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:24:41.860190",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:24:41.885906",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:24:41.913424",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:25:41.944667",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:25:41.988577",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:25:42.037736",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:25:42.089391",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:25:42.137120",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:26:42.181438",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:26:42.207327",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:26:42.233094",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:26:42.259985",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:26:42.289015",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:27:42.318951",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:27:42.347443",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:27:42.374276",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:27:42.401444",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:27:42.428012",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:30:46.502164",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:30:46.537520",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:30:46.577623",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:30:46.609066",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:30:46.638983",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:31:46.677375",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:31:46.722353",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:31:46.749507",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:31:46.775727",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:31:46.802774",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:32:46.836039",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:32:46.935976",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:32:46.985780",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:32:47.036964",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:32:47.090992",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:33:47.153384",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:33:47.182594",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:33:47.209181",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:33:47.235402",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:33:47.261473",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:34:47.292869",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:34:47.320605",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:34:47.347094",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:34:47.373423",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:34:47.400065",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:35:47.426730",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:35:47.453838",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:35:47.479839",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:35:47.506376",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:35:47.533231",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:36:47.560257",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:36:47.590278",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:36:47.617975",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:36:47.644695",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:36:47.672298",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:37:47.703395",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:37:47.730540",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:37:47.757069",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:37:47.783915",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:37:47.810363",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:38:47.842185",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:38:47.869327",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:38:47.895701",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:38:47.921806",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:38:47.948028",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:39:47.979987",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:39:48.010636",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:39:48.039807",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:39:48.066963",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:39:48.093855",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:40:48.124591",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:40:48.151313",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:40:48.178544",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:40:48.206312",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:40:48.233232",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:41:48.261637",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:41:48.288883",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:41:48.316021",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:41:48.343549",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:41:48.371245",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:42:48.405905",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:42:48.432691",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:42:48.460834",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:42:48.488385",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:42:48.515958",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:43:48.544070",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:43:48.573600",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:43:48.604119",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:43:48.634400",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:43:48.663825",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:44:48.698792",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:44:48.726649",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:44:48.754190",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:44:48.781811",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:44:48.809455",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:45:48.839012",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:45:48.897207",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:45:48.956224",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:45:49.017483",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:45:49.077197",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:46:49.137993",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:46:49.165281",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:46:49.192569",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:46:49.220637",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:46:49.248464",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:47:49.276084",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:47:49.303095",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:47:49.330387",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:47:49.358962",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:47:49.387267",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:48:49.417239",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:48:49.444444",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:48:49.473108",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:48:49.501045",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:48:49.528878",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:49:49.557349",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:49:49.584537",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:49:49.612381",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:49:49.640496",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T19:49:49.668470",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:50:49.696991",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:50:49.724430",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:50:49.752150",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:50:49.779776",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:50:49.807495",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:51:49.839851",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:51:49.867182",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:51:49.911411",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T19:51:49.958603",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:51:49.994661",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:52:50.025444",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:52:50.052803",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:52:50.079725",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:52:50.107456",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:52:50.134723",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:53:50.167666",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:53:50.195914",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T19:53:50.223382",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:53:50.250483",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:53:50.278049",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:54:50.306362",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:54:50.334489",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:54:50.361610",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:54:50.390104",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:54:50.417680",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:55:50.445033",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T19:55:50.473358",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:55:50.500909",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:55:50.528861",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:55:50.556510",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:56:50.591961",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:56:50.620719",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:56:50.649065",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:56:50.677212",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:56:50.705276",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T19:57:50.737334",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:57:50.765721",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:57:50.793404",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:57:50.820752",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:57:50.848833",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:58:50.881491",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:58:50.909902",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:58:50.937750",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:58:50.965491",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T19:58:50.993686",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:59:51.022877",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:59:51.051127",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T19:59:51.079257",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:59:51.107225",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T19:59:51.135151",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:00:51.167826",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:00:51.204624",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:00:51.236154",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:00:51.272156",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:00:51.306469",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:51.344289",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:51.373864",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:51.401648",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:51.429558",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:01:51.457355",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:02:51.485152",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:02:51.517096",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:02:51.548681",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:02:51.579752",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:02:51.610245",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:03:51.640203",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:03:51.669391",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:03:51.697942",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:03:51.725900",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:03:51.753613",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:04:51.786875",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:04:51.817057",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:04:51.844886",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:04:51.875943",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:04:51.904859",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:05:51.936130",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:05:51.954044",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:05:51.969550",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:05:51.985531",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:05:52.001192",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:06:52.026232",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:06:52.041616",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:06:52.056621",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:06:52.071446",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:06:52.086269",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:07:49.387015",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:07:49.405539",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:07:49.426774",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:07:49.444435",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:07:49.461453",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:08:09.365746",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:08:09.388186",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:08:09.443766",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:08:09.463194",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:08:09.486787",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:09:09.516398",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:09:09.532893",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:09:09.548240",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:09:09.563608",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:09:09.578880",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:10:09.596534",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:10:09.612763",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:10:09.628530",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:10:09.643624",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:10:09.658750",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:11:09.676641",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:11:09.694405",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:11:09.709542",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:11:09.724982",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:11:09.739917",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:09.756532",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:09.772656",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:09.787736",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:09.803583",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:09.818649",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:37.346714",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:37.365777",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:37.381729",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:37.397617",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:12:37.414002",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:13:37.433883",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:13:37.450396",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:13:37.465625",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:13:37.480923",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:13:37.496053",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:14:37.516358",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:14:37.531927",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:14:37.546837",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:14:37.561806",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:14:37.577262",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:15:37.592585",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:15:37.608189",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:15:37.623396",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:15:37.638855",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:15:37.654024",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:16:37.669635",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:16:37.685407",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:16:37.700577",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:16:37.716258",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:16:37.732141",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:17:37.755882",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:17:37.772057",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:17:37.787485",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:17:37.802706",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:17:37.817670",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:18:26.137408",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:18:26.157020",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:18:26.178529",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:18:26.196706",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:18:26.214274",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:19:26.235191",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:19:26.251337",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:19:26.266710",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:19:26.281636",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:19:26.296691",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:20:26.316160",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:20:26.333265",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:20:26.348332",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:20:26.363357",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:20:26.378482",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:21:26.398777",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:21:26.414816",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:21:26.430154",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:21:26.445273",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:21:26.460387",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:22:26.480219",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:22:26.496556",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:22:26.511832",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:22:26.526948",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:22:26.542244",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:23:26.558681",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:23:26.574594",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:23:26.589802",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:23:26.604842",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:23:26.621992",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:24:26.643269",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:24:26.659072",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:24:26.674457",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:24:26.689682",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:24:26.705000",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:25:26.725285",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:25:26.740879",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:25:26.756129",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:25:26.771495",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:25:26.786795",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:26:26.807414",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:26:26.823407",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:26:26.838713",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:26:26.854026",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:26:26.869560",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:27:26.885853",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:27:26.901734",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:27:26.917057",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:27:26.932050",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:27:26.947723",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:28:26.966318",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:28:26.981922",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:28:26.997431",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:28:27.012624",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:28:27.027781",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:29:27.043333",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:29:27.059819",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:29:27.075823",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:29:27.090939",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:29:27.106166",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:30:27.131648",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:30:27.147493",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:30:27.163067",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:30:27.178295",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:30:27.193536",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:31:27.214672",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:31:27.230725",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:31:27.246588",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:31:27.262027",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:31:27.277662",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:32:27.297896",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:32:27.313670",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:32:27.329264",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:32:27.344636",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:32:27.360277",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:33:27.376169",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:33:27.392019",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:33:27.407660",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:33:27.423398",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:33:27.439479",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:34:27.456354",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:34:27.472785",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:34:27.502500",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:34:27.532343",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:34:27.550987",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:35:27.572244",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:35:27.588627",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:35:27.605005",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:35:27.620680",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:35:27.636257",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:36:27.657074",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:36:27.673293",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:36:27.688898",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:36:27.704354",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:36:27.719929",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:37:27.737321",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:37:27.753326",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:37:27.769053",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:37:27.784825",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:37:27.800534",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:38:27.819025",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:38:27.835180",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:38:27.851086",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:38:27.866703",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:38:27.882803",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:39:27.903559",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:39:27.919692",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:39:27.935579",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:39:27.951257",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:39:27.967223",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:40:27.983865",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:40:28.000089",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:40:28.016008",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:40:28.031696",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:40:28.047263",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:41:28.068182",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:41:28.084425",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:41:28.100690",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:41:28.116643",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:41:28.132506",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:42:28.148563",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:42:28.164802",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:42:28.180922",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:42:28.196529",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:42:28.212136",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:43:28.235838",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:43:28.252096",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:43:28.268103",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:43:28.283898",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:43:28.299635",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:44:28.320506",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:44:28.336808",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:44:28.352809",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:44:28.368636",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:44:28.384551",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:45:28.405526",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:45:28.421872",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:45:28.438005",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:45:28.453723",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:45:28.469718",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:46:28.485720",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:46:28.502075",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:46:28.518156",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:46:28.534116",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:46:28.550158",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:47:28.571315",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:47:28.588371",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:47:28.605466",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:47:28.621936",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:47:28.638580",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:48:28.656336",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:48:28.674499",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:48:28.690909",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:48:28.707093",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:48:28.723343",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:49:28.740801",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:49:28.758166",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:49:28.774302",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:49:28.790246",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:49:28.806282",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:50:28.826871",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:50:28.844119",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:50:28.860232",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:50:28.876686",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:50:28.892476",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T20:51:28.913687",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:51:28.931491",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:51:28.947997",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T20:51:28.963962",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:51:28.979885",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:52:28.995912",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:52:29.013684",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:52:29.030272",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:52:29.046112",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T20:52:29.062071",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:53:29.083117",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:53:29.100529",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:53:29.116652",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:53:29.133036",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:53:29.149127",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T20:54:29.170382",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:54:29.186922",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:54:29.203404",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:54:29.219423",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:54:29.235616",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:55:29.254885",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T20:55:29.273687",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:55:29.292618",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:55:29.311460",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:55:29.328546",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:56:29.350181",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:56:29.367002",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T20:56:29.383429",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:56:29.400041",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:56:29.416279",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:57:29.432541",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:57:29.449823",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:57:29.466393",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:57:29.482622",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:57:29.498754",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:58:29.515335",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T20:58:29.532649",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:58:29.548952",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:58:29.565136",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:58:29.581436",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:59:29.598434",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:59:29.615749",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:59:29.632484",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:59:29.648599",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T20:59:29.664739",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:00:58.343738",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:00:58.360452",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:00:58.376846",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:00:58.393528",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:00:58.409558",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:01:58.431212",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:01:58.448118",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:01:58.464439",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:01:58.480575",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:01:58.496520",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:02:58.518375",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:02:58.535274",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:02:58.551783",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:02:58.567994",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:02:58.584312",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:03:58.601644",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:03:58.618350",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:03:58.634875",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:03:58.651203",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:03:58.667612",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:04:58.689000",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:04:58.705704",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:04:58.722247",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:04:58.738796",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:04:58.755310",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:05:58.774349",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:05:58.791040",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:05:58.807704",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:05:58.823939",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:05:58.840244",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:06:58.861867",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:06:58.878849",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:06:58.895663",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:06:58.912038",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:06:58.928306",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:07:58.949827",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:07:58.966812",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:07:58.983629",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:07:59.000174",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:07:59.016748",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:08:59.038884",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:08:59.055702",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:08:59.072322",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:08:59.088631",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:08:59.105049",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:09:59.126868",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:09:59.143912",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:09:59.160781",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:09:59.177191",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:09:59.193795",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:10:59.215683",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:10:59.232557",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:10:59.249303",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:10:59.265856",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:10:59.282565",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:11:59.301937",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:11:59.319023",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:11:59.335859",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:11:59.352546",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:11:59.369363",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:12:59.388765",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:12:59.408186",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:12:59.427261",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:12:59.446329",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:12:59.466592",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:13:59.489631",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:13:59.506737",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:13:59.523981",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:13:59.540776",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:13:59.557263",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:14:59.578949",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T21:14:59.596169",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:14:59.613408",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:14:59.630102",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:14:59.646686",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:15:59.663742",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:15:59.681955",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:15:59.700863",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:15:59.718799",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:15:59.736699",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-02-28T21:16:59.757163",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:16:59.774477",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:16:59.791598",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:16:59.808323",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:16:59.825614",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:17:59.845643",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:17:59.862876",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:17:59.880289",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:17:59.897056",
+    "reward": 5.0,
+    "category": "entertainment"
+  },
+  {
+    "timestamp": "2026-02-28T21:17:59.914060",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:18:59.936539",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:18:59.954392",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:18:59.971507",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:18:59.988297",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:19:00.005043",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:20:00.022209",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:20:00.041901",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:20:00.060214",
+    "reward": 5.0,
+    "category": "science"
+  },
+  {
+    "timestamp": "2026-02-28T21:20:00.079894",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:20:00.096947",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:21:00.114119",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:21:00.133947",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:21:00.151215",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:21:00.168400",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:21:00.185698",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:22:00.207839",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:22:00.227421",
+    "reward": 5.0,
+    "category": "technology"
+  },
+  {
+    "timestamp": "2026-02-28T21:22:00.244643",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:22:00.262170",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:22:00.279291",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:23:00.301187",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:23:00.320262",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:23:00.337767",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:23:00.354692",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:23:00.371872",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:24:00.391913",
+    "reward": 5.0,
+    "category": "politics"
+  },
+  {
+    "timestamp": "2026-02-28T21:24:00.409101",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:24:00.426339",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:24:00.443169",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:24:00.460053",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:25:00.481089",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:25:00.498491",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:25:00.515980",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:25:00.532941",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:25:00.549926",
+    "reward": 5.0,
+    "category": "world"
+  },
+  {
+    "timestamp": "2026-02-28T21:26:25.400184",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:26:25.417445",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:26:25.434676",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:26:25.451618",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:26:25.468357",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:45:44.380079",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:45:44.397322",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:45:44.414372",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:45:44.431432",
+    "reward": 5.0,
+    "category": "national"
+  },
+  {
+    "timestamp": "2026-02-28T21:45:44.448391",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T23:14:38.733722",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T23:14:38.752211",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T23:14:38.769749",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T23:14:38.787442",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-02-28T23:14:38.804530",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T01:10:21.196217",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T01:10:21.213143",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T01:10:21.230244",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T01:10:21.247481",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T01:10:21.264611",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T02:50:17.343572",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T02:50:17.361369",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T02:50:17.378527",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T02:50:17.395541",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T02:50:17.412980",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:04:39.843799",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:04:39.860829",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:04:39.877865",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:04:39.896545",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:04:39.913526",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:17:44.166679",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:17:44.184440",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:17:44.201931",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:17:44.219433",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:17:44.236823",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:18:44.257704",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:18:44.276003",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:18:44.293554",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:18:44.310645",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:18:44.327737",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:19:44.350094",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:19:44.367971",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:19:44.385865",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:19:44.403398",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:19:44.420634",
+    "reward": 5.0,
+    "category": "sports"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:44.387312",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:44.422108",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:44.472235",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:44.633239",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:44.833018",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:56.369249",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:56.392312",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:56.425322",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:56.446017",
+    "reward": 5.0,
+    "category": "business"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:56.473854",
+    "reward": 5.0,
+    "category": "business"
   }
 ]

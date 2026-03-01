@@ -1,0 +1,174 @@
+{
+  "iteration": 260,
+  "timestamp": "2026-03-01T05:04:34.407575",
+  "total_reward": 1164.8819640302245,
+  "avg_reward": 4.480315246270094,
+  "qa_learned_count": 260,
+  "qa_pairs": [
+    {
+      "id": "qa_251",
+      "source_id": "ic_002",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Freedom?",
+      "answer": "Article 19-22: Citizens have freedom of speech and expression, assembly, association, movement, residence, and profession, subject to reasonable restrictions.",
+      "key_terms": [
+        "freedom",
+        "speech",
+        "expression",
+        "assembly"
+      ],
+      "timestamp": "2026-02-28T21:43:04.940661",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_252",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-02-28T21:45:14.345477",
+      "reward": 4.34
+    },
+    {
+      "id": "qa_253",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-02-28T22:33:17.006693",
+      "reward": 4.53
+    },
+    {
+      "id": "qa_254",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T22:59:32.777473",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_255",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-02-28T23:52:13.585991",
+      "reward": 3.61
+    },
+    {
+      "id": "qa_256",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-03-01T01:00:36.623243",
+      "reward": 3.72
+    },
+    {
+      "id": "qa_257",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T01:20:37.699808",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_258",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T02:34:22.299315",
+      "reward": 3.93
+    },
+    {
+      "id": "qa_259",
+      "source_id": "pd_001",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Tariffs and Trade?",
+      "answer": "Tariff: A tax on imported or exported goods. Used to protect domestic industries, generate revenue, or influence trade balances. Types: ad valorem (% of value), specific (fixed amount).",
+      "key_terms": [
+        "tariff",
+        "trade",
+        "import",
+        "export",
+        "tax"
+      ],
+      "timestamp": "2026-03-01T03:51:02.588752",
+      "reward": 3.85
+    },
+    {
+      "id": "qa_260",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-03-01T05:04:34.407556",
+      "reward": 4.55
+    }
+  ]
+}

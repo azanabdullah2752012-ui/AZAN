@@ -1,0 +1,171 @@
+{
+  "iteration": 150,
+  "timestamp": "2026-02-28T20:35:26.288655",
+  "total_reward": 671.5366522453293,
+  "avg_reward": 4.476911014968862,
+  "qa_learned_count": 150,
+  "qa_pairs": [
+    {
+      "id": "qa_141",
+      "source_id": "pd_002",
+      "source": "Political Definitions",
+      "category": "political_economy",
+      "question": "What is Sanctions?",
+      "answer": "Economic/political penalties imposed by one or more countries against a target country/entity. Types: comprehensive, targeted, sectoral. Goal: compel behavior change without military force.",
+      "key_terms": [
+        "sanctions",
+        "embargo",
+        "penalty",
+        "coercion"
+      ],
+      "timestamp": "2026-02-28T20:30:56.257451",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_142",
+      "source_id": "ic_001",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Equality?",
+      "answer": "Article 14-18: The Constitution guarantees equality before law, prohibition of discrimination, equality of opportunity in matters of public employment, abolition of titles, and prohibition of forced labor.",
+      "key_terms": [
+        "equality",
+        "discrimination",
+        "citizenship",
+        "fundamental rights"
+      ],
+      "timestamp": "2026-02-28T20:31:26.259270",
+      "reward": 4.51
+    },
+    {
+      "id": "qa_143",
+      "source_id": "un_002",
+      "source": "UN Declaration of Human Rights",
+      "category": "international_law",
+      "question": "What is Universal Declaration of Human Rights?",
+      "answer": "UDHR 1948: Sets out fundamental human rights. All humans born free and equal in dignity and rights. Includes rights to life, liberty, security, and freedom from slavery.",
+      "key_terms": [
+        "human rights",
+        "dignity",
+        "liberty",
+        "equality"
+      ],
+      "timestamp": "2026-02-28T20:31:56.261021",
+      "reward": 4.51
+    },
+    {
+      "id": "qa_144",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-02-28T20:32:26.267831",
+      "reward": 4.25
+    },
+    {
+      "id": "qa_145",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-02-28T20:32:56.269671",
+      "reward": 4.63
+    },
+    {
+      "id": "qa_146",
+      "source_id": "ic_003",
+      "source": "Indian Constitution",
+      "category": "fundamental_rights",
+      "question": "What is Right to Constitutional Remedies?",
+      "answer": "Article 32: Right to move Supreme Court for enforcement of fundamental rights. Citizens can approach the Supreme Court directly for violation of fundamental rights.",
+      "key_terms": [
+        "writ",
+        "habeas corpus",
+        "mandamus",
+        "prohibition"
+      ],
+      "timestamp": "2026-02-28T20:33:26.275243",
+      "reward": 4.79
+    },
+    {
+      "id": "qa_147",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T20:33:56.279090",
+      "reward": 3.69
+    },
+    {
+      "id": "qa_148",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T20:34:26.283058",
+      "reward": 5.0
+    },
+    {
+      "id": "qa_149",
+      "source_id": "ms_002",
+      "source": "Modern Military Doctrine",
+      "category": "military_doctrine",
+      "question": "What is Network-Centric Warfare?",
+      "answer": "Modern military doctrine emphasizing information, surveillance, reconnaissance integration with real-time command and control for superior situational awareness.",
+      "key_terms": [
+        "network",
+        "information",
+        "surveillance",
+        "command",
+        "control"
+      ],
+      "timestamp": "2026-02-28T20:34:56.286675",
+      "reward": 3.76
+    },
+    {
+      "id": "qa_150",
+      "source_id": "ms_001",
+      "source": "Military Strategy",
+      "category": "military_doctrine",
+      "question": "What is Sun Tzu Art of War Principles?",
+      "answer": "Ancient Chinese military doctrine: Know yourself and your enemy, never be defeated. Key principles: deception, surprise, concentration of force, terrain advantage.",
+      "key_terms": [
+        "strategy",
+        "deception",
+        "concentration",
+        "terrain"
+      ],
+      "timestamp": "2026-02-28T20:35:26.288643",
+      "reward": 4.97
+    }
+  ]
+}

@@ -465,9 +465,8 @@ class TrainingDashboard:
         }
     
     def list_all_models(self) -> List[str]:
-        """List all available models."""
+        """List all available models from Ollama."""
         try:
-            # Try to list models from Ollama
             import subprocess
             result = subprocess.run(
                 ["ollama", "list"],
@@ -476,13 +475,26 @@ class TrainingDashboard:
                 timeout=5
             )
             if result.returncode == 0:
-                lines = result.stdout.strip().split("\n")[1:]  # Skip header
-                models = [line.split()[0] for line in lines if line.strip()]
-                return models
+                models = []
+                lines = result.stdout.strip().split("\n")
+                if len(lines) > 1:
+                    for line in lines[1:]:  # Skip header
+                        parts = line.split()
+                        if parts:
+                            model_name = parts[0]
+                            # Clean up model name (remove :latest if present)
+                            if model_name.endswith(":latest"):
+                                model_name = model_name[:-7]
+                            models.append(model_name)
+                
+                # Ensure llama3 is at least mentioned as a primary option
+                if not models:
+                    return ["llama3", "llama3_president_rlhf"]
+                return sorted(list(set(models)))
         except Exception as e:
             logger.warning(f"Could not list Ollama models: {e}")
         
-        # Fallback to known models
+        # Fallback to known default models
         return ["llama3", "llama3_president_rlhf"]
     
     def export_training_data(self, format: str = "json") -> str:

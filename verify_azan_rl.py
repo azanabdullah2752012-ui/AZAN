@@ -20,6 +20,9 @@ def verify_files():
         'src/azan_rl_pipeline.py',
         'src/azan_rl_inference.py',
         'src/azan_dashboard.py',
+        'src/math_engine.py',
+        'src/physics_engine.py',
+        'src/task_executor.py',
         'webui/app.py',
         'data/azan_knowledge_base.json'
     ]
@@ -45,6 +48,9 @@ def verify_imports():
         ('src.azan_rl_pipeline', ['RLTrainingEngine', 'AutomatedRLTrainer', 'CuratedKnowledgeBase']),
         ('src.azan_rl_inference', ['DataOnlyInferenceEngine']),
         ('src.azan_dashboard', ['get_dashboard']),
+        ('src.math_engine', ['MathEngine', 'get_math_engine']),
+        ('src.physics_engine', ['PhysicsEngine', 'get_physics_engine']),
+        ('src.task_executor', ['execute_task']),
     ]
     
     all_ok = True
@@ -216,6 +222,71 @@ def verify_dashboard():
         return False
 
 
+def verify_math_engine():
+    """Verify symbolic math engine"""
+    logger.info("\n📐 Verifying Math Engine...")
+    try:
+        from src.math_engine import get_math_engine
+        engine = get_math_engine()
+        
+        # Test 1: Simplify
+        res = engine.solve("x^2 + 2x + 1", task="simplify")
+        if "(x + 1)**2" in res['result'] or "x**2 + 2*x + 1" in res['result']:
+            logger.info(f"  ✅ Simplify test passed: {res['result']}")
+        else:
+            logger.warning(f"  ⚠️ Simplify test returned unexpected result: {res['result']}")
+
+        # Test 2: Differentiate
+        res = engine.solve("diff x^3", task="auto")
+        if "3*x**2" in res['result']:
+            logger.info("  ✅ Differentiate test passed")
+        else:
+            logger.error(f"  ❌ Differentiate test failed: {res['result']}")
+            return False
+
+        # Test 3: Solve Equation
+        res = engine.solve("solve x^2 - 4 = 0", task="auto")
+        if "-2" in res['result'] and "2" in res['result']:
+            logger.info("  ✅ Equation solver test passed")
+        else:
+            logger.error(f"  ❌ Equation solver test failed: {res['result']}")
+            return False
+
+        return True
+    except Exception as e:
+        logger.error(f"  ❌ Math engine error: {e}")
+        return False
+
+
+def verify_physics_engine():
+    """Verify symbolic physics engine"""
+    logger.info("\n🔬 Verifying Physics Engine...")
+    try:
+        from src.physics_engine import get_physics_engine
+        engine = get_physics_engine()
+        
+        # Test 1: Kinematics
+        res = engine.solve("v=20 u=0 t=5 find a", domain="kinematics")
+        if "4.0" in res['result']:
+            logger.info(f"  ✅ Kinematics test passed: {res['result']}")
+        else:
+            logger.error(f"  ❌ Kinematics test failed: {res['result']}")
+            return False
+
+        # Test 2: Unit Conversion
+        res = engine.solve("convert 100 celsius to fahrenheit", domain="unit_convert")
+        if "212" in res['result']:
+            logger.info(f"  ✅ Unit conversion test passed: {res['result']}")
+        else:
+            logger.error(f"  ❌ Unit conversion test failed: {res['result']}")
+            return False
+
+        return True
+    except Exception as e:
+        logger.error(f"  ❌ Physics engine error: {e}")
+        return False
+
+
 def verify_app_integration():
     """Verify FastAPI app integration"""
     logger.info("\n🌐 Verifying FastAPI Integration...")
@@ -228,7 +299,7 @@ def verify_app_integration():
         required_imports = [
             'from src.azan_rl_pipeline import',
             'from src.azan_rl_inference import',
-            '@app.get("/azan-dashboard")',
+            '@app.get("/azan-dashboard"',
             '@app.get("/api/azan/rl/status")',
             '@app.post("/api/azan/rl/start")',
             '@app.post("/api/azan/rl/stop")',
@@ -262,6 +333,8 @@ def run_all_checks():
         ("Knowledge Base", verify_knowledge_base),
         ("RL Engine", verify_rl_engine),
         ("Inference Engine", verify_inference_engine),
+        ("Math Engine", verify_math_engine),
+        ("Physics Engine", verify_physics_engine),
         ("Dashboard", verify_dashboard),
         ("App Integration", verify_app_integration),
     ]

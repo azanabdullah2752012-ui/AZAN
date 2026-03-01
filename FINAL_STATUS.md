@@ -239,7 +239,7 @@ All systems tested and verified:
 Start AZAN and all systems will be operational:
 
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 python start.sh
 ```
 

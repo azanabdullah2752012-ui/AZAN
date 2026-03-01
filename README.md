@@ -13,6 +13,7 @@ AZAN is your personal AI assistant that **learns autonomously** from news source
 - ✅ **Base AI Knowledge** (Ollama + Llama3 model)
 - ✅ **Autonomous Learning** (Continuous RL training, 60-second cycles)
 - ✅ **Knowledge Integration** (217 Q&A pairs across 8 categories)
+- ✅ **Advanced Math & Physics** (Symbolic reasoning powered by SymPy)
 - ✅ **Real-time Monitoring** (API endpoints for training metrics)
 
 ---
@@ -215,7 +216,7 @@ ps aux | grep uvicorn
 
 # Kill and restart
 pkill -f "uvicorn.*webui.app"
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 nohup python -m uvicorn webui.app:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
 ```
 

@@ -168,7 +168,7 @@ User Input → Browser → POST /chat → Inference → Ollama → Llama3 → Re
 ### 5.4 File Structure
 
 ```
-/Users/azan/Desktop/AZAN/
+/Applications/AZAN/
 ├── src/
 │   ├── inference.py           # Core LLM inference module
 │   ├── train_rlhf.py          # RLHF training pipeline
@@ -423,7 +423,7 @@ input,response
 ### 11.2 Installation
 
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 pip install -r requirements.txt
 ollama pull llama3

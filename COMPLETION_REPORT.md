@@ -287,7 +287,7 @@ All endpoints tested and working:
 
 ### Step 1: Start Server
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python -m uvicorn webui.app:app --reload
 ```

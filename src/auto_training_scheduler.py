@@ -153,29 +153,36 @@ class AutoTrainingScheduler:
                 threading.Event().wait(60)
     
     def _run_training_session(self) -> None:
-        """Run a single training session with political topics."""
+        """Run a single training session by acquiring news and perfecting knowledge."""
         try:
-            start_time = datetime.now()
+            from src.inshorts_scraper import InshortsScraper
+            from src.database import get_database
             
-            # Get training pairs
-            all_pairs = self.trainer.get_training_pairs()
+            scraper = InshortsScraper()
+            db = get_database()
             
-            # Filter by focused topics if specified
-            focused_topics = self.config.get("topics_to_focus", [])
-            if focused_topics:
-                pairs = [p for p in all_pairs if p.get("topic") in focused_topics]
-            else:
-                pairs = all_pairs
+            # 1. Fetch latest news (knowledge acquisition)
+            logger.info("AutoTraining: Scraping latest news...")
+            new_articles_count = scraper.scrape_all_categories()
             
-            # Randomly sample pairs for this session
-            num_examples = self.config.get("examples_per_session", 5)
-            sample_pairs = random.sample(pairs, min(num_examples, len(pairs)))
+            # 2. Sync with SQLite and ChromaDB
+            latest_articles = scraper.get_latest_articles(limit=new_articles_count or 10)
+            for art in latest_articles:
+                db.insert_article(art) # This triggers ChromaDB indexing as of Phase 3
+                
+            # 3. Generate training pairs from real news
+            logger.info("AutoTraining: Generating training pairs...")
+            new_pairs = scraper.convert_to_training_data(latest_articles)
             
-            # Train on each pair
+            # 4. Perform RL training on a sample of new knowledge
             trained_count = 0
             total_reward = 0.0
-            topic_counts = {}
             
+            # Sample up to 5 pairs for this session
+            sample_size = self.config.get("examples_per_session", 5)
+            sample_pairs = random.sample(new_pairs, min(sample_size, len(new_pairs))) if new_pairs else []
+            
+            start_time = datetime.now()
             for pair in sample_pairs:
                 try:
                     result = dashboard.train_single_example(
@@ -187,35 +194,27 @@ class AutoTrainingScheduler:
                     
                     if result.get("success"):
                         trained_count += 1
-                        reward = result.get("reward_score", 0.0)
-                        total_reward += reward
-                        
-                        # Track by topic
-                        topic = pair.get("topic", "Unknown")
-                        topic_counts[topic] = topic_counts.get(topic, 0) + 1
-                
+                        total_reward += result.get("reward_score", 0.0)
                 except Exception as e:
-                    logger.warning(f"Failed to train on pair: {e}")
+                    logger.warning(f"Training failed on pair: {e}")
             
-            # Log session
+            # Log session results
             duration = (datetime.now() - start_time).total_seconds()
+            avg_reward = round(total_reward / trained_count, 3) if trained_count > 0 else 0
+            
             session_data = {
                 "auto_training": True,
+                "new_news_acquired": new_articles_count,
                 "examples_trained": trained_count,
-                "avg_reward": round(total_reward / trained_count, 3) if trained_count > 0 else 0,
-                "duration_seconds": round(duration, 2),
-                "topics_covered": topic_counts,
-                "quick_mode_used": self.config.get("quick_mode", True)
+                "avg_reward": avg_reward,
+                "duration_seconds": duration
             }
             
             self.trainer.log_training_session(session_data)
             self.training_count += 1
             self.last_training_time = datetime.now()
             
-            logger.info(
-                f"Auto-training session #{self.training_count} completed: "
-                f"{trained_count} examples, avg reward {session_data['avg_reward']}"
-            )
+            logger.info(f"✓ Auto-training session #{self.training_count} complete. Avg Reward: {avg_reward}")
         
         except Exception as e:
             logger.error(f"Error during auto-training session: {e}")

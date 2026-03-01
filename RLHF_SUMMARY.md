@@ -111,7 +111,7 @@ rlhf_training_report.json
 
 ### Option 1: Fast Demo (Instant)
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python demo_rlhf.py
 ```
@@ -122,7 +122,7 @@ python demo_rlhf.py
 
 ### Option 2: Full Training (Complete)
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python src/train_rlhf.py
 ```
@@ -136,7 +136,7 @@ python src/train_rlhf.py
 ## 📋 Files Overview
 
 ```
-/Users/azan/Desktop/AZAN/
+/Applications/AZAN/
 ├── src/
 │   ├── train_rlhf.py              ← RLHF training script
 │   ├── train_llm.py               ← Existing LLM training

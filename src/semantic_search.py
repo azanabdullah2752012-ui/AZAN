@@ -1,15 +1,16 @@
 """
-Semantic Search with Embeddings for AZAN
-Uses Ollama embeddings for vector similarity search
+Semantic Search with ChromaDB for AZAN
+Uses ChromaDB for vector persistence and semantic retrieval.
+Keeps AZAN's knowledge base intelligent and fast.
 """
 
-import json
 import logging
-import numpy as np
-from datetime import datetime
+import chromadb
+from chromadb.config import Settings
 from pathlib import Path
 from typing import List, Dict, Optional
 import requests
+import hashlib
 
 logger = logging.getLogger(__name__)
 
@@ -41,15 +42,9 @@ class EmbeddingService:
     def get_embedding(self, text: str) -> Optional[List[float]]:
         """
         Get embedding for text
-        
-        Args:
-            text: Text to embed
-        
-        Returns:
-            Embedding vector or None if failed
         """
-        # Check cache first
-        text_hash = hash(text) % ((2 ** 31) - 1)
+        # Simple in-memory cache for speed
+        text_hash = hashlib.md5(text.encode()).hexdigest()
         if text_hash in self.embedding_cache:
             return self.embedding_cache[text_hash]
         
@@ -74,232 +69,123 @@ class EmbeddingService:
         except Exception as e:
             logger.error(f"Error getting embedding: {e}")
             return None
-    
-    def similarity(self, vec1: List[float], vec2: List[float]) -> float:
-        """
-        Calculate cosine similarity between two vectors
-        
-        Args:
-            vec1: First embedding vector
-            vec2: Second embedding vector
-        
-        Returns:
-            Similarity score (0-1)
-        """
-        if not vec1 or not vec2:
-            return 0.0
-        
-        vec1 = np.array(vec1)
-        vec2 = np.array(vec2)
-        
-        dot_product = np.dot(vec1, vec2)
-        norm1 = np.linalg.norm(vec1)
-        norm2 = np.linalg.norm(vec2)
-        
-        if norm1 == 0 or norm2 == 0:
-            return 0.0
-        
-        return float(dot_product / (norm1 * norm2))
 
 
-class SemanticSearchEngine:
+class VectorStore:
     """
-    Semantic search across articles and training data
+    ChromaDB wrapper for persistent vector storage.
     """
     
-    def __init__(self, data_dir: str = "data", embedding_service: Optional[EmbeddingService] = None):
+    def __init__(self, persist_directory: str = "data/chroma_db"):
+        self.persist_directory = Path(persist_directory)
+        self.persist_directory.mkdir(parents=True, exist_ok=True)
+        
+        # Initialize Persistent Client
+        self.client = chromadb.PersistentClient(path=str(self.persist_directory))
+        
+        # Create or Get Collections
+        # Using a default distance function "l2" (squared L2 distance)
+        # Cosine similarity is "cosine"
+        self.articles_collection = self.client.get_or_create_collection(
+            name="azan_articles",
+            metadata={"hnsw:space": "cosine"}
+        )
+        
+        self.embedding_service = EmbeddingService()
+        logger.info(f"✓ ChromaDB VectorStore initialized at {self.persist_directory}")
+
+    def add_article(self, article: Dict) -> bool:
         """
-        Initialize semantic search
-        
-        Args:
-            data_dir: Directory containing data files
-            embedding_service: Optional custom embedding service
+        Add an article to the vector store.
         """
-        self.data_dir = Path(data_dir)
-        self.embedding_service = embedding_service or EmbeddingService()
-        self.embeddings_file = self.data_dir / "embeddings.json"
+        article_id = article.get("id")
+        headline = article.get("headline", "")
+        body = article.get("body", "")
         
-        self.embeddings = {}
-        self._load_embeddings()
+        if not article_id:
+            article_id = hashlib.md5((headline + body).encode()).hexdigest()
         
-        logger.info("✓ SemanticSearchEngine initialized")
-    
-    def _load_embeddings(self):
-        """Load cached embeddings"""
-        if self.embeddings_file.exists():
+        text = f"{headline}\n\n{body}"
+        embedding = self.embedding_service.get_embedding(text)
+        
+        if embedding:
             try:
-                with open(self.embeddings_file, 'r') as f:
-                    self.embeddings = json.load(f)
-                logger.info(f"Loaded {len(self.embeddings)} cached embeddings")
-            except Exception as e:
-                logger.error(f"Error loading embeddings: {e}")
-    
-    def _save_embeddings(self):
-        """Save embeddings to cache"""
-        try:
-            with open(self.embeddings_file, 'w') as f:
-                json.dump(self.embeddings, f)
-        except Exception as e:
-            logger.error(f"Error saving embeddings: {e}")
-    
-    def index_articles(self, articles: Dict[str, Dict]) -> Dict:
-        """
-        Index articles for semantic search
-        
-        Args:
-            articles: Dictionary of articles {id: article_data}
-        
-        Returns:
-            Indexing results
-        """
-        indexed = 0
-        failed = 0
-        
-        for article_id, article in articles.items():
-            if article_id in self.embeddings:
-                continue  # Skip already indexed
-            
-            # Combine headline and body for embedding
-            text = f"{article.get('headline', '')} {article.get('body', '')}"
-            embedding = self.embedding_service.get_embedding(text)
-            
-            if embedding:
-                self.embeddings[article_id] = {
-                    "embedding": embedding,
-                    "headline": article.get('headline'),
-                    "source": article.get('source'),
-                    "category": article.get('category'),
-                    "timestamp": datetime.now().isoformat()
+                # Sanitize metadata to ensure all values are valid types (str, int, float, bool)
+                metadata = {
+                    "headline": str(headline) if headline else "Unknown",
+                    "source": str(article.get("source")) if article.get("source") else "Unknown",
+                    "category": str(article.get("category")) if article.get("category") else "General",
+                    "published_at": str(article.get("published_at")) if article.get("published_at") else "Unknown"
                 }
-                indexed += 1
-            else:
-                failed += 1
-        
-        self._save_embeddings()
-        
-        result = {
-            "indexed": indexed,
-            "failed": failed,
-            "total": len(self.embeddings)
-        }
-        
-        logger.info(f"✓ Indexed {indexed} articles, {failed} failed")
-        return result
-    
+
+                self.articles_collection.add(
+                    ids=[article_id],
+                    embeddings=[embedding],
+                    metadatas=[metadata],
+                    documents=[text]
+                )
+                return True
+            except Exception as e:
+                logger.error(f"Error adding to ChromaDB: {e}")
+                return False
+        return False
+
     def search(self, query: str, limit: int = 5, category: Optional[str] = None) -> List[Dict]:
         """
-        Semantic search across indexed content
-        
-        Args:
-            query: Search query
-            limit: Maximum results
-            category: Optional category filter
-        
-        Returns:
-            List of relevant articles with similarity scores
+        Semantic search using vector similarity.
         """
         query_embedding = self.embedding_service.get_embedding(query)
         
         if not query_embedding:
-            logger.error("Failed to embed query")
             return []
         
-        results = []
-        
-        for doc_id, doc_info in self.embeddings.items():
-            doc_embedding = doc_info.get("embedding")
+        where_filter = {}
+        if category:
+            where_filter = {"category": category}
             
-            if not doc_embedding:
-                continue
+        try:
+            results = self.articles_collection.query(
+                query_embeddings=[query_embedding],
+                n_results=limit,
+                where=where_filter if where_filter else None,
+                include=["metadatas", "documents", "distances"]
+            )
             
-            # Apply category filter
-            if category and doc_info.get("category") != category:
-                continue
-            
-            # Calculate similarity
-            similarity = self.embedding_service.similarity(query_embedding, doc_embedding)
-            
-            results.append({
-                "id": doc_id,
-                "headline": doc_info.get("headline"),
-                "source": doc_info.get("source"),
-                "category": doc_info.get("category"),
-                "similarity": round(similarity, 3),
-                "timestamp": doc_info.get("timestamp")
-            })
-        
-        # Sort by similarity
-        results.sort(key=lambda x: x["similarity"], reverse=True)
-        
-        return results[:limit]
-    
-    def search_by_category(self, query: str, category: str, limit: int = 5) -> List[Dict]:
-        """Search within specific category"""
-        return self.search(query, limit=limit, category=category)
-    
-    def find_similar(self, doc_id: str, limit: int = 5) -> List[Dict]:
-        """
-        Find documents similar to a given document
-        
-        Args:
-            doc_id: Document ID to find similarities for
-            limit: Maximum results
-        
-        Returns:
-            List of similar documents
-        """
-        if doc_id not in self.embeddings:
+            output = []
+            if results["ids"] and results["ids"][0]:
+                for i in range(len(results["ids"][0])):
+                    output.append({
+                        "id": results["ids"][0][i],
+                        "headline": results["metadatas"][0][i]["headline"],
+                        "body": results["documents"][0][i],
+                        "source": results["metadatas"][0][i]["source"],
+                        "category": results["metadatas"][0][i]["category"],
+                        "similarity": 1.0 - results["distances"][0][i]  # Convert distance to similarity
+                    })
+            return output
+        except Exception as e:
+            logger.error(f"Semantic search error: {e}")
             return []
-        
-        doc_embedding = self.embeddings[doc_id]["embedding"]
-        results = []
-        
-        for other_id, other_info in self.embeddings.items():
-            if other_id == doc_id:
-                continue
-            
-            other_embedding = other_info.get("embedding")
-            if not other_embedding:
-                continue
-            
-            similarity = self.embedding_service.similarity(doc_embedding, other_embedding)
-            results.append({
-                "id": other_id,
-                "headline": other_info.get("headline"),
-                "similarity": round(similarity, 3)
-            })
-        
-        results.sort(key=lambda x: x["similarity"], reverse=True)
-        return results[:limit]
-    
+
     def get_stats(self) -> Dict:
-        """Get indexing statistics"""
-        by_category = {}
-        for doc_info in self.embeddings.values():
-            cat = doc_info.get("category", "unknown")
-            by_category[cat] = by_category.get(cat, 0) + 1
-        
+        """Get vector store statistics."""
         return {
-            "total_documents": len(self.embeddings),
-            "by_category": by_category
+            "total_vectors": self.articles_collection.count(),
+            "collection_name": "azan_articles"
         }
 
 
-# Global search engine instance
-_semantic_search = None
+# Global instances
+_vector_store = None
 
 
-def initialize_semantic_search(data_dir: str = "data") -> SemanticSearchEngine:
-    """Initialize global semantic search engine"""
-    global _semantic_search
-    if _semantic_search is None:
-        _semantic_search = SemanticSearchEngine(data_dir=data_dir)
-    return _semantic_search
+def get_vector_store() -> VectorStore:
+    global _vector_store
+    if _vector_store is None:
+        _vector_store = VectorStore()
+    return _vector_store
 
 
-def get_semantic_search() -> SemanticSearchEngine:
-    """Get global semantic search engine"""
-    global _semantic_search
-    if _semantic_search is None:
-        initialize_semantic_search()
-    return _semantic_search
+def initialize_semantic_search():
+    """Proxy for legacy compatibility if needed."""
+    return get_vector_store()

@@ -45,7 +45,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 1️⃣  RUN THE DEMO (2 minutes)
-   $ cd /Users/azan/Desktop/AZAN
+   $ cd /Applications/AZAN
    $ source .venv/bin/activate
    $ python demo_rlhf.py
 
@@ -248,7 +248,7 @@ A: Yes! Add data anytime and re-train
 🎉 YOU'RE ALL SET!
 
 Start with:
-   cd /Users/azan/Desktop/AZAN
+   cd /Applications/AZAN
    source .venv/bin/activate
    python demo_rlhf.py
 

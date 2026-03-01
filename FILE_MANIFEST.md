@@ -30,6 +30,24 @@ src/azan_dashboard.py
 │  ├─ Knowledge search interface
 │  └─ Start/stop controls
 └─ Status: ✅ Production Ready
+
+src/math_engine.py
+├─ Size: 400+ lines
+├─ Purpose: Advanced symbolic math (Sympy)
+├─ Features: Calculus, ODEs, Matrices, Limits
+└─ Status: ✅ Production Ready
+
+src/physics_engine.py
+├─ Size: 500+ lines
+├─ Purpose: Symbolic physics solver
+├─ Domains: Kinematics, Forces, EM, Thermo, Waves
+└─ Status: ✅ Production Ready
+
+src/task_executor.py
+├─ Size: 220+ lines
+├─ Purpose: Agentic task orchestration
+├─ Commands: scrape, summarize, solve_math, solve_physics
+└─ Status: ✅ Production Ready
 ```
 
 ### Integration & Updated Files

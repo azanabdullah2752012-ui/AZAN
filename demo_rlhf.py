@@ -4,7 +4,7 @@ Use this to understand the reward function and RLHF pipeline without waiting for
 """
 
 import sys
-sys.path.insert(0, '/Users/azan/Desktop/AZAN')
+sys.path.insert(0, '/Applications/AZAN')
 
 from src.train_rlhf import RLHFTrainer, TrainingExample, RewardFunction
 import logging

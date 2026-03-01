@@ -16,7 +16,7 @@ This is a complete **Reinforcement Learning with Human Feedback (RLHF)** trainin
 ### 1. Run the Full RLHF Training Pipeline
 
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python src/train_rlhf.py
 ```

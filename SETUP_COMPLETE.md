@@ -20,7 +20,7 @@ You now have a fully functional local AI chatbot powered by **Llama3** via **Oll
 ## File Structure
 
 ```
-/Users/azan/Desktop/AZAN/
+/Applications/AZAN/
 ├── src/
 │   ├── train_llm.py          ✅ Training pipeline for fine-tuning
 │   ├── inference.py           ✅ Inference module (fixed to use response.message.content)
@@ -60,7 +60,7 @@ Features:
 ### 2. **Train the Model**
 To prepare training data:
 ```bash
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 source .venv/bin/activate
 python -m src.train_llm
 ```

@@ -354,7 +354,7 @@ The system is **100% autonomous** - no manual intervention needed:
 
 ```bash
 # 1. Start server
-cd /Users/azan/Desktop/AZAN
+cd /Applications/AZAN
 python -m uvicorn webui.app:app --port 8000
 
 # 2. Check knowledge
