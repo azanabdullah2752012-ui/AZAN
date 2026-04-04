@@ -1,296 +1,93 @@
-# AZAN - Autonomous Learning AI with Reinforcement Learning
+# J.A.R.V.I.S. (AZAN OS) - Autonomous macOS Intelligence
 
-**Status**: ✅ FULLY OPERATIONAL  
-**Version**: 2.0.0  
-**Server**: Running on `http://localhost:8000`
+**Status**: ✅ FULLY OPERATIONAL (Phase 16 Complete)  
+**Version**: 16.0.0 (The Ecosystem Update)  
+**Server**: FastAPI (`http://localhost:8000`) + Native macOS Menu Bar Daemon  
 
----
+J.A.R.V.I.S. (formerly AZAN) is a fully local, profoundly autonomous artificial intelligence operating system built for macOS Apple Silicon. Powered by **Local LLMs (Ollama/Llama3)**, it goes far beyond a traditional chatbot. JARVIS utilizes a continuous **ReAct (Reason → Act → Observe)** loop to autonomously interact with your Mac, read your files, manage your schedule, control your media, and hold zero-latency voiced conversations.
 
-## 🎯 What is AZAN?
-
-AZAN is your personal AI assistant that **learns autonomously** from news sources and continuously improves through reinforcement learning. It combines:
-
-- ✅ **Base AI Knowledge** (Ollama + Llama3 model)
-- ✅ **Autonomous Learning** (Continuous RL training, 60-second cycles)
-- ✅ **Knowledge Integration** (217 Q&A pairs across 8 categories)
-- ✅ **Advanced Math & Physics** (Symbolic reasoning powered by SymPy)
-- ✅ **Real-time Monitoring** (API endpoints for training metrics)
+Everything runs 100% locally and privately on your machine. Zero cloud APIs.
 
 ---
 
-## 🚀 Quick Start (5 Minutes)
+## 🌟 The J.A.R.V.I.S. Architecture
 
-### 1. Verify Server is Running
+JARVIS exists simultaneously as a **Web Dashboard** and a **Native macOS Menu Bar Widget**, unified by a powerful FastAPI backend and a sophisticated PyAudio/TTS daemon.
+
+### 1. The ReAct Orchestrator Core
+At the center of JARVIS is the Orchestrator. Instead of answering linearly, JARVIS *thinks*. When asked a complex question, the LLM emits a JSON tool call, the backend executes it natively, and feeds the `Observation` back to JARVIS. It loops autonomously, handling errors and self-correcting until the task is complete.
+
+### 2. Deep Native Expansion (The 16 Phases)
+JARVIS has been systematically expanded over 16 core architectural phases to achieve complete ecosystem dominion:
+- **Vision & Screen**: JARVIS can take screenshots and analyze your active desktop using local Vision-Language Models.
+- **System Control**: Native AppleScript wrappers allow JARVIS to adjust Mac volume, brightness, sleep the display, and toggle Do Not Disturb.
+- **Productivity Suite**: Direct integrations with Apple Calendar, Reminders, and Notes. JARVIS can read your agenda, create tasks, and archive notes entirely on its own.
+- **Communications**: Automated dispatch of iMessages/SMS through the native macOS Messages app, and WhatsApp Desktop integration using URI schemas.
+- **Media Mastery**: Seamless, integrated playback control and deep-library searching for Spotify Desktop.
+
+### 3. The Semantic "Brain" (Knowledge Graph & RAG)
+- **Local Document Indexer**: A background daemon continuously crawls your `~/Documents` and `~/Desktop`, reading `.md`, `.txt`, `.pdf`, and `.py` files.
+- **ChromaDB Vector Store**: Information is encoded into high-dimensional space.
+- **SQLite Provenance Graph**: Every atomic claim JARVIS learns is fact-checked and stored in a graph database, ensuring he remembers context forever.
+
+### 4. Zero-Latency Voice Daemon
+JARVIS features a persistent, always-open microphone stream (eliminating macOS TCC permission lag) coupled with a high-performance sentence-boundary TTS buffer using Microsoft Edge neural voices. This provides a sub-second, multi-turn, British-accented spoken dialogue system accessible from anywhere on your Mac.
+
+---
+
+## 🖥️ The Dual Interfaces
+
+### The Web Dashboard Control Center (`http://localhost:8000`)
+- **Real-Time ReAct Streaming**: Watch JARVIS think. The UI intercepts internal ReAct loops and elegantly displays "⚙️ Action: web_search" and the resulting terminal outputs before giving you the final conversational answer.
+- **System Telemetry**: Live CPU, RAM, and background worker status.
+- **Knowledge Visualizer**: See exactly how many articles, documents, and concepts exist in ChromaDB.
+
+### The Native macOS Widget (Menu Bar)
+- **Always Available**: A lightweight `rumps` application living in the macOS Menu Bar.
+- **Ambient Listening**: Actively listens for the wake word *"Hey JARVIS"* or *"Hey AZAN"*.
+- **Floating HUD**: Delivers sleek, non-intrusive chat interfaces that float over your active workspace.
+
+---
+
+## 🧰 The Tool Registry
+JARVIS holds an arsenal of specialized tools he can deploy autonomously:
+1. `web_search`: Live headless scraping and deep reading of zero-paywall internet.
+2. `code_runner`: Sandboxed Python execution.
+3. `shell_runner`: Bash script and terminal command execution.
+4. `file_manager`: Read, write, and traverse the local SSD.
+5. `computer_control`: Open apps, click, type, and analyze screenshots.
+6. `spotify`: Play, pause, search, and manage playlists.
+7. `apple_calendar` / `apple_reminders` / `apple_notes`: Deep macOS PIM integration.
+8. `apple_messages` / `whatsapp`: Automated messaging.
+9. `system_control`: Mute, volume, brightness, Focus modes.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- macOS on Apple Silicon (M1/M2/M3/M4)
+- Python 3.9+
+- Ollama installed and running (`ollama serve`)
+
+### Booting the System
 ```bash
-curl http://localhost:8000/health
-# Response: {"status":"healthy","version":"2.0.0"}
-```
-
-### 2. Chat with AZAN
-```bash
-curl -X POST http://localhost:8000/chat \
-  -H "Content-Type: application/json" \
-  -d '{"prompt":"What have you learned about quantum computing?"}'
-```
-
-### 3. Check Training Status
-```bash
-curl http://localhost:8000/api/rl/status | jq .
-```
-
-**See QUICKSTART.md for more examples and DEPLOYMENT_STATUS.md for full technical details.**
-
----
-
-## 📁 Project Structure
-
-```
-AZAN/
-├── 📋 Documentation (NEW)
-│   ├── README.md (this file)
-│   ├── QUICKSTART.md
-│   ├── DEPLOYMENT_STATUS.md
-│   └── RL_PIPELINE_DOCS.md
-│
-├── 🧠 AI Core
-│   ├── webui/app.py              # FastAPI server + 7 RL endpoints
-│   ├── src/inference.py          # Enhanced system prompt + inference
-│   ├── src/model.py              # Model utilities
-│   ├── src/train.py              # Training utilities
-│   ├── src/inshorts_scraper.py   # News scraper
-│   └── src/inshorts_trainer.py   # Background news trainer
-│
-├── 🎓 RL System (NEW - Core Feature)
-│   ├── src/rl_pipeline.py        # Autonomous RL orchestrator (400+ lines)
-│   ├── src/rl_inference.py       # Knowledge base + inference (300+ lines)
-│   └── src/init_rl_data.py       # Data initialization
-│
-├── 📊 Data & Models
-│   ├── data/
-│   │   ├── inshorts_articles.json      # 64 source articles
-│   │   ├── rl_training_data.json       # 217 Q&A pairs (NEW)
-│   │   ├── rl_rewards.json             # Reward tracking (NEW)
-│   │   ├── rl_checkpoints/             # Model snapshots (NEW)
-│   │   └── sample_data.csv
-│   ├── model/linear_model.npz
-│   └── requirements.txt
-│
-└── 🔧 Configuration
-    └── start.sh
-```
-
----
-
-## 🎓 What AZAN Knows
-
-AZAN has learned from 64 Inshorts news articles with 217 Q&A pairs covering:
-
-| Category | Topics | Pairs |
-|----------|--------|-------|
-| **Business** | Markets, earnings, crypto, trade, mergers | 24 |
-| **Technology** | AI, quantum computing, 5G, cybersecurity | 24 |
-| **Science** | Fusion energy ⭐, gene therapy, CRISPR | 24 |
-| **Politics** | Policy, elections, diplomacy | 24 |
-| **World** | Global events, humanitarian efforts | 24 |
-| **Sports** | Achievements, championships | 24 |
-| **Entertainment** | Industry trends, cultural events | 24 |
-| **National** | Domestic news, infrastructure | 24 |
-| **Other** | Diverse topics | 25 |
-
----
-
-## 🔌 API Endpoints
-
-### Chat Interface
-```bash
-POST /chat
-# Input: {"prompt": "Your question here"}
-# Output: {"response": "AZAN's answer with learned knowledge"}
-```
-
-### Health & Status
-```bash
-GET /health                  # Server status
-GET /api/rl/status          # Training metrics
-GET /api/rl/knowledge       # Knowledge base summary
-GET /api/rl/metrics         # Detailed performance data
-```
-
-### Training Control
-```bash
-POST /api/rl/start-training  # Start training loop
-POST /api/rl/stop-training   # Stop training loop
-```
-
----
-
-## ⚙️ How It Works
-
-### Autonomous Training Loop (Every 60 Seconds)
-```python
-while training_enabled:
-    # 1. Load batch of 5 Q&A pairs
-    batch = load_batch(batch_size=5)
-    
-    # 2. Evaluate each pair
-    for pair in batch:
-        reward = evaluate_response(pair)
-        model.update_state(reward)
-    
-    # 3. Save checkpoint every 10 iterations
-    if iteration_count % 10 == 0:
-        model.save_checkpoint()
-    
-    # 4. Wait 60 seconds
-    time.sleep(60)
-```
-
-### Knowledge-Enhanced Chat
-```python
-# When user asks a question:
-1. Search knowledge base for relevant articles
-2. Build context from top matches
-3. Inject context into system prompt
-4. Query Ollama with enhanced prompt
-5. Return response with citations
-```
-
----
-
-## ✨ Key Features
-
-✅ **Fully Autonomous**
-- Starts automatically on server startup
-- Runs in background (no blocking)
-- No manual intervention needed
-
-✅ **Intelligent Learning**
-- 60-second training cycles
-- Reward-based response evaluation
-- Checkpoint system saves progress every 10 iterations
-
-✅ **Knowledge Integration**
-- 64 articles indexed by category and keywords
-- Smart context injection into responses
-- Cites learned sources
-
-✅ **Data Persistence**
-- All training data saved to JSON
-- Survives server restarts
-- Graceful error handling
-
-✅ **Real-time Monitoring**
-- API endpoints for training status
-- Performance metrics dashboard
-- Start/stop training controls
-
----
-
-## 🧪 Testing
-
-### Verify Everything Works
-```bash
-# 1. Server health
-curl http://localhost:8000/health
-
-# 2. Ask about learned knowledge
-curl -X POST http://localhost:8000/chat \
-  -H "Content-Type: application/json" \
-  -d '{"prompt":"Tell me about fusion energy breakthroughs"}'
-
-# 3. Check training status
-curl http://localhost:8000/api/rl/status | jq .
-
-# 4. View knowledge summary
-curl http://localhost:8000/api/rl/knowledge | jq .
-```
-
----
-
-## 🔧 Troubleshooting
-
-### Server Won't Start
-```bash
-# Check if already running
-ps aux | grep uvicorn
-
-# Kill and restart
-pkill -f "uvicorn.*webui.app"
+# Start the entire JARVIS ecosystem (Backend, WebUI, and Mac Daemon)
 cd /Applications/AZAN
-nohup python -m uvicorn webui.app:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
+./start_jarvis.sh
 ```
 
-### Ollama Connection Error
-```bash
-# Verify Ollama is running
-curl http://localhost:11434/api/tags
-
-# Start if needed
-ollama serve
-```
-
-### Chat Returning Old Info
-```bash
-# Ensure training is enabled
-curl -X POST http://localhost:8000/api/rl/start-training
-
-# Wait for next cycle and try again
-sleep 60
-```
+### Communicating
+- **Web**: Navigate to `http://localhost:8000`
+- **Voice**: Speak *"Hey JARVIS, what's on my schedule today?"*
+- **Text**: Click the AI icon in your Mac Menu Bar.
 
 ---
 
-## 📚 Full Documentation
-
-- **QUICKSTART.md** - Quick reference and usage examples
-- **DEPLOYMENT_STATUS.md** - Complete deployment and testing guide
-- **RL_PIPELINE_DOCS.md** - Detailed architecture and implementation
-- **Code comments** - Extensive inline documentation
+## 🛡️ Security & Privacy
+Because JARVIS has `shell` and `osascript` access to your machine, he is designed to operate **100% locally**.
+- **No API Keys** (uses Local LLMs and generic web scraping).
+- **Strict Guardrails**: File deletion and destructive shell commands are restricted. System changes require explicit user prompts or safe-listed pathways.
 
 ---
-
-## 📋 Original Features (Still Available)
-
-This project originally included:
-- Linear regression model training and inference
-- FastAPI web UI
-- Model artifacts management
-
-**All original functionality is preserved and enhanced with RL capabilities.**
-
----
-
-## 🚀 Next Steps
-
-1. **Start Using**: Ask AZAN questions about learned knowledge
-2. **Monitor**: Check `/api/rl/status` to see training progress
-3. **Explore**: Test all API endpoints with different prompts
-4. **Review**: Read RL_PIPELINE_DOCS.md for technical details
-5. **Customize**: Modify training interval, batch size, or knowledge categories
-
----
-
-## ✅ System Requirements
-
-- **Python**: 3.9+
-- **RAM**: 2GB minimum
-- **Storage**: 500MB for checkpoints
-- **Network**: Localhost only (127.0.0.1)
-- **Dependencies**: See requirements.txt
-
----
-
-## 📊 Status
-
-**Deployment**: ✅ COMPLETE  
-**Server**: ✅ RUNNING (localhost:8000)  
-**RL Pipeline**: ✅ ACTIVE  
-**Knowledge Base**: ✅ LOADED (217 pairs)  
-**Training**: ✅ ENABLED  
-**Ready to Use**: ✅ YES
-
----
-
-**AZAN v2.0.0** - Autonomous Learning AI with Reinforcement Learning  
-Last Updated: February 23, 2026  
-Status: Production Ready ✅
+*Built for the ultimate local autonomous productivity experience. Welcome to the future of macOS.*

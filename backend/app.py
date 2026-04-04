@@ -6,16 +6,23 @@ Serves the frontend and provides chat + knowledge APIs.
 
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
+from flask_sock import Sock
 import sys
 import os
 import json
 import logging
+import subprocess
+import threading
+import base64
 from pathlib import Path
 from datetime import datetime
+import speech_recognition as sr
 
 # Add project root to path so we can import src modules
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, PROJECT_ROOT)
+from src.tools.macos_control import MacOSControlTool
+from src.agents.automation_engine import AutomationEngine
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -59,6 +66,15 @@ def start_autolearning():
         logger.info("🚀 Political topic autonomous scheduler started")
     except Exception as e:
         logger.error(f"Failed to start autolearning systems: {e}")
+
+# ── Automation Engine Initialization ──────────────────────────────────────────
+automation_engine = AutomationEngine()
+
+def start_automation():
+    """Starts the proactive automation engine loop in a new event loop."""
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(automation_engine.start())
 
 
 # ── Direct Ollama fallback via httpx ─────────────────────────────────────────
@@ -111,6 +127,32 @@ app = Flask(__name__,
             static_folder='../frontend',
             static_url_path='')
 CORS(app)
+sock = Sock(app)
+
+# ── Voice Helpers ────────────────────────────────────────────────────────────
+
+def text_to_speech_mac(text):
+    """Fallback to macOS 'say' command for fast local TTS."""
+    try:
+        subprocess.Popen(["say", text])
+    except Exception as e:
+        logger.error(f"TTS failed: {e}")
+
+def speech_to_text_mac(audio_base64):
+    """Simple STT wrapper using SpeechRecognition."""
+    try:
+        audio_data = base64.b64decode(audio_base64)
+        with open("/tmp/mobile_audio.wav", "wb") as f:
+            f.write(audio_data)
+        
+        recognizer = sr.Recognizer()
+        with sr.AudioFile("/tmp/mobile_audio.wav") as source:
+            audio = recognizer.record(source)
+            text = recognizer.recognize_google(audio)
+            return text
+    except Exception as e:
+        logger.error(f"STT failed: {e}")
+        return None
 
 
 # ── Routes ───────────────────────────────────────────────────────────────────
@@ -136,13 +178,24 @@ def chat():
             return jsonify({'error': 'No JSON body'}), 400
 
         query = (data.get('query') or data.get('prompt', '')).strip()
+        mode = request.args.get('mode', 'desktop')
+        
         if not query:
             return jsonify({'error': 'Empty query'}), 400
 
-        # Try RL-enhanced inference first (Ollama + training data knowledge base)
+        # Performance Mode for Mobile
+        if mode == 'mobile':
+            query = f"ANSWER CONCISELY AND ONLY PROVIDE THE FINAL ANSWER. SKIP REASONING. {query}"
+
+        # Try RL-enhanced inference first
         if rl_inference_available:
             try:
                 response_text = rl_predict(query)
+                
+                # Mobile mode cleanup
+                if mode == 'mobile':
+                    response_text = response_text.replace("Final Answer:", "").strip()
+                
                 return jsonify({
                     'response': response_text,
                     'source': 'rl_inference',
@@ -162,6 +215,40 @@ def chat():
     except Exception as e:
         logger.error(f"Chat error: {e}")
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/quick_action', methods=['POST'])
+def quick_action():
+    """High-performance endpoint for mobile quick actions (<500ms)."""
+    try:
+        data = request.get_json()
+        action = data.get('action')
+        args = data.get('args', {})
+        
+        # Bypass ReAct loop, execute directly via MacOSControlTool
+        control = MacOSControlTool()
+        
+        if action == "mute":
+            res = control.mute(enable=args.get('enable', True))
+        elif action == "open_app":
+            res = control.open_app(args.get('app_name', 'Safari'))
+        elif action == "set_volume":
+            res = control.set_volume(args.get('level', 50))
+        elif action == "get_context":
+            from src.tools.macos_context import MacOSContextTool
+            ctx = MacOSContextTool()
+            res = ctx.get_screen_summary()
+        else:
+            # Fallback to general execute for other macos_control actions
+            res = control.execute(action, args)
+            
+        return jsonify({
+            "status": "success",
+            "result": res
+        })
+    except Exception as e:
+        logger.error(f"Quick action error: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 
 @app.route('/api/status')
@@ -394,6 +481,76 @@ TEXT:
 {text}"""
 
 
+# ── WebSocket for Mobile Interface ──────────────────────────────────────────
+
+@sock.route('/ws')
+def handle_websocket(ws):
+    """
+    WebSocket endpoint for J.A.R.V.I.S. Mobile.
+    Handles streaming audio/text and returns real-time responses.
+    """
+    logger.info("📱 Mobile device connected via WebSocket")
+    while True:
+        try:
+            message = ws.receive()
+            if not message:
+                break
+            
+            data = json.loads(message)
+            msg_type = data.get('type')
+            
+            if msg_type == 'text':
+                query = data.get('text')
+                logger.info(f"💬 WebSocket Text: {query}")
+                
+                # Use Mobile Mode prompt
+                prompt = f"ANSWER CONCISELY AND ONLY PROVIDE THE FINAL ANSWER. SKIP REASONING. {query}"
+                
+                if rl_inference_available:
+                    from src.rl_inference import get_inference_engine
+                    engine = get_inference_engine()
+                    
+                    # Stream chunks back to mobile
+                    ws.send(json.dumps({'type': 'status', 'status': 'Thinking...'}))
+                    full_response = ""
+                    for chunk in engine.stream_predict(prompt):
+                        full_response += chunk
+                        ws.send(json.dumps({'type': 'chunk', 'text': chunk}))
+                    
+                    # Optional: TTS on Mac automatically if requested
+                    if data.get('tts', True):
+                        text_to_speech_mac(full_response.replace("Final Answer:", "").strip())
+                    
+                    ws.send(json.dumps({'type': 'done', 'final_answer': full_response}))
+                else:
+                    response = ollama_direct_chat(prompt)
+                    ws.send(json.dumps({'type': 'done', 'final_answer': response}))
+
+            elif msg_type == 'audio':
+                # Handle base64 audio transcription
+                ws.send(json.dumps({'type': 'status', 'status': 'Transcribing...'}))
+                text = speech_to_text_mac(data.get('audio'))
+                if text:
+                    ws.send(json.dumps({'type': 'transcription', 'text': text}))
+                    # Auto-trigger response
+                    ws.send(json.dumps({'type': 'status', 'status': 'Thinking...'}))
+                    # Reuse text logic simplified here
+                    if rl_inference_available:
+                        from src.rl_inference import get_inference_engine
+                        engine = get_inference_engine()
+                        full_response = ""
+                        for chunk in engine.stream_predict(f"ANSWER CONCISELY. {text}"):
+                            full_response += chunk
+                            ws.send(json.dumps({'type': 'chunk', 'text': chunk}))
+                        ws.send(json.dumps({'type': 'done', 'final_answer': full_response}))
+                else:
+                    ws.send(json.dumps({'type': 'error', 'message': 'STT Failed'}))
+
+        except Exception as e:
+            logger.error(f"WebSocket error: {e}")
+            break
+    logger.info("📱 Mobile device disconnected")
+
 @app.route('/api/extract-claims', methods=['POST'])
 def extract_claims():
     """
@@ -457,6 +614,17 @@ def extract_claims():
         return jsonify({'error': str(e)}), 500
 
 
+def keep_alive():
+    """FIX 2: Keep-alive heartbeat to prevent Ollama from going idle."""
+    client = httpx.Client(timeout=5.0)
+    while True:
+        try:
+            # Ping Ollama every 20 seconds
+            client.get(OLLAMA_HOST)
+        except Exception:
+            pass # Ignore errors, just want to keep it warm
+        time.sleep(20)
+
 if __name__ == '__main__':
     print("=" * 60)
     print("  AZAN AI Autonomous Backend Server")
@@ -467,5 +635,13 @@ if __name__ == '__main__':
     
     # Start autolearning in background
     start_autolearning()
+    
+    # Start Automation Engine in background thread
+    threading.Thread(target=start_automation, daemon=True).start()
+    logger.info("🚀 Proactive Automation Engine started")
+
+    # FIX 2: Start Keep-alive heartbeat
+    threading.Thread(target=keep_alive, daemon=True).start()
+    logger.info("💓 Ollama Keep-alive heartbeat started")
     
     app.run(host='0.0.0.0', port=8000, debug=True, use_reloader=False)

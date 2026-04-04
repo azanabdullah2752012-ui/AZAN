@@ -1,0 +1,1 @@
+../../../../Resources/webui/.venv/bin/activate.fish
